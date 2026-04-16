@@ -361,7 +361,9 @@ html.dark .sprite-image-wrap::after {
 }
 
 .sprite-img.retro {
-  height: 128px;
+  height: 160px;
+  transform-origin: center;
+  transform: scale(2);
   transform-origin: center;
 }
 
