@@ -12,7 +12,7 @@ const {
   description = 'Pokemon sprite source comparison gallery',
 } = Astro.props;
 
-const sourceMap = Object.fromEntries(SPRITE_SOURCES.map((s) => [s.id, s.url(1)]));
+const defaultTemplate = SPRITE_SOURCES[0].url(1);
 const canonicalURL = 'https://wangrui2025.github.io/sprites-gallery/';
 ---
 
@@ -41,18 +41,16 @@ const canonicalURL = 'https://wangrui2025.github.io/sprites-gallery/';
     <link rel="preconnect" href="https://raw.githubusercontent.com" crossorigin />
 
     <link id="pokemon-favicon" rel="icon" type="image/png" href="" />
-    <script is:inline define:vars={{ sourceMap }}>
+    <script is:inline define:vars={{ defaultTemplate }}>
       (function() {
         var link = document.getElementById('pokemon-favicon');
         if (!link) return;
-        var preferredSource = localStorage.getItem('preferred-sprite-source');
         var preferredId = localStorage.getItem('preferred-pokemon-id');
-        if (preferredSource && preferredId) {
-          var template = sourceMap[preferredSource] || sourceMap['default'];
-          link.href = template.replace(/\/(\d+)\.(png|svg)$/, '/' + preferredId + '.$2');
+        if (preferredId) {
+          link.href = defaultTemplate.replace(/\/(\d+)\.(png|svg)$/, '/' + preferredId + '.$2');
         } else {
           var id = Math.floor(Math.random() * 151) + 1;
-          link.href = 'https://cdn.jsdelivr.net/gh/PokeAPI/sprites@master/sprites/pokemon/' + id + '.png';
+          link.href = defaultTemplate.replace(/\/(\d+)\.(png|svg)$/, '/' + id + '.$2');
         }
       })();
     </script>
