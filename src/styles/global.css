@@ -362,9 +362,8 @@ html.dark .sprite-image-wrap::after {
 
 .sprite-img.retro {
   height: 160px;
-  transform-origin: center;
-  transform: scale(2);
-  transform-origin: center;
+  /* Use negative margins to reduce spacing and let the image fill more space, like pokesprite does */
+  margin: -20px 0 -10px 0;
 }
 
 .sprite-img.error {
