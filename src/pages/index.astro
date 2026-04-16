@@ -98,7 +98,7 @@ const generations = Array.from(
           >
             <div class="sprite-image-wrap">
               <img
-                class={`sprite-img ${source.size === '56×56' ? 'retro' : ''}`}
+                class={`sprite-img ${source.size === '56×56' || source.id === 'pokesprite-gen8' ? 'retro' : ''}`}
                 data-source={source.id}
                 src={source.url(1)}
                 alt={source.name}
