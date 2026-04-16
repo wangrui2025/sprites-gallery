@@ -370,6 +370,7 @@ const generations = Array.from(
       const randomId = Math.floor(Math.random() * 1025) + 1;
       currentId = randomId;
       idInput.value = String(randomId);
+      localStorage.setItem('preferred-pokemon-id', String(randomId));
       updateImages();
       updatePokemonInfo(currentId);
     }

@@ -52,7 +52,10 @@ const canonicalURL = 'https://wangrui2025.github.io/sprites-gallery/';
         localStorage.removeItem('preferred-favicon-url');
 
         var preferredId = localStorage.getItem('preferred-pokemon-id');
-        var url = defaultTemplate.replace(/\/(\d+)\.(png|svg)$/, '/' + (preferredId || String(Math.floor(Math.random() * 151) + 1)) + '.$2');
+        if (!preferredId) {
+          preferredId = String(Math.floor(Math.random() * 1025) + 1);
+        }
+        var url = defaultTemplate.replace(/\/(\d+)\.(png|svg)$/, '/' + preferredId + '.$2');
         var link = document.querySelector("link[rel*='icon']");
         if (link) link.href = url;
       })();
