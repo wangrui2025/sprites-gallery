@@ -415,7 +415,7 @@ const generations = Array.from(
         const name = info.names.en.toLowerCase().replace(/[^a-z0-9]/g, '');
         const faviconLink = document.getElementById('pokemon-favicon') as HTMLLinkElement | null;
         if (faviconLink) {
-          faviconLink.href = `https://play.pokemonshowdown.com/sprites/gen5/${name}.png`;
+          faviconLink.href = `https://raw.githubusercontent.com/msikma/pokesprite/master/icons/pokemon/regular/${name}.png`;
         }
       }
     }
