@@ -139,16 +139,52 @@ html.dark .control-bar {
   font-size: 1.1rem;
   font-weight: 600;
   color: var(--color-heading-primary);
+  line-height: 1.4;
 }
 
 html.dark .poke-name {
   color: var(--color-heading-dark);
 }
 
-.poke-types {
-  font-size: 0.8rem;
+.poke-name .name-en {
+  font-weight: 700;
+}
+
+.poke-name .name-ja {
+  font-weight: 500;
   color: var(--color-text-secondary);
+  font-size: 0.95em;
+}
+
+.poke-name .name-zh {
+  font-weight: 500;
+  color: var(--color-link-primary);
+  font-size: 0.95em;
+}
+
+html.dark .poke-name .name-zh {
+  color: var(--color-link-dark);
+}
+
+.poke-types {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  font-size: 0.8rem;
   text-transform: capitalize;
+}
+
+.type-badge {
+  font-size: 0.7rem;
+  padding: 0.15rem 0.4rem;
+  border-radius: 9999px;
+  background: var(--color-tag-tech-bg);
+  color: var(--color-tag-tech-text);
+}
+
+html.dark .type-badge {
+  background: var(--color-tag-tech-bg-dark);
+  color: var(--color-tag-tech-text-dark);
 }
 
 .id-input {

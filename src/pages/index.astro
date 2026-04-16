@@ -131,7 +131,7 @@ const generations = Array.from(
 
     let currentId = 1;
     let selectedSourceId: string | null = null;
-    let pokeCache = new Map<number, { name: string; types: string[] }>();
+    let pokeCache = new Map<number, { names: { en: string; ja: string; zh: string }; types: string[] }>();
 
     function showToast(message: string) {
       toast.textContent = message;
@@ -159,12 +159,25 @@ const generations = Array.from(
         return pokeCache.get(id)!;
       }
       try {
-        const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
-        if (!res.ok) return null;
-        const data = await res.json();
+        const [pokemonRes, speciesRes] = await Promise.all([
+          fetch(`https://pokeapi.co/api/v2/pokemon/${id}`),
+          fetch(`https://pokeapi.co/api/v2/pokemon-species/${id}`),
+        ]);
+        if (!pokemonRes.ok) return null;
+        const pokemon = await pokemonRes.json();
+        const species = speciesRes.ok ? await speciesRes.json() : null;
+
+        const names = species?.names || [];
+        const getName = (lang: string) =>
+          names.find((n: any) => n.language.name === lang)?.name || '';
+
         const info = {
-          name: data.name.charAt(0).toUpperCase() + data.name.slice(1),
-          types: data.types.map((t: any) => t.type.name),
+          names: {
+            en: getName('en') || pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1),
+            ja: getName('ja-Hrkt') || getName('ja') || '',
+            zh: getName('zh-Hans') || getName('zh-Hant') || '',
+          },
+          types: pokemon.types.map((t: any) => t.type.name),
         };
         pokeCache.set(id, info);
         return info;
@@ -178,8 +191,12 @@ const generations = Array.from(
       pokeTypes.textContent = '';
       const info = await fetchPokemonInfo(id);
       if (info) {
-        pokeName.textContent = `#${id} ${info.name}`;
-        pokeTypes.textContent = info.types.join(' / ');
+        const { names, types } = info;
+        const typeText = types.map((t) => `<span class="type-badge type-${t}">${t}</span>`).join('');
+        pokeName.innerHTML = `#${id} <span class="name-en">${names.en}</span>` +
+          (names.ja ? ` <span class="name-ja">${names.ja}</span>` : '') +
+          (names.zh ? ` <span class="name-zh">${names.zh}</span>` : '');
+        pokeTypes.innerHTML = typeText;
       } else {
         pokeName.textContent = `#${id}`;
       }
