@@ -218,7 +218,6 @@ const generations = Array.from(
         urlTemplate.textContent = source.url(1).replace(/\/(\d+)\.(png|svg)$/, '/{id}.$2');
       }
 
-      updatePokemonInfo(id);
     }
 
     function applyGenFilter() {
@@ -254,9 +253,15 @@ const generations = Array.from(
       showToast(`Set to ${source.name} - #${pokemonId}`);
     }
 
-    idInput.addEventListener('change', updateImages);
+    idInput.addEventListener('change', () => {
+      updateImages();
+      updatePokemonInfo(currentId);
+    });
     idInput.addEventListener('input', updateImages);
-    btnRandom.addEventListener('click', randomize);
+    btnRandom.addEventListener('click', () => {
+      randomize();
+      updatePokemonInfo(currentId);
+    });
     genFilter.addEventListener('change', applyGenFilter);
 
     grid.addEventListener('click', (e) => {
@@ -299,16 +304,19 @@ const generations = Array.from(
           e.preventDefault();
           idInput.value = String(Math.max(1, currentId - 1));
           updateImages();
+          updatePokemonInfo(currentId);
           break;
         case 'ArrowRight':
           e.preventDefault();
           idInput.value = String(Math.min(1025, currentId + 1));
           updateImages();
+          updatePokemonInfo(currentId);
           break;
         case 'r':
         case 'R':
           e.preventDefault();
           randomize();
+          updatePokemonInfo(currentId);
           break;
         case 'f':
         case 'F': {
@@ -342,5 +350,6 @@ const generations = Array.from(
 
     // Initial load
     updateImages();
+    updatePokemonInfo(currentId);
   </script>
 </BaseLayout>
