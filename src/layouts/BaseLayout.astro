@@ -48,15 +48,12 @@ const canonicalURL = 'https://wangrui2025.github.io/sprites-gallery/';
     <link id="pokemon-favicon" rel="icon" type="image/png" href="" />
     <script is:inline define:vars={{ defaultTemplate }}>
       (function() {
-        // Clear stale canvas-generated favicon URL from older versions
-        localStorage.removeItem('preferred-favicon-url');
-
-        var preferredId = localStorage.getItem('preferred-pokemon-id');
+        const preferredId = localStorage.getItem('preferred-pokemon-id');
         if (!preferredId) {
           preferredId = String(Math.floor(Math.random() * 1025) + 1);
         }
-        var url = defaultTemplate.replace(/\/(\d+)\.(png|svg)$/, '/' + preferredId + '.$2');
-        var link = document.querySelector("link[rel*='icon']");
+        const url = defaultTemplate.replace(/\/(\d+)\.(png|svg)$/, '/' + preferredId + '.$2');
+        const link = document.querySelector("link[rel*='icon']");
         if (link) link.href = url;
       })();
     </script>

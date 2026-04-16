@@ -162,6 +162,7 @@ const generations = Array.from(
     let pokeCache = new Map<number, { names: { en: string; ja: string; zh: string }; types: string[] }>();
 
     function showToast(message: string) {
+      if (!toast) return;
       toast.textContent = message;
       toast.classList.add('show');
       setTimeout(() => toast.classList.remove('show'), 2000);
