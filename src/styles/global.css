@@ -284,7 +284,7 @@ html.dark .sprite-card:hover {
 
 .sprite-image-wrap {
   position: relative;
-  height: 120px;
+  height: 160px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -320,15 +320,14 @@ html.dark .sprite-image-wrap::after {
   image-rendering: pixelated;
   image-rendering: crisp-edges;
   width: auto;
-  height: 96px;
+  height: 128px;
   object-fit: contain;
   opacity: 1;
   transition: opacity 0.2s;
 }
 
 .sprite-img.retro {
-  height: 56px;
-  transform: scale(1.5);
+  height: 128px;
   transform-origin: center;
 }
 
