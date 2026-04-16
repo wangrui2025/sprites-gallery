@@ -5,6 +5,7 @@ import { SPRITE_SOURCES } from '../data/sprite-sources';
 const generations = Array.from(
   new Set(SPRITE_SOURCES.map((s) => s.generation).filter(Boolean))
 );
+const randomId = Math.floor(Math.random() * 1025) + 1;
 ---
 
 <BaseLayout
@@ -33,7 +34,7 @@ const generations = Array.from(
           type="number"
           min="1"
           max="1025"
-          value="1"
+          value={randomId}
           class="id-input"
           aria-label="Pokemon ID"
         />
@@ -116,7 +117,7 @@ const generations = Array.from(
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
   <script>
-    import { SPRITE_SOURCES, isValidForSource, getSpriteUrl } from '../data/sprite-sources';
+    import { SPRITE_SOURCES, isValidForSource, getSpriteUrl, getFaviconUrl } from '../data/sprite-sources';
 
     const idInput = document.getElementById('poke-id') as HTMLInputElement;
     const btnRandom = document.getElementById('btn-random') as HTMLButtonElement;
@@ -129,7 +130,7 @@ const generations = Array.from(
     const pokeName = document.getElementById('poke-name') as HTMLElement;
     const pokeTypes = document.getElementById('poke-types') as HTMLElement;
 
-    let currentId = 1;
+    let currentId = Math.floor(Math.random() * 1025) + 1;
     let selectedSourceId: string | null = null;
     let pokeCache = new Map<number, { names: { en: string; ja: string; zh: string }; types: string[] }>();
 
@@ -260,7 +261,7 @@ const generations = Array.from(
     function setAsFavicon(sourceId: string, pokemonId: number) {
       const source = SPRITE_SOURCES.find((s) => s.id === sourceId);
       if (!source) return;
-      const url = getSpriteUrl('default', pokemonId);
+      const url = getFaviconUrl(pokemonId);
 
       const link = document.querySelector("link[rel*='icon']") as HTMLLinkElement | null;
       if (link) link.href = url;
