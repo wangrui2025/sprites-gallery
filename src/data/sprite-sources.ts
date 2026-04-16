@@ -99,6 +99,18 @@ export const SPRITE_SOURCES: SpriteSource[] = [
     style: '像素图标',
     generation: 'All',
   },
+  // msikma/pokesprite Gen 8（68×56 像素风格，URL 用名字而非 ID）
+  {
+    id: 'pokesprite-gen8',
+    name: 'pokesprite Gen 8',
+    url: (_id: number) =>
+      `https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen8/regular/__NAME__.png`,
+    format: 'PNG',
+    size: '68×56',
+    style: '像素',
+    generation: 'Gen VIII',
+    maxId: 898,
+  },
   // 高清/艺术风格
   {
     id: 'home',

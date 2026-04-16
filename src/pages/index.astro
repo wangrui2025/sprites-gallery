@@ -309,12 +309,18 @@ const generations = Array.from(
           el.classList.remove('error');
           el.parentElement?.classList.remove('show-placeholder');
           let newUrl = source.url(id);
-          // pokesprite uses Pokemon name in URL instead of ID
+          // pokesprite sources use Pokemon name in URL instead of ID
           if (sourceId === 'pokesprite') {
             const info = pokeCache.get(id);
             if (info) {
               const name = sanitizeName(info.names.en);
               newUrl = `${POKESPRITE_BASE}/${name}.png`;
+            }
+          } else if (sourceId === 'pokesprite-gen8') {
+            const info = pokeCache.get(id);
+            if (info) {
+              const name = sanitizeName(info.names.en);
+              newUrl = `${POKESPRITE_GEN8_BASE}/${name}.png`;
             }
           }
           if (el.src !== newUrl) {
@@ -366,12 +372,18 @@ const generations = Array.from(
       const source = SPRITE_SOURCES.find((s) => s.id === sourceId);
       if (!source) return;
       let url = source.url(pokemonId);
-      // pokesprite uses Pokemon name in URL instead of ID
+      // pokesprite sources use Pokemon name in URL instead of ID
       if (sourceId === 'pokesprite') {
         const info = pokeCache.get(pokemonId);
         if (info) {
           const name = sanitizeName(info.names.en);
           url = `${POKESPRITE_BASE}/${name}.png`;
+        }
+      } else if (sourceId === 'pokesprite-gen8') {
+        const info = pokeCache.get(pokemonId);
+        if (info) {
+          const name = sanitizeName(info.names.en);
+          url = `${POKESPRITE_GEN8_BASE}/${name}.png`;
         }
       }
       const link = document.querySelector("link[rel*='icon']") as HTMLLinkElement | null;
