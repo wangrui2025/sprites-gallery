@@ -121,3 +121,7 @@ export function getSpriteUrl(sourceId: string, id: number): string {
   if (!source) return SPRITE_SOURCES[0].url(id);
   return source.url(id);
 }
+
+export function getFaviconUrl(id: number): string {
+  return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`;
+}
