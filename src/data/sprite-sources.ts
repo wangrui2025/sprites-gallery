@@ -76,6 +76,17 @@ export const SPRITE_SOURCES: SpriteSource[] = [
     generation: 'Gen II',
     maxId: 251,
   },
+  // Pokemon Showdown（像素风，与 XY 风格一致）
+  {
+    id: 'showdown',
+    name: 'Pokemon Showdown',
+    url: (id: number) =>
+      `https://play.pokemonshowdown.com/sprites/gen5/${id}.png`,
+    format: 'PNG',
+    size: '96×96',
+    style: '现代像素',
+    generation: 'Gen V+',
+  },
   // 高清/艺术风格
   {
     id: 'home',
