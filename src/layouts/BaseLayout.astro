@@ -1,0 +1,59 @@
+---
+import '../styles/global.css';
+import { SPRITE_SOURCES } from '../data/sprite-sources';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const {
+  title = 'Sprites Gallery',
+  description = 'Pokemon sprite source comparison gallery',
+} = Astro.props;
+
+const sourceMap = Object.fromEntries(SPRITE_SOURCES.map((s) => [s.id, s.url(1)]));
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+
+    <link id="pokemon-favicon" rel="icon" type="image/png" href="" />
+    <script is:inline define:vars={{ sourceMap }}>
+      (function() {
+        var link = document.getElementById('pokemon-favicon');
+        if (!link) return;
+        var preferredSource = localStorage.getItem('preferred-sprite-source');
+        var preferredId = localStorage.getItem('preferred-pokemon-id');
+        if (preferredSource && preferredId) {
+          var template = sourceMap[preferredSource] || sourceMap['default'];
+          link.href = template.replace(/\/(\d+)\.(png|svg)$/, '/' + preferredId + '.$2');
+        } else {
+          var id = Math.floor(Math.random() * 151) + 1;
+          link.href = 'https://cdn.jsdelivr.net/gh/PokeAPI/sprites@master/sprites/pokemon/' + id + '.png';
+        }
+      })();
+    </script>
+
+    <!-- Theme initialization -->
+    <script is:inline>
+      (function() {
+        function applyTheme() {
+          const theme = localStorage.getItem('theme')
+            || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+          document.documentElement.classList.toggle('dark', theme === 'dark');
+        }
+        applyTheme();
+      })();
+    </script>
+  </head>
+
+  <body>
+    <slot />
+  </body>
+</html>

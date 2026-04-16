@@ -1,0 +1,301 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SPRITE_SOURCES } from '../data/sprite-sources';
+
+const generations = Array.from(
+  new Set(SPRITE_SOURCES.map((s) => s.generation).filter(Boolean))
+);
+---
+
+<BaseLayout
+  title="Sprites Gallery - Rui Wang"
+  description="Pokemon sprite source comparison gallery"
+>
+  <div class="sprites-gallery">
+    <header class="site-header">
+      <h1 class="gallery-title">Pokemon Sprites Gallery</h1>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <span class="icon-sun">☀️</span>
+        <span class="icon-moon">🌙</span>
+      </button>
+    </header>
+
+    <p class="gallery-subtitle">
+      Compare sprite sources from PokeAPI. All images are static remote links.
+    </p>
+
+    <!-- Control Bar -->
+    <div class="control-bar">
+      <div class="control-group">
+        <label for="poke-id">ID</label>
+        <input
+          id="poke-id"
+          type="number"
+          min="1"
+          max="1025"
+          value="1"
+          class="id-input"
+        />
+      </div>
+
+      <button id="btn-random" class="control-btn" title="Random (R)">
+        Random
+      </button>
+
+      <div class="control-group">
+        <label for="gen-filter">Generation</label>
+        <select id="gen-filter" class="gen-select">
+          <option value="">All</option>
+          {generations.map((gen) => (
+            <option value={gen}>{gen}</option>
+          ))}
+        </select>
+      </div>
+    </div>
+
+    <!-- Grid -->
+    <div id="sprite-grid" class="sprite-grid">
+      {
+        SPRITE_SOURCES.map((source) => (
+          <div
+            class="sprite-card"
+            data-generation={source.generation || ''}
+            data-source-id={source.id}
+          >
+            <div class="sprite-image-wrap">
+              <img
+                class={`sprite-img ${source.size === '56×56' ? 'retro' : ''}`}
+                data-source={source.id}
+                alt={source.name}
+                loading="lazy"
+              />
+            </div>
+            <div class="sprite-meta">
+              <h3 class="sprite-name">{source.name}</h3>
+              <div class="sprite-tags">
+                <span class="tag tag-format">{source.format}</span>
+                <span class="tag tag-size">{source.size}</span>
+                <span class="tag tag-style">{source.style}</span>
+              </div>
+              <div class="sprite-actions">
+                <button class="action-btn copy-url" data-source={source.id}>
+                  Copy URL
+                </button>
+                <button class="action-btn set-favicon" data-source={source.id}>
+                  Set Favicon
+                </button>
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+
+    <!-- Code Snippet -->
+    <div class="code-section">
+      <h2 class="code-title">URL Template</h2>
+      <pre class="code-block"><code id="url-template">Select a source to view its URL template</code></pre>
+      <button id="copy-template" class="control-btn">Copy Template</button>
+    </div>
+
+    <footer class="site-footer">
+      <a href="https://wangrui2025.github.io/" class="back-link">← Back to Homepage</a>
+    </footer>
+  </div>
+
+  <!-- Toast -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    import { SPRITE_SOURCES, isValidForSource, getSpriteUrl } from '../data/sprite-sources';
+
+    const idInput = document.getElementById('poke-id') as HTMLInputElement;
+    const btnRandom = document.getElementById('btn-random') as HTMLButtonElement;
+    const genFilter = document.getElementById('gen-filter') as HTMLSelectElement;
+    const grid = document.getElementById('sprite-grid') as HTMLDivElement;
+    const urlTemplate = document.getElementById('url-template') as HTMLElement;
+    const copyTemplateBtn = document.getElementById('copy-template') as HTMLButtonElement;
+    const toast = document.getElementById('toast') as HTMLDivElement;
+    const themeToggle = document.getElementById('theme-toggle') as HTMLButtonElement;
+
+    let currentId = 1;
+    let selectedSourceId: string | null = null;
+
+    function showToast(message: string) {
+      toast.textContent = message;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 2000);
+    }
+
+    function getValidId(): number {
+      const val = parseInt(idInput.value, 10);
+      if (Number.isNaN(val)) return 1;
+      return Math.max(1, Math.min(1025, val));
+    }
+
+    function getActiveSourceId(): string | null {
+      const visibleCards = Array.from(grid.querySelectorAll('.sprite-card:not([hidden])'));
+      if (selectedSourceId) {
+        const match = visibleCards.find((card) => card.getAttribute('data-source-id') === selectedSourceId);
+        if (match) return match.getAttribute('data-source-id');
+      }
+      return visibleCards[0]?.getAttribute('data-source-id') || null;
+    }
+
+    function updateImages() {
+      const id = getValidId();
+      currentId = id;
+      idInput.value = String(id);
+
+      const images = grid.querySelectorAll('.sprite-img');
+      images.forEach((img) => {
+        const el = img as HTMLImageElement;
+        const sourceId = el.dataset.source;
+        if (!sourceId) return;
+        const source = SPRITE_SOURCES.find((s) => s.id === sourceId);
+        if (!source) return;
+
+        if (!isValidForSource(id, source)) {
+          el.src = '';
+          el.classList.add('error');
+          el.parentElement?.classList.add('show-placeholder');
+        } else {
+          el.classList.remove('error');
+          el.parentElement?.classList.remove('show-placeholder');
+          const newUrl = source.url(id);
+          if (el.src !== newUrl) {
+            el.src = newUrl;
+          }
+        }
+      });
+
+      const sid = getActiveSourceId();
+      const source = sid ? SPRITE_SOURCES.find((s) => s.id === sid) : undefined;
+      if (source) {
+        urlTemplate.textContent = source.url(1).replace(/\/(\d+)\.(png|svg)$/, '/{id}.$2');
+      }
+    }
+
+    function applyGenFilter() {
+      const gen = genFilter.value;
+      const cards = grid.querySelectorAll('.sprite-card');
+      cards.forEach((card) => {
+        const cardGen = card.getAttribute('data-generation') || '';
+        if (!gen || cardGen === gen) {
+          (card as HTMLElement).hidden = false;
+        } else {
+          (card as HTMLElement).hidden = true;
+        }
+      });
+      updateImages();
+    }
+
+    function randomize() {
+      const id = Math.floor(Math.random() * 1025) + 1;
+      idInput.value = String(id);
+      updateImages();
+    }
+
+    function setAsFavicon(sourceId: string, pokemonId: number) {
+      const source = SPRITE_SOURCES.find((s) => s.id === sourceId);
+      if (!source) return;
+      const url = getSpriteUrl(sourceId, pokemonId);
+
+      const link = document.querySelector("link[rel*='icon']") as HTMLLinkElement | null;
+      if (link) link.href = url;
+
+      localStorage.setItem('preferred-sprite-source', sourceId);
+      localStorage.setItem('preferred-pokemon-id', String(pokemonId));
+      showToast(`Set to ${source.name} - #${pokemonId}`);
+    }
+
+    idInput.addEventListener('change', updateImages);
+    idInput.addEventListener('input', updateImages);
+    btnRandom.addEventListener('click', randomize);
+    genFilter.addEventListener('change', applyGenFilter);
+
+    grid.addEventListener('click', (e) => {
+      const target = e.target as HTMLElement;
+      if (target.classList.contains('copy-url')) {
+        const sid = target.dataset.source;
+        const source = SPRITE_SOURCES.find((s) => s.id === sid);
+        if (source) {
+          navigator.clipboard.writeText(source.url(currentId));
+          showToast('URL copied');
+        }
+      }
+      if (target.classList.contains('set-favicon')) {
+        const sid = target.dataset.source;
+        if (sid) {
+          selectedSourceId = sid;
+          setAsFavicon(sid, currentId);
+          updateImages();
+        }
+      }
+    });
+
+    copyTemplateBtn.addEventListener('click', () => {
+      const text = urlTemplate.textContent || '';
+      if (text) {
+        navigator.clipboard.writeText(text);
+        showToast('Template copied');
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) {
+        if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+          return;
+        }
+      }
+
+      switch (e.key) {
+        case 'ArrowLeft':
+          e.preventDefault();
+          idInput.value = String(Math.max(1, currentId - 1));
+          updateImages();
+          break;
+        case 'ArrowRight':
+          e.preventDefault();
+          idInput.value = String(Math.min(1025, currentId + 1));
+          updateImages();
+          break;
+        case 'r':
+        case 'R':
+          e.preventDefault();
+          randomize();
+          break;
+        case 'f':
+        case 'F': {
+          e.preventDefault();
+          const sid = getActiveSourceId();
+          if (sid) {
+            selectedSourceId = sid;
+            setAsFavicon(sid, currentId);
+            updateImages();
+          } else {
+            showToast('No visible source to set as favicon');
+          }
+          break;
+        }
+      }
+    });
+
+    grid.addEventListener('error', (e) => {
+      const target = e.target as HTMLImageElement;
+      if (target.classList.contains('sprite-img')) {
+        target.classList.add('error');
+        target.parentElement?.classList.add('show-placeholder');
+      }
+    }, true);
+
+    // Theme toggle
+    themeToggle?.addEventListener('click', () => {
+      const isDark = document.documentElement.classList.toggle('dark');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+
+    // Initial load
+    updateImages();
+  </script>
+</BaseLayout>
