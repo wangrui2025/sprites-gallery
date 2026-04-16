@@ -396,12 +396,11 @@ const generations = Array.from(
 
     // Initial load
     function init() {
-      // Page content always randomizes on refresh
-      const randomId = Math.floor(Math.random() * 1025) + 1;
-      currentId = randomId;
-      idInput.value = String(randomId);
-      // Persist to localStorage so favicon script (BaseLayout) picks up the same random ID
-      localStorage.setItem('preferred-pokemon-id', String(randomId));
+      // BaseLayout generates the random ID and writes it to localStorage + window.__INITIAL_POKEMON_ID__
+      // index.astro reads it to stay in sync with the favicon
+      const initialId = window.__INITIAL_POKEMON_ID__ || 1;
+      currentId = initialId;
+      idInput.value = String(initialId);
       updateImages();
       updatePokemonInfo(currentId);
     }
