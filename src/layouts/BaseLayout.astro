@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-import { SPRITE_SOURCES, getFaviconUrl } from '../data/sprite-sources';
+import { SPRITE_SOURCES } from '../data/sprite-sources';
 
 interface Props {
   title: string;
@@ -13,7 +13,6 @@ const {
 } = Astro.props;
 
 const sourceMap = Object.fromEntries(SPRITE_SOURCES.map((s) => [s.id, s.url(1)]));
-const faviconTemplate = getFaviconUrl(1);
 const canonicalURL = 'https://wangrui2025.github.io/sprites-gallery/';
 ---
 
@@ -42,16 +41,18 @@ const canonicalURL = 'https://wangrui2025.github.io/sprites-gallery/';
     <link rel="preconnect" href="https://raw.githubusercontent.com" crossorigin />
 
     <link id="pokemon-favicon" rel="icon" type="image/png" href="" />
-    <script is:inline define:vars={{ faviconTemplate }}>
+    <script is:inline define:vars={{ sourceMap }}>
       (function() {
         var link = document.getElementById('pokemon-favicon');
         if (!link) return;
+        var preferredSource = localStorage.getItem('preferred-sprite-source');
         var preferredId = localStorage.getItem('preferred-pokemon-id');
-        if (preferredId) {
-          link.href = faviconTemplate.replace(/\/1\.png$/, '/' + preferredId + '.png');
+        if (preferredSource && preferredId) {
+          var template = sourceMap[preferredSource] || sourceMap['default'];
+          link.href = template.replace(/\/(\d+)\.(png|svg)$/, '/' + preferredId + '.$2');
         } else {
           var id = Math.floor(Math.random() * 151) + 1;
-          link.href = faviconTemplate.replace(/\/1\.png$/, '/' + id + '.png');
+          link.href = 'https://cdn.jsdelivr.net/gh/PokeAPI/sprites@master/sprites/pokemon/' + id + '.png';
         }
       })();
     </script>

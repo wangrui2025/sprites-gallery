@@ -116,7 +116,7 @@ const generations = Array.from(
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
   <script>
-    import { SPRITE_SOURCES, isValidForSource, getSpriteUrl, getFaviconUrl } from '../data/sprite-sources';
+    import { SPRITE_SOURCES, isValidForSource, getSpriteUrl } from '../data/sprite-sources';
 
     const idInput = document.getElementById('poke-id') as HTMLInputElement;
     const btnRandom = document.getElementById('btn-random') as HTMLButtonElement;
@@ -260,7 +260,7 @@ const generations = Array.from(
     function setAsFavicon(sourceId: string, pokemonId: number) {
       const source = SPRITE_SOURCES.find((s) => s.id === sourceId);
       if (!source) return;
-      const url = getFaviconUrl(pokemonId);
+      const url = getSpriteUrl(sourceId, pokemonId);
 
       const link = document.querySelector("link[rel*='icon']") as HTMLLinkElement | null;
       if (link) link.href = url;
