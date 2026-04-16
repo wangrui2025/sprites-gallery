@@ -150,6 +150,29 @@ const generations = Array.from(
       </div>
     </div>
 
+    <!-- Pokesprite Sync Card -->
+    <div class="sprite-card" id="pokesprite-sync-card">
+      <div class="sprite-image-wrap">
+        <img
+          id="pokesprite-sync-img"
+          class="sprite-img"
+          src=""
+          alt="pokesprite"
+          width="68"
+          height="56"
+          loading="lazy"
+        />
+      </div>
+      <div class="sprite-meta">
+        <h3 class="sprite-name">pokesprite sync</h3>
+        <div class="sprite-tags">
+          <span class="tag">PNG</span>
+          <span class="tag">68×56</span>
+          <span class="tag">Gen 8</span>
+        </div>
+      </div>
+    </div>
+
     <!-- Code Snippet -->
     <div class="code-section">
       <h2 class="code-title">URL Template</h2>
@@ -190,6 +213,7 @@ const generations = Array.from(
     let pokeCache = new Map<number, { names: { en: string; ja: string; zh: string }; types: string[] }>();
 
     const POKESPRITE_BASE = 'https://raw.githubusercontent.com/msikma/pokesprite/master/icons/pokemon/regular';
+    const POKESPRITE_GEN8_BASE = 'https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen8/regular';
     function sanitizeName(name: string) {
       return name.toLowerCase().replace(/[^a-z0-9]/g, '');
     }
@@ -303,6 +327,16 @@ const generations = Array.from(
       const source = sid ? SPRITE_SOURCES.find((s) => s.id === sid) : undefined;
       if (source) {
         urlTemplate.textContent = source.url(1).replace(/\/(\d+)\.(png|svg)$/, '/{id}.$2');
+      }
+
+      // Update pokesprite sync card
+      const syncImg = document.getElementById('pokesprite-sync-img') as HTMLImageElement | null;
+      if (syncImg) {
+        const info = pokeCache.get(id);
+        if (info) {
+          const name = sanitizeName(info.names.en);
+          syncImg.src = `${POKESPRITE_GEN8_BASE}/${name}.png`;
+        }
       }
 
     }
