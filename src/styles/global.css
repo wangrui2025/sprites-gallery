@@ -83,6 +83,40 @@ html.dark .theme-toggle {
 html.dark .icon-sun { display: none; }
 html.dark .icon-moon { display: inline; }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-paper-bg);
+  border: 1px solid var(--color-paper-border);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding: 0.5rem 0.6rem;
+  color: var(--color-text);
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+html.dark .icon-btn {
+  background: var(--color-paper-bg-dark);
+  border-color: var(--color-paper-border-dark);
+  color: var(--color-text-dark);
+}
+
+.icon-btn:hover {
+  background: var(--color-paper-border);
+}
+
+html.dark .icon-btn:hover {
+  background: var(--color-paper-border-dark);
+}
+
 /* ===== Layout ===== */
 .sprites-gallery {
   max-width: 1200px;
