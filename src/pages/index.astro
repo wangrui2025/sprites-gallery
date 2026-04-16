@@ -257,38 +257,17 @@ const generations = Array.from(
       updateImages();
     }
 
-    function setPixelFavicon(url: string, sourceName: string, pokemonId: number) {
-      const img = new Image();
-      img.crossOrigin = 'anonymous';
-      img.onload = () => {
-        const canvas = document.createElement('canvas');
-        canvas.width = 256;
-        canvas.height = 256;
-        const ctx = canvas.getContext('2d');
-        if (ctx) {
-          ctx.imageSmoothingEnabled = false;
-          ctx.drawImage(img, 0, 0, 256, 256);
-        }
-        const link = document.querySelector("link[rel*='icon']") as HTMLLinkElement | null;
-        if (link) link.href = canvas.toDataURL('image/png');
-      };
-      img.onerror = () => {
-        const link = document.querySelector("link[rel*='icon']") as HTMLLinkElement | null;
-        if (link) link.href = url;
-      };
-      img.src = url;
-
-      localStorage.setItem('preferred-favicon-url', url);
-      localStorage.setItem('preferred-pokemon-id', String(pokemonId));
-      showToast(`Set to ${sourceName} - #${pokemonId}`);
-    }
-
     function setAsFavicon(sourceId: string, pokemonId: number) {
       const source = SPRITE_SOURCES.find((s) => s.id === sourceId);
       if (!source) return;
       const url = source.url(pokemonId);
-      setPixelFavicon(url, source.name, pokemonId);
+      const link = document.querySelector("link[rel*='icon']") as HTMLLinkElement | null;
+      if (link) link.href = url;
+      localStorage.setItem('preferred-pokemon-id', String(pokemonId));
       localStorage.setItem('preferred-sprite-source', sourceId);
+      // Clear any stale canvas-generated URL from older versions
+      localStorage.removeItem('preferred-favicon-url');
+      showToast(`Set to ${source.name} - #${pokemonId}`);
     }
 
     idInput.addEventListener('change', () => {

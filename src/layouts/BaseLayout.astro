@@ -48,30 +48,13 @@ const canonicalURL = 'https://wangrui2025.github.io/sprites-gallery/';
     <link id="pokemon-favicon" rel="icon" type="image/png" href="" />
     <script is:inline define:vars={{ defaultTemplate }}>
       (function() {
-        function setPixelFavicon(url) {
-          var img = new Image();
-          img.crossOrigin = 'anonymous';
-          img.onload = function() {
-            var canvas = document.createElement('canvas');
-            canvas.width = 256;
-            canvas.height = 256;
-            var ctx = canvas.getContext('2d');
-            ctx.imageSmoothingEnabled = false;
-            ctx.drawImage(img, 0, 0, 256, 256);
-            var link = document.querySelector("link[rel*='icon']");
-            if (link) link.href = canvas.toDataURL('image/png');
-          };
-          img.onerror = function() {
-            var link = document.querySelector("link[rel*='icon']");
-            if (link) link.href = url;
-          };
-          img.src = url;
-        }
+        // Clear stale canvas-generated favicon URL from older versions
+        localStorage.removeItem('preferred-favicon-url');
 
-        var preferredUrl = localStorage.getItem('preferred-favicon-url');
         var preferredId = localStorage.getItem('preferred-pokemon-id');
-        var url = preferredUrl || defaultTemplate.replace(/\/(\d+)\.(png|svg)$/, '/' + (preferredId || String(Math.floor(Math.random() * 151) + 1)) + '.$2');
-        setPixelFavicon(url);
+        var url = defaultTemplate.replace(/\/(\d+)\.(png|svg)$/, '/' + (preferredId || String(Math.floor(Math.random() * 151) + 1)) + '.$2');
+        var link = document.querySelector("link[rel*='icon']");
+        if (link) link.href = url;
       })();
     </script>
 
