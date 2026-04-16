@@ -380,10 +380,11 @@ const generations = Array.from(
           url = `${POKESPRITE_BASE}/${name}.png`;
         }
       } else if (sourceId === 'pokesprite-gen8') {
+        // Use smaller 40x30 icon version for favicon
         const info = pokeCache.get(pokemonId);
         if (info) {
           const name = sanitizeName(info.names.en);
-          url = `${POKESPRITE_GEN8_BASE}/${name}.png`;
+          url = `${POKESPRITE_BASE}/${name}.png`;
         }
       }
       const link = document.querySelector("link[rel*='icon']") as HTMLLinkElement | null;
