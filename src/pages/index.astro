@@ -174,8 +174,8 @@ const generations = Array.from(
         const info = {
           names: {
             en: getName('en') || pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1),
-            ja: getName('ja-Hrkt') || getName('ja') || '',
-            zh: getName('zh-Hans') || getName('zh-Hant') || '',
+            ja: getName('ja-hrkt') || getName('ja') || '',
+            zh: getName('zh-hans') || getName('zh-hant') || '',
           },
           types: pokemon.types.map((t: any) => t.type.name),
         };
