@@ -86,6 +86,7 @@ export const SPRITE_SOURCES: SpriteSource[] = [
     size: '96×96',
     style: '现代像素',
     generation: 'Gen V+',
+    maxId: 649,
   },
   // 高清/艺术风格
   {
