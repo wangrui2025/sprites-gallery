@@ -2,6 +2,24 @@
 import '../styles/global.css';
 import { getSpriteUrl } from '../data/sprite-sources';
 
+// Fetch Pokemon names from pokesprite at build time
+const POKESPRITE_BASE = 'https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen8';
+const POKESPRITE_REGULAR_URL = `https://api.github.com/repos/msikma/pokesprite/contents/pokemon-gen8/regular`;
+
+// Get the list of Pokemon names at build time
+let pokespriteNames: string[] = [];
+try {
+  const response = await fetch(POKESPRITE_REGULAR_URL);
+  if (response.ok) {
+    const files = await response.json();
+    pokespriteNames = files
+      .filter((f: any) => f.name.endsWith('.png'))
+      .map((f: any) => f.name.replace('.png', ''));
+  }
+} catch {
+  pokespriteNames = [];
+}
+
 interface Props {
   title: string;
   description?: string;
@@ -13,7 +31,7 @@ const {
 } = Astro.props;
 
 const defaultTemplate = getSpriteUrl('showdown', 1);
-const canonicalURL = 'https://wangrui2025.github.io/sprites-gallery/';
+const canonicalURL = 'https://wangrui2025.github.io/sprites-gallery-byname-myk/';
 const defaultId = 1;
 ---
 
@@ -46,15 +64,20 @@ const defaultId = 1;
     <link rel="dns-prefetch" href="https://raw.githubusercontent.com" />
     <link rel="preconnect" href="https://raw.githubusercontent.com" crossorigin />
 
-    <link id="pokemon-favicon" rel="icon" type="image/png" sizes="any" href="" />
-    <script is:inline define:vars={{ defaultTemplate, defaultId }}>
+    <link id="pokemon-favicon" rel="icon" type="image/png" href="" />
+    <script is:inline define:vars={{ pokespriteNames, POKESPRITE_BASE }}>
       (function() {
-        var randomId = Math.floor(Math.random() * 898) + 1;
-        localStorage.setItem('preferred-pokemon-id', String(randomId));
-        window.__INITIAL_POKEMON_ID__ = randomId;
-        // Use defaultTemplate as placeholder; index.astro will update with correct URL after fetching name
+        // Randomly pick a Pokemon name from pokesprite
+        var randomName = pokespriteNames[Math.floor(Math.random() * pokespriteNames.length)];
+        if (!randomName) return;
+
+        localStorage.setItem('preferred-pokemon-name', randomName);
+        window.__INITIAL_POKEMON_NAME__ = randomName;
+
+        // Set favicon to pokesprite Gen 8 regular sprite URL (68x56)
+        var url = POKESPRITE_BASE + '/regular/' + randomName + '.png';
         var link = document.getElementById('pokemon-favicon');
-        if (link) link.href = defaultTemplate;
+        if (link) link.href = url;
       })();
     </script>
 
