@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-import { SPRITE_SOURCES } from '../data/sprite-sources';
+import { SPRITE_SOURCES, getSpriteUrl } from '../data/sprite-sources';
 
 interface Props {
   title: string;
@@ -12,7 +12,7 @@ const {
   description = 'Pokemon sprite source comparison gallery',
 } = Astro.props;
 
-const defaultTemplate = SPRITE_SOURCES[0].url(1);
+const defaultTemplate = getSpriteUrl('official-artwork', 1);
 const canonicalURL = 'https://wangrui2025.github.io/sprites-gallery/';
 ---
 
