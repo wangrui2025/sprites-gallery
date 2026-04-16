@@ -88,7 +88,7 @@ export const SPRITE_SOURCES: SpriteSource[] = [
     generation: 'Gen V+',
     maxId: 649,
   },
-  // 高清/艺术风格
+    // 高清/艺术风格
   {
     id: 'home',
     name: 'HOME 高清渲染',
