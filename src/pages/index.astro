@@ -35,7 +35,13 @@ const generations = Array.from(
           max="1025"
           value="1"
           class="id-input"
+          aria-label="Pokemon ID"
         />
+      </div>
+
+      <div class="pokemon-info">
+        <span id="poke-name" class="poke-name">Loading...</span>
+        <span id="poke-types" class="poke-types"></span>
       </div>
 
       <button id="btn-random" class="control-btn" title="Random (R)">
@@ -66,7 +72,10 @@ const generations = Array.from(
               <img
                 class={`sprite-img ${source.size === '56×56' ? 'retro' : ''}`}
                 data-source={source.id}
+                src={source.url(1)}
                 alt={source.name}
+                width={source.size === '56×56' ? 56 : 96}
+                height={source.size === '56×56' ? 56 : 96}
                 loading="lazy"
               />
             </div>
@@ -117,9 +126,12 @@ const generations = Array.from(
     const copyTemplateBtn = document.getElementById('copy-template') as HTMLButtonElement;
     const toast = document.getElementById('toast') as HTMLDivElement;
     const themeToggle = document.getElementById('theme-toggle') as HTMLButtonElement;
+    const pokeName = document.getElementById('poke-name') as HTMLElement;
+    const pokeTypes = document.getElementById('poke-types') as HTMLElement;
 
     let currentId = 1;
     let selectedSourceId: string | null = null;
+    let pokeCache = new Map<number, { name: string; types: string[] }>();
 
     function showToast(message: string) {
       toast.textContent = message;
@@ -140,6 +152,37 @@ const generations = Array.from(
         if (match) return match.getAttribute('data-source-id');
       }
       return visibleCards[0]?.getAttribute('data-source-id') || null;
+    }
+
+    async function fetchPokemonInfo(id: number) {
+      if (pokeCache.has(id)) {
+        return pokeCache.get(id)!;
+      }
+      try {
+        const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
+        if (!res.ok) return null;
+        const data = await res.json();
+        const info = {
+          name: data.name.charAt(0).toUpperCase() + data.name.slice(1),
+          types: data.types.map((t: any) => t.type.name),
+        };
+        pokeCache.set(id, info);
+        return info;
+      } catch {
+        return null;
+      }
+    }
+
+    async function updatePokemonInfo(id: number) {
+      pokeName.textContent = 'Loading...';
+      pokeTypes.textContent = '';
+      const info = await fetchPokemonInfo(id);
+      if (info) {
+        pokeName.textContent = `#${id} ${info.name}`;
+        pokeTypes.textContent = info.types.join(' / ');
+      } else {
+        pokeName.textContent = `#${id}`;
+      }
     }
 
     function updateImages() {
@@ -174,6 +217,8 @@ const generations = Array.from(
       if (source) {
         urlTemplate.textContent = source.url(1).replace(/\/(\d+)\.(png|svg)$/, '/{id}.$2');
       }
+
+      updatePokemonInfo(id);
     }
 
     function applyGenFilter() {
@@ -215,9 +260,12 @@ const generations = Array.from(
     genFilter.addEventListener('change', applyGenFilter);
 
     grid.addEventListener('click', (e) => {
-      const target = e.target as HTMLElement;
+      const target = (e.target as HTMLElement).closest('.action-btn');
+      if (!target) return;
+      const sid = target.dataset.source;
+      if (!sid) return;
+
       if (target.classList.contains('copy-url')) {
-        const sid = target.dataset.source;
         const source = SPRITE_SOURCES.find((s) => s.id === sid);
         if (source) {
           navigator.clipboard.writeText(source.url(currentId));
@@ -225,12 +273,9 @@ const generations = Array.from(
         }
       }
       if (target.classList.contains('set-favicon')) {
-        const sid = target.dataset.source;
-        if (sid) {
-          selectedSourceId = sid;
-          setAsFavicon(sid, currentId);
-          updateImages();
-        }
+        selectedSourceId = sid;
+        setAsFavicon(sid, currentId);
+        updateImages();
       }
     });
 

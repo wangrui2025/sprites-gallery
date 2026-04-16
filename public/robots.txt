@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wangrui2025.github.io/sprites-gallery/sitemap-index.xml

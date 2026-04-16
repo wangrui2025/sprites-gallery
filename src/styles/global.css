@@ -127,6 +127,30 @@ html.dark .control-bar {
   color: var(--color-text-secondary);
 }
 
+.pokemon-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.125rem;
+  min-width: 8rem;
+}
+
+.poke-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-heading-primary);
+}
+
+html.dark .poke-name {
+  color: var(--color-heading-dark);
+}
+
+.poke-types {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  text-transform: capitalize;
+}
+
 .id-input {
   width: 5rem;
   padding: 0.4rem 0.5rem;
@@ -383,6 +407,11 @@ html.dark .code-title {
   overflow-x: auto;
   font-size: 0.85rem;
   margin: 0 0 0.75rem 0;
+}
+
+html.dark .code-block {
+  background: #0f0f1a;
+  color: #a6adc8;
 }
 
 /* ===== Footer ===== */
