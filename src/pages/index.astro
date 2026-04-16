@@ -144,6 +144,12 @@ const generations = Array.from(
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
   <script>
+    declare global {
+      interface Window {
+        __INITIAL_POKEMON_ID__?: number;
+      }
+    }
+
     import { SPRITE_SOURCES, isValidForSource } from '../data/sprite-sources';
 
     const idInput = document.getElementById('poke-id') as HTMLInputElement;
@@ -395,14 +401,23 @@ const generations = Array.from(
     });
 
     // Initial load
-    function init() {
+    async function init() {
       // BaseLayout generates the random ID and writes it to localStorage + window.__INITIAL_POKEMON_ID__
       // index.astro reads it to stay in sync with the favicon
       const initialId = window.__INITIAL_POKEMON_ID__ || 1;
       currentId = initialId;
       idInput.value = String(initialId);
       updateImages();
-      updatePokemonInfo(currentId);
+      await updatePokemonInfo(currentId);
+      // Update favicon href using Pokemon name (Showdown uses names, not IDs)
+      const info = pokeCache.get(currentId);
+      if (info) {
+        const name = info.names.en.toLowerCase().replace(/[^a-z0-9]/g, '');
+        const faviconLink = document.getElementById('pokemon-favicon') as HTMLLinkElement | null;
+        if (faviconLink) {
+          faviconLink.href = `https://play.pokemonshowdown.com/sprites/gen5/${name}.png`;
+        }
+      }
     }
     init();
   </script>
