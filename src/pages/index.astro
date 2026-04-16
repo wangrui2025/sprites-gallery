@@ -257,7 +257,15 @@ const generations = Array.from(
         } else {
           el.classList.remove('error');
           el.parentElement?.classList.remove('show-placeholder');
-          const newUrl = source.url(id);
+          let newUrl = source.url(id);
+          // pokesprite uses Pokemon name in URL instead of ID
+          if (sourceId === 'pokesprite') {
+            const info = pokeCache.get(id);
+            if (info) {
+              const name = info.names.en.toLowerCase().replace(/[^a-z0-9]/g, '');
+              newUrl = `https://raw.githubusercontent.com/msikma/pokesprite/master/icons/pokemon/regular/${name}.png`;
+            }
+          }
           if (el.src !== newUrl) {
             el.src = newUrl;
           }
@@ -286,16 +294,25 @@ const generations = Array.from(
       updateImages();
     }
 
-    function randomize() {
-      const id = Math.floor(Math.random() * 1025) + 1;
+    async function randomize() {
+      const id = Math.floor(Math.random() * 898) + 1;
       idInput.value = String(id);
+      await updatePokemonInfo(id);
       updateImages();
     }
 
     function setAsFavicon(sourceId: string, pokemonId: number) {
       const source = SPRITE_SOURCES.find((s) => s.id === sourceId);
       if (!source) return;
-      const url = source.url(pokemonId);
+      let url = source.url(pokemonId);
+      // pokesprite uses Pokemon name in URL instead of ID
+      if (sourceId === 'pokesprite') {
+        const info = pokeCache.get(pokemonId);
+        if (info) {
+          const name = info.names.en.toLowerCase().replace(/[^a-z0-9]/g, '');
+          url = `https://raw.githubusercontent.com/msikma/pokesprite/master/icons/pokemon/regular/${name}.png`;
+        }
+      }
       const link = document.querySelector("link[rel*='icon']") as HTMLLinkElement | null;
       if (link) link.href = url;
       localStorage.setItem('preferred-pokemon-id', String(pokemonId));
@@ -310,9 +327,8 @@ const generations = Array.from(
       updatePokemonInfo(currentId);
     });
     idInput.addEventListener('input', updateImages);
-    btnRandom.addEventListener('click', () => {
-      randomize();
-      updatePokemonInfo(currentId);
+    btnRandom.addEventListener('click', async () => {
+      await randomize();
     });
     genFilter.addEventListener('change', applyGenFilter);
 
@@ -344,7 +360,7 @@ const generations = Array.from(
       }
     });
 
-    document.addEventListener('keydown', (e) => {
+    document.addEventListener('keydown', async (e) => {
       if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) {
         if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
           return;
@@ -367,8 +383,7 @@ const generations = Array.from(
         case 'r':
         case 'R':
           e.preventDefault();
-          randomize();
-          updatePokemonInfo(currentId);
+          await randomize();
           break;
         case 'f':
         case 'F': {
@@ -407,9 +422,10 @@ const generations = Array.from(
       const initialId = window.__INITIAL_POKEMON_ID__ || 1;
       currentId = initialId;
       idInput.value = String(initialId);
-      updateImages();
+      // Fetch Pokemon info first so updateImages can use the name for pokesprite
       await updatePokemonInfo(currentId);
-      // Update favicon href using Pokemon name (Showdown uses names, not IDs)
+      updateImages();
+      // Update favicon href using Pokemon name (pokesprite uses names, not IDs)
       const info = pokeCache.get(currentId);
       if (info) {
         const name = info.names.en.toLowerCase().replace(/[^a-z0-9]/g, '');

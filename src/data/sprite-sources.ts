@@ -88,6 +88,17 @@ export const SPRITE_SOURCES: SpriteSource[] = [
     generation: 'Gen V+',
     maxId: 649,
   },
+  // msikma/pokesprite（40×30 像素风格，适合小图标，URL 用名字而非 ID）
+  {
+    id: 'pokesprite',
+    name: 'pokesprite',
+    url: (_id: number) =>
+      `https://raw.githubusercontent.com/msikma/pokesprite/master/icons/pokemon/regular/__NAME__.png`,
+    format: 'PNG',
+    size: '40×30',
+    style: '像素图标',
+    generation: 'All',
+  },
   // 高清/艺术风格
   {
     id: 'home',
