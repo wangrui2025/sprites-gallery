@@ -167,6 +167,11 @@ const generations = Array.from(
     let selectedSourceId: string | null = null;
     let pokeCache = new Map<number, { names: { en: string; ja: string; zh: string }; types: string[] }>();
 
+    const POKESPRITE_BASE = 'https://raw.githubusercontent.com/msikma/pokesprite/master/icons/pokemon/regular';
+    function sanitizeName(name: string) {
+      return name.toLowerCase().replace(/[^a-z0-9]/g, '');
+    }
+
     function showToast(message: string) {
       if (!toast) return;
       toast.textContent = message;
@@ -262,8 +267,8 @@ const generations = Array.from(
           if (sourceId === 'pokesprite') {
             const info = pokeCache.get(id);
             if (info) {
-              const name = info.names.en.toLowerCase().replace(/[^a-z0-9]/g, '');
-              newUrl = `https://raw.githubusercontent.com/msikma/pokesprite/master/icons/pokemon/regular/${name}.png`;
+              const name = sanitizeName(info.names.en);
+              newUrl = `${POKESPRITE_BASE}/${name}.png`;
             }
           }
           if (el.src !== newUrl) {
@@ -309,8 +314,8 @@ const generations = Array.from(
       if (sourceId === 'pokesprite') {
         const info = pokeCache.get(pokemonId);
         if (info) {
-          const name = info.names.en.toLowerCase().replace(/[^a-z0-9]/g, '');
-          url = `https://raw.githubusercontent.com/msikma/pokesprite/master/icons/pokemon/regular/${name}.png`;
+          const name = sanitizeName(info.names.en);
+          url = `${POKESPRITE_BASE}/${name}.png`;
         }
       }
       const link = document.querySelector("link[rel*='icon']") as HTMLLinkElement | null;
@@ -431,7 +436,7 @@ const generations = Array.from(
         const name = info.names.en.toLowerCase().replace(/[^a-z0-9]/g, '');
         const faviconLink = document.getElementById('pokemon-favicon') as HTMLLinkElement | null;
         if (faviconLink) {
-          faviconLink.href = `https://raw.githubusercontent.com/msikma/pokesprite/master/icons/pokemon/regular/${name}.png`;
+          faviconLink.href = `${POKESPRITE_BASE}/${name}.png`;
         }
       }
     }
