@@ -116,7 +116,7 @@ const generations = Array.from(
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
   <script>
-    import { SPRITE_SOURCES, isValidForSource, getSpriteUrl } from '../data/sprite-sources';
+    import { SPRITE_SOURCES, isValidForSource } from '../data/sprite-sources';
 
     const idInput = document.getElementById('poke-id') as HTMLInputElement;
     const btnRandom = document.getElementById('btn-random') as HTMLButtonElement;
@@ -192,7 +192,7 @@ const generations = Array.from(
       const info = await fetchPokemonInfo(id);
       if (info) {
         const { names, types } = info;
-        const typeText = types.map((t) => `<span class="type-badge type-${t}">${t}</span>`).join('');
+        const typeText = types.map((t: string) => `<span class="type-badge type-${t}">${t}</span>`).join('');
         pokeName.innerHTML = `#${id} <span class="name-en">${names.en}</span>` +
           (names.ja ? ` <span class="name-ja">${names.ja}</span>` : '') +
           (names.zh ? ` <span class="name-zh">${names.zh}</span>` : '');
@@ -257,17 +257,38 @@ const generations = Array.from(
       updateImages();
     }
 
+    function setPixelFavicon(url: string, sourceName: string, pokemonId: number) {
+      const img = new Image();
+      img.crossOrigin = 'anonymous';
+      img.onload = () => {
+        const canvas = document.createElement('canvas');
+        canvas.width = 256;
+        canvas.height = 256;
+        const ctx = canvas.getContext('2d');
+        if (ctx) {
+          ctx.imageSmoothingEnabled = false;
+          ctx.drawImage(img, 0, 0, 256, 256);
+        }
+        const link = document.querySelector("link[rel*='icon']") as HTMLLinkElement | null;
+        if (link) link.href = canvas.toDataURL('image/png');
+      };
+      img.onerror = () => {
+        const link = document.querySelector("link[rel*='icon']") as HTMLLinkElement | null;
+        if (link) link.href = url;
+      };
+      img.src = url;
+
+      localStorage.setItem('preferred-favicon-url', url);
+      localStorage.setItem('preferred-pokemon-id', String(pokemonId));
+      showToast(`Set to ${sourceName} - #${pokemonId}`);
+    }
+
     function setAsFavicon(sourceId: string, pokemonId: number) {
       const source = SPRITE_SOURCES.find((s) => s.id === sourceId);
       if (!source) return;
-      const url = getSpriteUrl('official-artwork', pokemonId);
-
-      const link = document.querySelector("link[rel*='icon']") as HTMLLinkElement | null;
-      if (link) link.href = url;
-
+      const url = source.url(pokemonId);
+      setPixelFavicon(url, source.name, pokemonId);
       localStorage.setItem('preferred-sprite-source', sourceId);
-      localStorage.setItem('preferred-pokemon-id', String(pokemonId));
-      showToast(`Set to ${source.name} - #${pokemonId}`);
     }
 
     idInput.addEventListener('change', () => {
@@ -282,7 +303,7 @@ const generations = Array.from(
     genFilter.addEventListener('change', applyGenFilter);
 
     grid.addEventListener('click', (e) => {
-      const target = (e.target as HTMLElement).closest('.action-btn');
+      const target = (e.target as HTMLElement).closest('.action-btn') as HTMLElement | null;
       if (!target) return;
       const sid = target.dataset.source;
       if (!sid) return;
