@@ -45,6 +45,20 @@ This requires a different path:
 
 The favicon card in the grid uses Layer 2; all other sprite cards use Layer 1.
 
+### File Structure
+
+```
+src/
+├── layouts/BaseLayout.astro     ← HTML shell, theme init, favicon sync
+├── pages/index.astro            ← Page template, sprite grid markup
+├── script/gallery.ts           ← Client-side logic (events, API, state)
+├── data/sprite-sources.ts      ← Sprite source configs + URL builders
+└── styles/global.css           ← Global styles + theme variables
+```
+
+**Note**: Client script is extracted to `src/script/gallery.ts` for better maintainability.
+Astro bundles it automatically via `<script>import '../script/gallery'>`.
+
 ## Regression checks (run after `npm run build`)
 
 ```bash
