@@ -141,3 +141,7 @@ vite.config.ts.timestamp-*
 # Local dev / cache
 .astro/
 .omc/
+dist_favicons/
+all_files.txt
+temp_icons/
+process_icons.py
