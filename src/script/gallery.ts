@@ -173,21 +173,43 @@ export async function setAsFavicon(sourceId: string, pokemonId: number): Promise
     showToast(`Failed to load #${pokemonId}`);
     return;
   }
-  const name = info.names.en.toLowerCase().replace(/[^a-z0-9]/g, '');
-  const url = `/sprites-gallery/favicons/${name}.png`;
+
+  let faviconUrl: string;
+  if (sourceId === 'favicon-preview') {
+    faviconUrl = `/sprites-gallery/favicons/${info.names.en.toLowerCase().replace(/[^a-z0-9]/g, '')}.png`;
+  } else {
+    // Build the source URL and fetch as data URI to avoid CORS
+    const source = SPRITE_SOURCES.find((s) => s.id === sourceId);
+    if (!source) {
+      showToast(`Unknown source: ${sourceId}`);
+      return;
+    }
+    const imgUrl = source.url(pokemonId);
+    try {
+      faviconUrl = await urlToDataUri(imgUrl);
+    } catch {
+      showToast(`Failed to load image from ${source.name}`);
+      return;
+    }
+  }
+
   const link = document.querySelector("link[rel*='icon']") as HTMLLinkElement | null;
-  if (link) link.href = url;
-  // Try to pre-load to detect missing icons — set default favicon on error
-  const img = new Image();
-  img.onerror = () => {
-    if (link) link.href = '/sprites-gallery/favicons/pikachu.png';
-  };
-  img.src = url;
+  if (link) link.href = faviconUrl;
   localStorage.setItem('preferred-pokemon-id', String(pokemonId));
   localStorage.setItem('preferred-sprite-source', sourceId);
-  // Clear any stale canvas-generated URL from older versions
   localStorage.removeItem('preferred-favicon-url');
-  showToast(`Set favicon to #${pokemonId} (${info.names.en})`);
+  showToast(`Set favicon to #${pokemonId} (${info.names.en}) via ${sourceId}`);
+}
+
+async function urlToDataUri(url: string): Promise<string> {
+  const response = await fetch(url);
+  const blob = await response.blob();
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onloadend = () => resolve(reader.result as string);
+    reader.onerror = reject;
+    reader.readAsDataURL(blob);
+  });
 }
 
 export function initGallery(): void {
