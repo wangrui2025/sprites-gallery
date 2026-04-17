@@ -22,7 +22,8 @@
 
 ## Project-specific notes
 
-- **No i18n**: This is a single-language gallery; i18n routing is intentionally omitted.
+- **i18n routing**: Dynamic route `src/pages/[lang]/index.astro` generates `/en/` and `/zh/` pages.
+- **UI strings i18n**: All UI strings (buttons, labels, messages) are in `src/i18n/ui.ts`.
 - **No Tailwind v4**: Uses plain CSS in `src/styles/global.css`.
 - **No ClientRouter**: Single-page app with no view transitions; acceptable.
 - **No JSON-LD**: Not a content-heavy site; Open Graph tags in `BaseLayout.astro` are sufficient.
@@ -49,15 +50,18 @@ The favicon card in the grid uses Layer 2; all other sprite cards use Layer 1.
 
 ```
 src/
-├── layouts/BaseLayout.astro     ← HTML shell, theme init, favicon sync
-├── pages/index.astro            ← Page template, sprite grid markup
-├── script/gallery.ts           ← Client-side logic (events, API, state)
-├── data/sprite-sources.ts      ← Sprite source configs + URL builders
-└── styles/global.css           ← Global styles + theme variables
+├── layouts/BaseLayout.astro       ← HTML shell, LanguagePicker, theme init
+├── pages/
+│   ├── index.astro                  ← Redirect → /zh/
+│   └── [lang]/index.astro         ← Dynamic route: /en/ + /zh/ (i18n)
+├── components/LanguagePicker.astro ← Language switcher
+├── script/gallery.ts               ← Client-side logic (events, API, state)
+├── data/sprite-sources.ts          ← Sprite source configs + URL builders
+├── i18n/ui.ts + utils.ts           ← i18n strings + routing helpers
+└── styles/global.css                ← Global styles + theme variables
 ```
 
-**Note**: Client script is extracted to `src/script/gallery.ts` for better maintainability.
-Astro bundles it automatically via `<script>import '../script/gallery'>`.
+**Note**: All UI strings are internationalized via `src/i18n/ui.ts`.
 
 ## Regression checks (run after `npm run build`)
 
