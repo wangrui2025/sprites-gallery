@@ -2,8 +2,18 @@
 
 A live showcase for comparing Pokemon sprite sources — and setting any sprite as your browser's favicon.
 
+## The Purpose
+
+**Why this exists:** A Pokemon fan site where the browser tab icon itself is a Pokemon. Every page refresh gives you a different random Pokemon as your favicon — making your browser tab feel alive.
+
+This is **not just a sprite viewer**. The core experience is:
+1. You open the page → a random Pokemon appears as your browser tab icon
+2. The grid below shows that Pokemon across 9+ sprite sources simultaneously
+3. You can browse, compare, or set any source as your permanent favicon
+
 ### Features
 
+- **Random Favicon** — Each page load picks a random Pokemon (1–1025) and sets it as your browser tab icon instantly (no server needed)
 - **Sprite Comparison** — View any Pokemon (by ID) across 9+ sprite sources simultaneously, including Gen I-V pixel art, modern pixel renders, 3D home renders, and official artwork
 - **Set as Favicon** — Click "Set Favicon" on any card to instantly update your browser tab icon
 - **Persistent on Refresh** — Your chosen favicon Pokemon syncs across page loads via localStorage
