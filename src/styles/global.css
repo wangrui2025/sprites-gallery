@@ -443,6 +443,16 @@ html.dark .action-btn:hover {
   background: var(--color-tag-field-bg-dark);
 }
 
+.action-hint {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  text-align: center;
+}
+
+html.dark .action-hint {
+  color: var(--color-text-secondary-dark);
+}
+
 /* ===== Code Section ===== */
 .code-section {
   padding: 1rem;

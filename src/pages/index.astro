@@ -126,6 +126,29 @@ const generations = Array.from(
           </div>
         ))
       }
+      <div class="sprite-card favicon-card" data-source-id="favicon-preview">
+        <div class="sprite-image-wrap">
+          <img
+            id="favicon-preview-img"
+            src="/favicons/pikachu.png"
+            alt="Favicon Preview"
+            width="96"
+            height="96"
+            style="image-rendering: pixelated;"
+          />
+        </div>
+        <div class="sprite-meta">
+          <h3 class="sprite-name">Favicon Preview</h3>
+          <div class="sprite-tags">
+            <span class="tag tag-format">PNG</span>
+            <span class="tag tag-size">32×32</span>
+            <span class="tag tag-style">Local</span>
+          </div>
+          <div class="sprite-actions">
+            <span class="action-hint">Current browser icon</span>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Code Snippet -->
@@ -235,12 +258,17 @@ const generations = Array.from(
       } else {
         pokeName.textContent = `#${id}`;
       }
-      // Sync favicon to current Pokemon if user has set a preference before
-      const hasFaviconPref = localStorage.getItem('preferred-sprite-source');
-      if (hasFaviconPref && info) {
+      // Sync favicon preview and browser favicon when info is available
+      if (info) {
         const name = info.names.en.toLowerCase().replace(/[^a-z0-9]/g, '');
-        const link = document.querySelector("link[rel*='icon']") as HTMLLinkElement | null;
-        if (link) link.href = `/favicons/${name}.png`;
+        const faviconUrl = `/favicons/${name}.png`;
+        const previewImg = document.getElementById('favicon-preview-img') as HTMLImageElement | null;
+        if (previewImg) previewImg.src = faviconUrl;
+        const hasFaviconPref = localStorage.getItem('preferred-sprite-source');
+        if (hasFaviconPref) {
+          const link = document.querySelector("link[rel*='icon']") as HTMLLinkElement | null;
+          if (link) link.href = faviconUrl;
+        }
       }
     }
 
@@ -283,6 +311,7 @@ const generations = Array.from(
       const gen = genFilter.value;
       const cards = grid.querySelectorAll('.sprite-card');
       cards.forEach((card) => {
+        if (card.classList.contains('favicon-card')) return;
         const cardGen = card.getAttribute('data-generation') || '';
         if (!gen || cardGen === gen) {
           (card as HTMLElement).hidden = false;
