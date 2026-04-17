@@ -168,9 +168,12 @@ export function randomize(): void {
   updateImages();
 }
 
-export function setAsFavicon(sourceId: string, pokemonId: number): void {
-  const info = pokeCache.get(pokemonId);
-  if (!info) return;
+export async function setAsFavicon(sourceId: string, pokemonId: number): Promise<void> {
+  const info = await fetchPokemonInfo(pokemonId);
+  if (!info) {
+    showToast(`Failed to load #${pokemonId}`);
+    return;
+  }
   const name = info.names.en.toLowerCase().replace(/[^a-z0-9]/g, '');
   const url = `/sprites-gallery/favicons/${name}.png`;
   const link = document.querySelector("link[rel*='icon']") as HTMLLinkElement | null;
@@ -179,7 +182,7 @@ export function setAsFavicon(sourceId: string, pokemonId: number): void {
   localStorage.setItem('preferred-sprite-source', sourceId);
   // Clear any stale canvas-generated URL from older versions
   localStorage.removeItem('preferred-favicon-url');
-  showToast(`Set favicon to #${pokemonId}`);
+  showToast(`Set favicon to #${pokemonId} (${info.names.en})`);
 }
 
 export function initGallery(): void {
