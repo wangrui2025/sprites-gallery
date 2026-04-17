@@ -5,7 +5,7 @@ export default defineConfig({
   base: '/sprites-gallery',
   output: 'static',
   i18n: {
-    defaultLocale: 'en',
+    defaultLocale: 'zh',
     locales: ['en', 'zh'],
     routing: {
       prefixDefaultLocale: false,
