@@ -1,6 +1,8 @@
 ---
 import '../styles/global.css';
 import { getSpriteUrl } from '../data/sprite-sources';
+import { getLangFromUrl } from '../i18n/utils';
+import LanguagePicker from '../components/LanguagePicker.astro';
 
 interface Props {
   title: string;
@@ -12,13 +14,15 @@ const {
   description = 'Pokemon sprite source comparison gallery',
 } = Astro.props;
 
+const currentLang = getLangFromUrl(Astro.url);
 const defaultTemplate = getSpriteUrl('showdown', 1);
-const canonicalURL = 'https://wangrui2025.github.io/sprites-gallery/';
+// Dynamic canonical based on current URL
+const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
 const defaultId = 1;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={currentLang}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -70,5 +74,6 @@ const defaultId = 1;
 
   <body>
     <slot />
+    <LanguagePicker />
   </body>
 </html>

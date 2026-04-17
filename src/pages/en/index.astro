@@ -1,0 +1,179 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SPRITE_SOURCES } from '../../data/sprite-sources';
+
+declare global {
+  interface Window {
+    __INITIAL_POKEMON_ID__?: number;
+  }
+}
+
+const generations = Array.from(
+  new Set(SPRITE_SOURCES.map((s) => s.generation).filter(Boolean))
+);
+---
+
+<BaseLayout
+  title="Sprites Gallery - Rui Wang"
+  description="Pokemon sprite source comparison gallery"
+>
+  <div class="sprites-gallery">
+    <header class="site-header">
+      <h1 class="gallery-title">Pokemon Sprites Gallery</h1>
+      <div class="header-actions">
+        <a
+          id="github-btn"
+          class="icon-btn"
+          href="https://github.com/wangrui2025/sprites-gallery"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="View source on GitHub"
+          aria-label="GitHub source"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/>
+          </svg>
+        </a>
+        <a
+          id="actions-btn"
+          class="icon-btn"
+          href="https://github.com/wangrui2025/sprites-gallery/actions"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="View GitHub Actions"
+          aria-label="GitHub Actions"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M4.467 6.068v-.002a8.46 8.46 0 0 0-1.99 1.435C1.6 8.6 1.2 10.01 1.2 11.534c0 3.628 2.453 6.702 5.83 7.79.426.078.582-.185.582-.41 0-.202-.007-.734-.01-1.44-2.38.514-2.88-1.147-2.88-1.147-.387-.983-.944-1.245-.944-1.245-.773-.528.059-.518.059-.518.854.06 1.304.877 1.304.877.76 1.3 1.992.924 2.477.707.077-.55.297-.924.54-1.136-1.89-.215-3.878-.945-3.878-4.206 0-.93.332-1.69.877-2.286-.088-.216-.38-1.084.083-2.252 0 0 .715-.228 2.34.873a8.1 8.1 0 0 1 2.13-.287c.724 0 1.451.097 2.13.287 1.624-1.1 2.338-.873 2.338-.873.464 1.168.172 2.036.084 2.652.546.596.876 1.356.876 2.286 0 3.27-1.99 3.988-3.885 4.202.305.263.577.78.577 1.572 0 1.135-.01 2.05-.01 2.33 0 .226.154.49.584.41A8.493 8.493 0 0 0 22.8 11.534c0-1.524-.4-2.935-1.277-4.099a8.46 8.46 0 0 0-1.99-1.435v.002C19.532 6.068 16.494 4 12 4c-4.494 0-7.532 2.068-7.532 4.068z"/>
+          </svg>
+        </a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+          <span class="icon-sun">☀️</span>
+          <span class="icon-moon">🌙</span>
+        </button>
+      </div>
+    </header>
+
+    <p class="gallery-subtitle">
+      Compare sprite sources from PokeAPI. All images are static remote links.
+    </p>
+
+    <!-- Control Bar -->
+    <div class="control-bar">
+      <div class="control-group">
+        <label for="poke-id">ID</label>
+        <input
+          id="poke-id"
+          type="number"
+          min="1"
+          max="1025"
+          value="1"
+          class="id-input"
+          aria-label="Pokemon ID"
+        />
+      </div>
+
+      <div class="pokemon-info">
+        <span id="poke-name" class="poke-name">Loading...</span>
+        <span id="poke-types" class="poke-types"></span>
+      </div>
+
+      <button id="btn-random" class="control-btn" title="Random (R)">
+        Random
+      </button>
+
+      <div class="control-group">
+        <label for="gen-filter">Generation</label>
+        <select id="gen-filter" class="gen-select">
+          <option value="">All</option>
+          {generations.map((gen) => (
+            <option value={gen}>{gen}</option>
+          ))}
+        </select>
+      </div>
+    </div>
+
+    <!-- Grid -->
+    <div id="sprite-grid" class="sprite-grid">
+      {
+        SPRITE_SOURCES.map((source) => (
+          <div
+            class="sprite-card"
+            data-generation={source.generation || ''}
+            data-source-id={source.id}
+          >
+            <div class="sprite-image-wrap">
+              <img
+                class={`sprite-img ${source.size === '56×56' ? 'retro' : ''}`}
+                data-source={source.id}
+                src={source.url(1)}
+                alt={source.name}
+                width={source.size === '56×56' ? 56 : 96}
+                height={source.size === '56×56' ? 56 : 96}
+                loading="lazy"
+              />
+            </div>
+            <div class="sprite-meta">
+              <h3 class="sprite-name">{source.name}</h3>
+              <div class="sprite-tags">
+                <span class="tag tag-format">{source.format}</span>
+                <span class="tag tag-size">{source.size}</span>
+                <span class="tag tag-style">{source.style}</span>
+              </div>
+              <div class="sprite-actions">
+                <button class="action-btn copy-url" data-source={source.id}>
+                  Copy URL
+                </button>
+                <button class="action-btn set-favicon" data-source={source.id}>
+                  Set Favicon
+                </button>
+              </div>
+            </div>
+          </div>
+        ))
+      }
+      <div class="sprite-card favicon-card" data-source-id="favicon-preview">
+        <div class="sprite-image-wrap">
+          <img
+            id="favicon-preview-img"
+            src="/sprites-gallery/favicons/pikachu.png"
+            alt="Favicon Preview"
+            width="96"
+            height="96"
+            style="image-rendering: pixelated;"
+          />
+        </div>
+        <div class="sprite-meta">
+          <h3 class="sprite-name">Favicon Preview</h3>
+          <div class="sprite-tags">
+            <span class="tag tag-format">PNG</span>
+            <span class="tag tag-size">32×32</span>
+            <span class="tag tag-style">Local</span>
+            <span class="tag tag-mapping">ID → Name → Local</span>
+          </div>
+          <div class="sprite-actions">
+            <span class="action-hint">Current browser icon</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Code Snippet -->
+    <div class="code-section">
+      <h2 class="code-title">URL Template</h2>
+      <pre class="code-block"><code id="url-template">Select a source to view its URL template</code></pre>
+      <button id="copy-template" class="control-btn">Copy Template</button>
+    </div>
+
+    <footer class="site-footer">
+      <a href="https://wangrui2025.github.io/" class="back-link">← Back to Homepage</a>
+    </footer>
+  </div>
+
+  <!-- Toast -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    import '../../script/gallery';
+  </script>
+</BaseLayout>
