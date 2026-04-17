@@ -18,6 +18,7 @@
 | 3 | `ViewTransitions` | `<ViewTransitions />` | `<ClientRouter />` (if transitions are ever added) |
 | 4 | Unused imports | `import { unused } from '...'` | Remove or use them |
 | 5 | Implicit `any` in TS | `.map((t) => ...)` | `.map((t: string) => ...)` |
+| 6 | Favicon URL mapping without ID lookup | `fetch /pokemon/{id} → name → local file` inline in render | Pre-fetch names server-side; pass as prop to client components |
 
 ## Project-specific notes
 
@@ -26,6 +27,23 @@
 - **No ClientRouter**: Single-page app with no view transitions; acceptable.
 - **No JSON-LD**: Not a content-heavy site; Open Graph tags in `BaseLayout.astro` are sufficient.
 - **Favicon init**: The inline theme script and favicon randomizer in `BaseLayout.astro` are intentionally kept as `is:inline` to prevent FOUC.
+- **Favicon path uses ID → Name → Local file**: Only the favicon card requires a PokeAPI lookup to resolve numeric ID to English name for local file resolution. All other sprite cards use direct ID-based URLs to external sources (PokeAPI, Showdown, HOME, etc.) with no name lookup needed.
+
+## Technical Architecture
+
+### Layer 1 — Grid Sprites (ID-Only, No Name Mapping)
+All external sprite sources (PokeAPI, Showdown, HOME, etc.) store URLs by numeric Pokemon ID.
+The frontend constructs URLs directly: `.../pokemon/{id}.png`
+No PokeAPI lookup needed for these images.
+
+### Layer 2 — Favicon (ID → Name → Local File)
+Local favicon files in `public/favicons/` are named by Pokemon English name (e.g., `pikachu.png`).
+This requires a different path:
+1. Random ID → `https://pokeapi.co/api/v2/pokemon/{id}` → extract English name
+2. Name cleanup: `toLowerCase().replace(/[^a-z0-9]/g, '')`
+3. Read local file: `/sprites-gallery/favicons/{name}.png`
+
+The favicon card in the grid uses Layer 2; all other sprite cards use Layer 1.
 
 ## Regression checks (run after `npm run build`)
 
