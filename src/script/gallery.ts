@@ -72,8 +72,9 @@ export async function updatePokemonInfo(id: number): Promise<void> {
   const pokeTypes = document.getElementById('poke-types') as HTMLElement;
   if (!pokeName) return;
 
-  pokeName.textContent = 'Loading...';
-  if (pokeTypes) pokeTypes.textContent = '';
+  // Show ID immediately — name comes from async fetch
+  pokeName.textContent = `#${id}`;
+  if (pokeTypes) pokeTypes.innerHTML = '';
 
   const info = await fetchPokemonInfo(id);
   if (info) {
@@ -83,8 +84,6 @@ export async function updatePokemonInfo(id: number): Promise<void> {
       (names.ja ? ` <span class="name-ja">${names.ja}</span>` : '') +
       (names.zh ? ` <span class="name-zh">${names.zh}</span>` : '');
     if (pokeTypes) pokeTypes.innerHTML = typeText;
-  } else {
-    pokeName.textContent = `#${id}`;
   }
 
   // Sync favicon preview when info is available
