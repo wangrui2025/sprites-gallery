@@ -130,7 +130,7 @@ const generations = Array.from(
         <div class="sprite-image-wrap">
           <img
             id="favicon-preview-img"
-            src="/favicons/pikachu.png"
+            src="/sprites-gallery/favicons/pikachu.png"
             alt="Favicon Preview"
             width="96"
             height="96"
@@ -261,7 +261,7 @@ const generations = Array.from(
       // Sync favicon preview and browser favicon when info is available
       if (info) {
         const name = info.names.en.toLowerCase().replace(/[^a-z0-9]/g, '');
-        const faviconUrl = `/favicons/${name}.png`;
+        const faviconUrl = `/sprites-gallery/favicons/${name}.png`;
         const previewImg = document.getElementById('favicon-preview-img') as HTMLImageElement | null;
         if (previewImg) previewImg.src = faviconUrl;
         const hasFaviconPref = localStorage.getItem('preferred-sprite-source');
@@ -332,7 +332,7 @@ const generations = Array.from(
       const info = pokeCache.get(pokemonId);
       if (!info) return;
       const name = info.names.en.toLowerCase().replace(/[^a-z0-9]/g, '');
-      const url = `/favicons/${name}.png`;
+      const url = `/sprites-gallery/favicons/${name}.png`;
       const link = document.querySelector("link[rel*='icon']") as HTMLLinkElement | null;
       if (link) link.href = url;
       localStorage.setItem('preferred-pokemon-id', String(pokemonId));
@@ -452,7 +452,7 @@ const generations = Array.from(
         const name = info.names.en.toLowerCase().replace(/[^a-z0-9]/g, '');
         const faviconLink = document.getElementById('pokemon-favicon') as HTMLLinkElement | null;
         if (faviconLink) {
-          faviconLink.href = `/favicons/${name}.png`;
+          faviconLink.href = `/sprites-gallery/favicons/${name}.png`;
         }
       }
     }
