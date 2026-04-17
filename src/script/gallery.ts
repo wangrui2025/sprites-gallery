@@ -176,12 +176,13 @@ export async function setAsFavicon(sourceId: string, pokemonId: number): Promise
   const name = info.names.en.toLowerCase().replace(/[^a-z0-9]/g, '');
   const url = `/sprites-gallery/favicons/${name}.png`;
   const link = document.querySelector("link[rel*='icon']") as HTMLLinkElement | null;
-  if (link) {
-    link.href = url;
-    console.log('[favicon] set to', url, '| link found:', link.href);
-  } else {
-    console.warn('[favicon] link element not found!');
-  }
+  if (link) link.href = url;
+  // Try to pre-load to detect missing icons — set default favicon on error
+  const img = new Image();
+  img.onerror = () => {
+    if (link) link.href = '/sprites-gallery/favicons/pikachu.png';
+  };
+  img.src = url;
   localStorage.setItem('preferred-pokemon-id', String(pokemonId));
   localStorage.setItem('preferred-sprite-source', sourceId);
   // Clear any stale canvas-generated URL from older versions
