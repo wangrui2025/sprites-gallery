@@ -6,14 +6,14 @@
 import { readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { execSync } from 'node:child_process';
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url));
 const PUBLIC_DIR = join(__dirname, '../public');
 const MANIFEST_PATH = join(__dirname, '../public/icon-manifest.json');
 
-// Get current git commit SHA for immutable CDN versioning
-const GIT_SHA = execSync('git rev-parse HEAD', { cwd: join(__dirname, '..') }).toString().trim();
+// Use 'main' branch for CDN — avoids chicken-egg SHA mismatch problem
+// (manifest SHA always lags behind the commit that contains it)
+const GIT_REF = 'main';
 
 // Icon set definitions
 const ICON_SETS = [
@@ -76,11 +76,11 @@ function loadIndexJson(filePath) {
 }
 
 function generateManifest() {
-  const cdnBase = `https://cdn.jsdelivr.net/gh/wangrui2025/sprites-gallery@${GIT_SHA}/public`;
+  const cdnBase = `https://cdn.jsdelivr.net/gh/wangrui2025/sprites-gallery@${GIT_REF}/public`;
   const manifest = {
     version: '1.0',
     generated: new Date().toISOString(),
-    gitSha: GIT_SHA,
+    gitRef: GIT_REF,
     cdnBase,
     iconSets: {},
   };
