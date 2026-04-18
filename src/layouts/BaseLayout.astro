@@ -1,6 +1,5 @@
 ---
 import '../styles/global.css';
-import { getSpriteUrl } from '../data/sprite-sources';
 import { getLangFromUrl } from '../i18n/utils';
 import LanguagePicker from '../components/LanguagePicker.astro';
 
@@ -15,14 +14,13 @@ const {
 } = Astro.props;
 
 const currentLang = getLangFromUrl(Astro.url);
-const defaultTemplate = getSpriteUrl('showdown', 1);
-// Dynamic canonical based on current URL
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
+const defaultTemplate = 'https://play.pokemonshowdown.com/sprites/gen5/1.png';
 const defaultId = 1;
 ---
 
 <!doctype html>
-<html lang={currentLang}>
+<html lang={currentLang} class="bg-bg dark:bg-bg-dark text-text dark:text-text-dark">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -72,7 +70,7 @@ const defaultId = 1;
     </script>
   </head>
 
-  <body>
+  <body class="m-0 min-h-screen leading-relaxed">
     <slot />
     <LanguagePicker />
   </body>

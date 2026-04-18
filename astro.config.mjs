@@ -1,6 +1,10 @@
 import { defineConfig } from 'astro/config';
+import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
+  vite: {
+    plugins: [tailwindcss()],
+  },
   site: 'https://wangrui2025.github.io',
   base: '/sprites-gallery',
   output: 'static',
