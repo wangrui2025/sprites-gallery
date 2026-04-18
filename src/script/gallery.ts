@@ -148,9 +148,9 @@ export function applyGenFilter(): void {
   if (!genFilter || !grid) return;
 
   const gen = genFilter.value;
-  const cards = grid.querySelectorAll('.sprite-card');
+  const cards = grid.querySelectorAll('[data-source-id]');
   cards.forEach((card) => {
-    if (card.classList.contains('favicon-card')) return;
+    if (card.getAttribute('data-source-id') === 'favicon-preview') return;
     const cardGen = card.getAttribute('data-generation') || '';
     if (!gen || cardGen === gen) {
       (card as HTMLElement).hidden = false;
@@ -239,14 +239,13 @@ export function initGallery(): void {
     const sid = target.dataset.source;
     if (!sid) return;
 
-    if (target.classList.contains('copy-url')) {
-      const source = sourceMap.get(sid);
-      if (source) {
-        navigator.clipboard.writeText(source.url(currentId));
-        showToast('URL copied');
-      }
-    }
-    if (target.classList.contains('set-favicon')) {
+    const source = sourceMap.get(sid);
+    if (!source) return;
+    const label = target.textContent?.trim() || '';
+    if (label.includes('URL') || label.includes('复制')) {
+      navigator.clipboard.writeText(source.url(currentId));
+      showToast('URL copied');
+    } else if (label.includes('Favicon') || label.includes('图标')) {
       selectedSourceId = sid;
       setAsFavicon(sid, currentId);
       updateImages();
