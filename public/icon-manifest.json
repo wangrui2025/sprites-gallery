@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generated": "2026-04-18T09:55:16.345Z",
+  "generated": "2026-04-18T09:57:20.665Z",
   "iconSets": {
     "pokemon-gen8-regular": {
       "name": "Pokemon Gen8 Regular",
@@ -5335,6 +5335,94 @@
         {
           "fileName": "zygarde.png",
           "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/zygarde.png"
+        }
+      ]
+    },
+    "pokemon-gen8-regular-female": {
+      "name": "Pokemon Gen8 Regular Female",
+      "description": "Female variant Pokemon sprites from Gen8",
+      "baseUrl": "/favicons/msikma_pokesprite/pokemon-gen8/regular/female",
+      "iconCount": 20,
+      "icons": [
+        {
+          "fileName": "basculegion.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/female/basculegion.png"
+        },
+        {
+          "fileName": "frillish.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/female/frillish.png"
+        },
+        {
+          "fileName": "hippopotas.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/female/hippopotas.png"
+        },
+        {
+          "fileName": "hippowdon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/female/hippowdon.png"
+        },
+        {
+          "fileName": "indeedee.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/female/indeedee.png"
+        },
+        {
+          "fileName": "jellicent.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/female/jellicent.png"
+        },
+        {
+          "fileName": "meowstic.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/female/meowstic.png"
+        },
+        {
+          "fileName": "pikachu-alola-cap.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/female/pikachu-alola-cap.png"
+        },
+        {
+          "fileName": "pikachu-hoenn-cap.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/female/pikachu-hoenn-cap.png"
+        },
+        {
+          "fileName": "pikachu-kalos-cap.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/female/pikachu-kalos-cap.png"
+        },
+        {
+          "fileName": "pikachu-original-cap.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/female/pikachu-original-cap.png"
+        },
+        {
+          "fileName": "pikachu-partner-cap.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/female/pikachu-partner-cap.png"
+        },
+        {
+          "fileName": "pikachu-sinnoh-cap.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/female/pikachu-sinnoh-cap.png"
+        },
+        {
+          "fileName": "pikachu-starter.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/female/pikachu-starter.png"
+        },
+        {
+          "fileName": "pikachu-unova-cap.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/female/pikachu-unova-cap.png"
+        },
+        {
+          "fileName": "pikachu-world-cap.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/female/pikachu-world-cap.png"
+        },
+        {
+          "fileName": "pikachu.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/female/pikachu.png"
+        },
+        {
+          "fileName": "pyroar.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/female/pyroar.png"
+        },
+        {
+          "fileName": "unfezant.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/female/unfezant.png"
+        },
+        {
+          "fileName": "wobbuffet.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/female/wobbuffet.png"
         }
       ]
     },

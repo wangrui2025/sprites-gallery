@@ -21,6 +21,13 @@ const ICON_SETS = [
     indexFile: 'favicons/index.json',
   },
   {
+    id: 'pokemon-gen8-regular-female',
+    name: 'Pokemon Gen8 Regular Female',
+    description: 'Female variant Pokemon sprites from Gen8',
+    basePath: 'favicons/msikma_pokesprite/pokemon-gen8/regular/female',
+    indexFile: null,
+  },
+  {
     id: 'pokemon-gen8-shiny',
     name: 'Pokemon Gen8 Shiny',
     description: 'Shiny Pokemon sprites from Gen8',
@@ -55,6 +62,15 @@ function scanDirectory(dirPath, filter = null) {
   return icons.sort();
 }
 
+function loadIndexJson(filePath) {
+  try {
+    const content = readFileSync(join(PUBLIC_DIR, filePath), 'utf-8');
+    return JSON.parse(content);
+  } catch {
+    return null;
+  }
+}
+
 function generateManifest() {
   const manifest = {
     version: '1.0',
@@ -63,8 +79,15 @@ function generateManifest() {
   };
 
   for (const set of ICON_SETS) {
-    const fullPath = join(PUBLIC_DIR, set.basePath);
-    const icons = scanDirectory(fullPath, set.filter);
+    let icons = [];
+
+    if (set.indexFile) {
+      const indexData = loadIndexJson(set.indexFile);
+      icons = indexData || [];
+    } else {
+      const fullPath = join(PUBLIC_DIR, set.basePath);
+      icons = scanDirectory(fullPath, set.filter);
+    }
 
     if (icons.length > 0) {
       manifest.iconSets[set.id] = {
