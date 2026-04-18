@@ -141,3 +141,6 @@ vite.config.ts.timestamp-*
 # Local dev / cache
 .astro/
 .omc/
+# Backup directories
+corrupted_backup_*/
+*_backup_*/
