@@ -1,7 +1,5343 @@
 {
   "version": "1.0",
-  "generated": "2026-04-18T09:49:08.812Z",
+  "generated": "2026-04-18T09:55:16.345Z",
   "iconSets": {
+    "pokemon-gen8-regular": {
+      "name": "Pokemon Gen8 Regular",
+      "description": "Standard Pokemon sprites from Gen8",
+      "baseUrl": "/favicons/msikma_pokesprite/pokemon-gen8/regular",
+      "iconCount": 1332,
+      "icons": [
+        {
+          "fileName": "abomasnow-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/abomasnow-mega.png"
+        },
+        {
+          "fileName": "abomasnow.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/abomasnow.png"
+        },
+        {
+          "fileName": "abra.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/abra.png"
+        },
+        {
+          "fileName": "absol-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/absol-mega.png"
+        },
+        {
+          "fileName": "absol.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/absol.png"
+        },
+        {
+          "fileName": "accelgor.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/accelgor.png"
+        },
+        {
+          "fileName": "aegislash-blade.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/aegislash-blade.png"
+        },
+        {
+          "fileName": "aegislash.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/aegislash.png"
+        },
+        {
+          "fileName": "aerodactyl-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/aerodactyl-mega.png"
+        },
+        {
+          "fileName": "aerodactyl.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/aerodactyl.png"
+        },
+        {
+          "fileName": "aggron-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/aggron-mega.png"
+        },
+        {
+          "fileName": "aggron.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/aggron.png"
+        },
+        {
+          "fileName": "aipom.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/aipom.png"
+        },
+        {
+          "fileName": "alakazam-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alakazam-mega.png"
+        },
+        {
+          "fileName": "alakazam.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alakazam.png"
+        },
+        {
+          "fileName": "alcremie-caramel-swirl-berry.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-caramel-swirl-berry.png"
+        },
+        {
+          "fileName": "alcremie-caramel-swirl-clover.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-caramel-swirl-clover.png"
+        },
+        {
+          "fileName": "alcremie-caramel-swirl-flower.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-caramel-swirl-flower.png"
+        },
+        {
+          "fileName": "alcremie-caramel-swirl-love.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-caramel-swirl-love.png"
+        },
+        {
+          "fileName": "alcremie-caramel-swirl-plain.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-caramel-swirl-plain.png"
+        },
+        {
+          "fileName": "alcremie-caramel-swirl-ribbon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-caramel-swirl-ribbon.png"
+        },
+        {
+          "fileName": "alcremie-caramel-swirl-star.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-caramel-swirl-star.png"
+        },
+        {
+          "fileName": "alcremie-caramel-swirl-strawberry.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-caramel-swirl-strawberry.png"
+        },
+        {
+          "fileName": "alcremie-gmax.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-gmax.png"
+        },
+        {
+          "fileName": "alcremie-lemon-cream-berry.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-lemon-cream-berry.png"
+        },
+        {
+          "fileName": "alcremie-lemon-cream-clover.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-lemon-cream-clover.png"
+        },
+        {
+          "fileName": "alcremie-lemon-cream-flower.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-lemon-cream-flower.png"
+        },
+        {
+          "fileName": "alcremie-lemon-cream-love.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-lemon-cream-love.png"
+        },
+        {
+          "fileName": "alcremie-lemon-cream-plain.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-lemon-cream-plain.png"
+        },
+        {
+          "fileName": "alcremie-lemon-cream-ribbon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-lemon-cream-ribbon.png"
+        },
+        {
+          "fileName": "alcremie-lemon-cream-star.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-lemon-cream-star.png"
+        },
+        {
+          "fileName": "alcremie-lemon-cream-strawberry.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-lemon-cream-strawberry.png"
+        },
+        {
+          "fileName": "alcremie-matcha-cream-berry.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-matcha-cream-berry.png"
+        },
+        {
+          "fileName": "alcremie-matcha-cream-clover.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-matcha-cream-clover.png"
+        },
+        {
+          "fileName": "alcremie-matcha-cream-flower.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-matcha-cream-flower.png"
+        },
+        {
+          "fileName": "alcremie-matcha-cream-love.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-matcha-cream-love.png"
+        },
+        {
+          "fileName": "alcremie-matcha-cream-plain.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-matcha-cream-plain.png"
+        },
+        {
+          "fileName": "alcremie-matcha-cream-ribbon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-matcha-cream-ribbon.png"
+        },
+        {
+          "fileName": "alcremie-matcha-cream-star.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-matcha-cream-star.png"
+        },
+        {
+          "fileName": "alcremie-matcha-cream-strawberry.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-matcha-cream-strawberry.png"
+        },
+        {
+          "fileName": "alcremie-mint-cream-berry.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-mint-cream-berry.png"
+        },
+        {
+          "fileName": "alcremie-mint-cream-clover.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-mint-cream-clover.png"
+        },
+        {
+          "fileName": "alcremie-mint-cream-flower.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-mint-cream-flower.png"
+        },
+        {
+          "fileName": "alcremie-mint-cream-love.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-mint-cream-love.png"
+        },
+        {
+          "fileName": "alcremie-mint-cream-plain.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-mint-cream-plain.png"
+        },
+        {
+          "fileName": "alcremie-mint-cream-ribbon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-mint-cream-ribbon.png"
+        },
+        {
+          "fileName": "alcremie-mint-cream-star.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-mint-cream-star.png"
+        },
+        {
+          "fileName": "alcremie-mint-cream-strawberry.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-mint-cream-strawberry.png"
+        },
+        {
+          "fileName": "alcremie-rainbow-swirl-berry.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-rainbow-swirl-berry.png"
+        },
+        {
+          "fileName": "alcremie-rainbow-swirl-clover.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-rainbow-swirl-clover.png"
+        },
+        {
+          "fileName": "alcremie-rainbow-swirl-flower.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-rainbow-swirl-flower.png"
+        },
+        {
+          "fileName": "alcremie-rainbow-swirl-love.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-rainbow-swirl-love.png"
+        },
+        {
+          "fileName": "alcremie-rainbow-swirl-plain.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-rainbow-swirl-plain.png"
+        },
+        {
+          "fileName": "alcremie-rainbow-swirl-ribbon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-rainbow-swirl-ribbon.png"
+        },
+        {
+          "fileName": "alcremie-rainbow-swirl-star.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-rainbow-swirl-star.png"
+        },
+        {
+          "fileName": "alcremie-rainbow-swirl-strawberry.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-rainbow-swirl-strawberry.png"
+        },
+        {
+          "fileName": "alcremie-ruby-cream-berry.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-ruby-cream-berry.png"
+        },
+        {
+          "fileName": "alcremie-ruby-cream-clover.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-ruby-cream-clover.png"
+        },
+        {
+          "fileName": "alcremie-ruby-cream-flower.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-ruby-cream-flower.png"
+        },
+        {
+          "fileName": "alcremie-ruby-cream-love.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-ruby-cream-love.png"
+        },
+        {
+          "fileName": "alcremie-ruby-cream-plain.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-ruby-cream-plain.png"
+        },
+        {
+          "fileName": "alcremie-ruby-cream-ribbon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-ruby-cream-ribbon.png"
+        },
+        {
+          "fileName": "alcremie-ruby-cream-star.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-ruby-cream-star.png"
+        },
+        {
+          "fileName": "alcremie-ruby-cream-strawberry.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-ruby-cream-strawberry.png"
+        },
+        {
+          "fileName": "alcremie-ruby-swirl-berry.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-ruby-swirl-berry.png"
+        },
+        {
+          "fileName": "alcremie-ruby-swirl-clover.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-ruby-swirl-clover.png"
+        },
+        {
+          "fileName": "alcremie-ruby-swirl-flower.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-ruby-swirl-flower.png"
+        },
+        {
+          "fileName": "alcremie-ruby-swirl-love.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-ruby-swirl-love.png"
+        },
+        {
+          "fileName": "alcremie-ruby-swirl-plain.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-ruby-swirl-plain.png"
+        },
+        {
+          "fileName": "alcremie-ruby-swirl-ribbon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-ruby-swirl-ribbon.png"
+        },
+        {
+          "fileName": "alcremie-ruby-swirl-star.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-ruby-swirl-star.png"
+        },
+        {
+          "fileName": "alcremie-ruby-swirl-strawberry.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-ruby-swirl-strawberry.png"
+        },
+        {
+          "fileName": "alcremie-salted-cream-berry.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-salted-cream-berry.png"
+        },
+        {
+          "fileName": "alcremie-salted-cream-clover.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-salted-cream-clover.png"
+        },
+        {
+          "fileName": "alcremie-salted-cream-flower.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-salted-cream-flower.png"
+        },
+        {
+          "fileName": "alcremie-salted-cream-love.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-salted-cream-love.png"
+        },
+        {
+          "fileName": "alcremie-salted-cream-plain.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-salted-cream-plain.png"
+        },
+        {
+          "fileName": "alcremie-salted-cream-ribbon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-salted-cream-ribbon.png"
+        },
+        {
+          "fileName": "alcremie-salted-cream-star.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-salted-cream-star.png"
+        },
+        {
+          "fileName": "alcremie-salted-cream-strawberry.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-salted-cream-strawberry.png"
+        },
+        {
+          "fileName": "alcremie-vanilla-cream-berry.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-vanilla-cream-berry.png"
+        },
+        {
+          "fileName": "alcremie-vanilla-cream-clover.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-vanilla-cream-clover.png"
+        },
+        {
+          "fileName": "alcremie-vanilla-cream-flower.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-vanilla-cream-flower.png"
+        },
+        {
+          "fileName": "alcremie-vanilla-cream-love.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-vanilla-cream-love.png"
+        },
+        {
+          "fileName": "alcremie-vanilla-cream-plain.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-vanilla-cream-plain.png"
+        },
+        {
+          "fileName": "alcremie-vanilla-cream-ribbon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-vanilla-cream-ribbon.png"
+        },
+        {
+          "fileName": "alcremie-vanilla-cream-star.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-vanilla-cream-star.png"
+        },
+        {
+          "fileName": "alcremie-vanilla-cream-strawberry.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie-vanilla-cream-strawberry.png"
+        },
+        {
+          "fileName": "alcremie.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alcremie.png"
+        },
+        {
+          "fileName": "alomomola.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/alomomola.png"
+        },
+        {
+          "fileName": "altaria-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/altaria-mega.png"
+        },
+        {
+          "fileName": "altaria.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/altaria.png"
+        },
+        {
+          "fileName": "amaura.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/amaura.png"
+        },
+        {
+          "fileName": "ambipom.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/ambipom.png"
+        },
+        {
+          "fileName": "amoonguss.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/amoonguss.png"
+        },
+        {
+          "fileName": "ampharos-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/ampharos-mega.png"
+        },
+        {
+          "fileName": "ampharos.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/ampharos.png"
+        },
+        {
+          "fileName": "anorith.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/anorith.png"
+        },
+        {
+          "fileName": "appletun.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/appletun.png"
+        },
+        {
+          "fileName": "applin.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/applin.png"
+        },
+        {
+          "fileName": "araquanid.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/araquanid.png"
+        },
+        {
+          "fileName": "arbok.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/arbok.png"
+        },
+        {
+          "fileName": "arcanine-hisui-noble.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/arcanine-hisui-noble.png"
+        },
+        {
+          "fileName": "arcanine-hisui.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/arcanine-hisui.png"
+        },
+        {
+          "fileName": "arcanine.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/arcanine.png"
+        },
+        {
+          "fileName": "arceus-bug.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/arceus-bug.png"
+        },
+        {
+          "fileName": "arceus-dark.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/arceus-dark.png"
+        },
+        {
+          "fileName": "arceus-dragon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/arceus-dragon.png"
+        },
+        {
+          "fileName": "arceus-electric.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/arceus-electric.png"
+        },
+        {
+          "fileName": "arceus-fairy.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/arceus-fairy.png"
+        },
+        {
+          "fileName": "arceus-fighting.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/arceus-fighting.png"
+        },
+        {
+          "fileName": "arceus-fire.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/arceus-fire.png"
+        },
+        {
+          "fileName": "arceus-flying.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/arceus-flying.png"
+        },
+        {
+          "fileName": "arceus-ghost.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/arceus-ghost.png"
+        },
+        {
+          "fileName": "arceus-grass.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/arceus-grass.png"
+        },
+        {
+          "fileName": "arceus-ground.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/arceus-ground.png"
+        },
+        {
+          "fileName": "arceus-ice.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/arceus-ice.png"
+        },
+        {
+          "fileName": "arceus-poison.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/arceus-poison.png"
+        },
+        {
+          "fileName": "arceus-psychic.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/arceus-psychic.png"
+        },
+        {
+          "fileName": "arceus-rock.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/arceus-rock.png"
+        },
+        {
+          "fileName": "arceus-steel.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/arceus-steel.png"
+        },
+        {
+          "fileName": "arceus-unknown.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/arceus-unknown.png"
+        },
+        {
+          "fileName": "arceus-water.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/arceus-water.png"
+        },
+        {
+          "fileName": "arceus.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/arceus.png"
+        },
+        {
+          "fileName": "archen.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/archen.png"
+        },
+        {
+          "fileName": "archeops.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/archeops.png"
+        },
+        {
+          "fileName": "arctovish.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/arctovish.png"
+        },
+        {
+          "fileName": "arctozolt.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/arctozolt.png"
+        },
+        {
+          "fileName": "ariados.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/ariados.png"
+        },
+        {
+          "fileName": "armaldo.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/armaldo.png"
+        },
+        {
+          "fileName": "aromatisse.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/aromatisse.png"
+        },
+        {
+          "fileName": "aron.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/aron.png"
+        },
+        {
+          "fileName": "arrokuda.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/arrokuda.png"
+        },
+        {
+          "fileName": "articuno-galar.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/articuno-galar.png"
+        },
+        {
+          "fileName": "articuno.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/articuno.png"
+        },
+        {
+          "fileName": "audino-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/audino-mega.png"
+        },
+        {
+          "fileName": "audino.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/audino.png"
+        },
+        {
+          "fileName": "aurorus.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/aurorus.png"
+        },
+        {
+          "fileName": "avalugg-hisui-noble.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/avalugg-hisui-noble.png"
+        },
+        {
+          "fileName": "avalugg-hisui.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/avalugg-hisui.png"
+        },
+        {
+          "fileName": "avalugg.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/avalugg.png"
+        },
+        {
+          "fileName": "axew.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/axew.png"
+        },
+        {
+          "fileName": "azelf.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/azelf.png"
+        },
+        {
+          "fileName": "azumarill.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/azumarill.png"
+        },
+        {
+          "fileName": "azurill.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/azurill.png"
+        },
+        {
+          "fileName": "bagon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/bagon.png"
+        },
+        {
+          "fileName": "baltoy.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/baltoy.png"
+        },
+        {
+          "fileName": "banette-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/banette-mega.png"
+        },
+        {
+          "fileName": "banette.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/banette.png"
+        },
+        {
+          "fileName": "barbaracle.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/barbaracle.png"
+        },
+        {
+          "fileName": "barboach.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/barboach.png"
+        },
+        {
+          "fileName": "barraskewda.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/barraskewda.png"
+        },
+        {
+          "fileName": "basculegion.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/basculegion.png"
+        },
+        {
+          "fileName": "basculin-blue-striped.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/basculin-blue-striped.png"
+        },
+        {
+          "fileName": "basculin-white-striped.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/basculin-white-striped.png"
+        },
+        {
+          "fileName": "basculin.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/basculin.png"
+        },
+        {
+          "fileName": "bastiodon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/bastiodon.png"
+        },
+        {
+          "fileName": "bayleef.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/bayleef.png"
+        },
+        {
+          "fileName": "beartic.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/beartic.png"
+        },
+        {
+          "fileName": "beautifly.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/beautifly.png"
+        },
+        {
+          "fileName": "beedrill-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/beedrill-mega.png"
+        },
+        {
+          "fileName": "beedrill.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/beedrill.png"
+        },
+        {
+          "fileName": "beheeyem.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/beheeyem.png"
+        },
+        {
+          "fileName": "beldum.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/beldum.png"
+        },
+        {
+          "fileName": "bellossom.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/bellossom.png"
+        },
+        {
+          "fileName": "bellsprout.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/bellsprout.png"
+        },
+        {
+          "fileName": "bergmite.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/bergmite.png"
+        },
+        {
+          "fileName": "bewear.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/bewear.png"
+        },
+        {
+          "fileName": "bibarel.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/bibarel.png"
+        },
+        {
+          "fileName": "bidoof.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/bidoof.png"
+        },
+        {
+          "fileName": "binacle.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/binacle.png"
+        },
+        {
+          "fileName": "bisharp.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/bisharp.png"
+        },
+        {
+          "fileName": "blacephalon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/blacephalon.png"
+        },
+        {
+          "fileName": "blastoise-gmax.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/blastoise-gmax.png"
+        },
+        {
+          "fileName": "blastoise-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/blastoise-mega.png"
+        },
+        {
+          "fileName": "blastoise.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/blastoise.png"
+        },
+        {
+          "fileName": "blaziken-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/blaziken-mega.png"
+        },
+        {
+          "fileName": "blaziken.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/blaziken.png"
+        },
+        {
+          "fileName": "blipbug.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/blipbug.png"
+        },
+        {
+          "fileName": "blissey.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/blissey.png"
+        },
+        {
+          "fileName": "blitzle.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/blitzle.png"
+        },
+        {
+          "fileName": "boldore.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/boldore.png"
+        },
+        {
+          "fileName": "boltund.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/boltund.png"
+        },
+        {
+          "fileName": "bonsly.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/bonsly.png"
+        },
+        {
+          "fileName": "bouffalant.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/bouffalant.png"
+        },
+        {
+          "fileName": "bounsweet.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/bounsweet.png"
+        },
+        {
+          "fileName": "braixen.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/braixen.png"
+        },
+        {
+          "fileName": "braviary-hisui.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/braviary-hisui.png"
+        },
+        {
+          "fileName": "braviary.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/braviary.png"
+        },
+        {
+          "fileName": "breloom.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/breloom.png"
+        },
+        {
+          "fileName": "brionne.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/brionne.png"
+        },
+        {
+          "fileName": "bronzong.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/bronzong.png"
+        },
+        {
+          "fileName": "bronzor.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/bronzor.png"
+        },
+        {
+          "fileName": "bruxish.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/bruxish.png"
+        },
+        {
+          "fileName": "budew.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/budew.png"
+        },
+        {
+          "fileName": "buizel.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/buizel.png"
+        },
+        {
+          "fileName": "bulbasaur.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/bulbasaur.png"
+        },
+        {
+          "fileName": "buneary.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/buneary.png"
+        },
+        {
+          "fileName": "bunnelby.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/bunnelby.png"
+        },
+        {
+          "fileName": "burmy-sandy.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/burmy-sandy.png"
+        },
+        {
+          "fileName": "burmy-trash.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/burmy-trash.png"
+        },
+        {
+          "fileName": "burmy.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/burmy.png"
+        },
+        {
+          "fileName": "butterfree-gmax.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/butterfree-gmax.png"
+        },
+        {
+          "fileName": "butterfree.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/butterfree.png"
+        },
+        {
+          "fileName": "buzzwole.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/buzzwole.png"
+        },
+        {
+          "fileName": "cacnea.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/cacnea.png"
+        },
+        {
+          "fileName": "cacturne.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/cacturne.png"
+        },
+        {
+          "fileName": "calyrex-ice-rider.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/calyrex-ice-rider.png"
+        },
+        {
+          "fileName": "calyrex-shadow-rider.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/calyrex-shadow-rider.png"
+        },
+        {
+          "fileName": "calyrex.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/calyrex.png"
+        },
+        {
+          "fileName": "camerupt-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/camerupt-mega.png"
+        },
+        {
+          "fileName": "camerupt.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/camerupt.png"
+        },
+        {
+          "fileName": "carbink.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/carbink.png"
+        },
+        {
+          "fileName": "carkol.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/carkol.png"
+        },
+        {
+          "fileName": "carnivine.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/carnivine.png"
+        },
+        {
+          "fileName": "carracosta.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/carracosta.png"
+        },
+        {
+          "fileName": "carvanha.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/carvanha.png"
+        },
+        {
+          "fileName": "cascoon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/cascoon.png"
+        },
+        {
+          "fileName": "castform-rainy.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/castform-rainy.png"
+        },
+        {
+          "fileName": "castform-snowy.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/castform-snowy.png"
+        },
+        {
+          "fileName": "castform-sunny.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/castform-sunny.png"
+        },
+        {
+          "fileName": "castform.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/castform.png"
+        },
+        {
+          "fileName": "caterpie.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/caterpie.png"
+        },
+        {
+          "fileName": "celebi.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/celebi.png"
+        },
+        {
+          "fileName": "celesteela.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/celesteela.png"
+        },
+        {
+          "fileName": "centiskorch-gmax.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/centiskorch-gmax.png"
+        },
+        {
+          "fileName": "centiskorch.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/centiskorch.png"
+        },
+        {
+          "fileName": "chandelure.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/chandelure.png"
+        },
+        {
+          "fileName": "chansey.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/chansey.png"
+        },
+        {
+          "fileName": "charizard-gmax.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/charizard-gmax.png"
+        },
+        {
+          "fileName": "charizard-mega-x.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/charizard-mega-x.png"
+        },
+        {
+          "fileName": "charizard-mega-y.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/charizard-mega-y.png"
+        },
+        {
+          "fileName": "charizard.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/charizard.png"
+        },
+        {
+          "fileName": "charjabug.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/charjabug.png"
+        },
+        {
+          "fileName": "charmander.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/charmander.png"
+        },
+        {
+          "fileName": "charmeleon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/charmeleon.png"
+        },
+        {
+          "fileName": "chatot.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/chatot.png"
+        },
+        {
+          "fileName": "cherrim-sunshine.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/cherrim-sunshine.png"
+        },
+        {
+          "fileName": "cherrim.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/cherrim.png"
+        },
+        {
+          "fileName": "cherubi.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/cherubi.png"
+        },
+        {
+          "fileName": "chesnaught.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/chesnaught.png"
+        },
+        {
+          "fileName": "chespin.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/chespin.png"
+        },
+        {
+          "fileName": "chewtle.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/chewtle.png"
+        },
+        {
+          "fileName": "chikorita.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/chikorita.png"
+        },
+        {
+          "fileName": "chimchar.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/chimchar.png"
+        },
+        {
+          "fileName": "chimecho.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/chimecho.png"
+        },
+        {
+          "fileName": "chinchou.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/chinchou.png"
+        },
+        {
+          "fileName": "chingling.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/chingling.png"
+        },
+        {
+          "fileName": "cinccino.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/cinccino.png"
+        },
+        {
+          "fileName": "cinderace-gmax.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/cinderace-gmax.png"
+        },
+        {
+          "fileName": "cinderace.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/cinderace.png"
+        },
+        {
+          "fileName": "clamperl.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/clamperl.png"
+        },
+        {
+          "fileName": "clauncher.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/clauncher.png"
+        },
+        {
+          "fileName": "clawitzer.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/clawitzer.png"
+        },
+        {
+          "fileName": "claydol.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/claydol.png"
+        },
+        {
+          "fileName": "clefable.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/clefable.png"
+        },
+        {
+          "fileName": "clefairy.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/clefairy.png"
+        },
+        {
+          "fileName": "cleffa.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/cleffa.png"
+        },
+        {
+          "fileName": "clobbopus.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/clobbopus.png"
+        },
+        {
+          "fileName": "cloyster.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/cloyster.png"
+        },
+        {
+          "fileName": "coalossal-gmax.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/coalossal-gmax.png"
+        },
+        {
+          "fileName": "coalossal.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/coalossal.png"
+        },
+        {
+          "fileName": "cobalion.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/cobalion.png"
+        },
+        {
+          "fileName": "cofagrigus.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/cofagrigus.png"
+        },
+        {
+          "fileName": "combee.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/combee.png"
+        },
+        {
+          "fileName": "combusken.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/combusken.png"
+        },
+        {
+          "fileName": "comfey.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/comfey.png"
+        },
+        {
+          "fileName": "conkeldurr.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/conkeldurr.png"
+        },
+        {
+          "fileName": "copperajah-gmax.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/copperajah-gmax.png"
+        },
+        {
+          "fileName": "copperajah.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/copperajah.png"
+        },
+        {
+          "fileName": "corphish.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/corphish.png"
+        },
+        {
+          "fileName": "corsola-galar.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/corsola-galar.png"
+        },
+        {
+          "fileName": "corsola.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/corsola.png"
+        },
+        {
+          "fileName": "corviknight-gmax.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/corviknight-gmax.png"
+        },
+        {
+          "fileName": "corviknight.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/corviknight.png"
+        },
+        {
+          "fileName": "corvisquire.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/corvisquire.png"
+        },
+        {
+          "fileName": "cosmoem.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/cosmoem.png"
+        },
+        {
+          "fileName": "cosmog.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/cosmog.png"
+        },
+        {
+          "fileName": "cottonee.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/cottonee.png"
+        },
+        {
+          "fileName": "crabominable.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/crabominable.png"
+        },
+        {
+          "fileName": "crabrawler.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/crabrawler.png"
+        },
+        {
+          "fileName": "cradily.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/cradily.png"
+        },
+        {
+          "fileName": "cramorant-gorging.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/cramorant-gorging.png"
+        },
+        {
+          "fileName": "cramorant-gulping.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/cramorant-gulping.png"
+        },
+        {
+          "fileName": "cramorant.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/cramorant.png"
+        },
+        {
+          "fileName": "cranidos.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/cranidos.png"
+        },
+        {
+          "fileName": "crawdaunt.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/crawdaunt.png"
+        },
+        {
+          "fileName": "cresselia.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/cresselia.png"
+        },
+        {
+          "fileName": "croagunk.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/croagunk.png"
+        },
+        {
+          "fileName": "crobat.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/crobat.png"
+        },
+        {
+          "fileName": "croconaw.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/croconaw.png"
+        },
+        {
+          "fileName": "crustle.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/crustle.png"
+        },
+        {
+          "fileName": "cryogonal.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/cryogonal.png"
+        },
+        {
+          "fileName": "cubchoo.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/cubchoo.png"
+        },
+        {
+          "fileName": "cubone.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/cubone.png"
+        },
+        {
+          "fileName": "cufant.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/cufant.png"
+        },
+        {
+          "fileName": "cursola.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/cursola.png"
+        },
+        {
+          "fileName": "cutiefly.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/cutiefly.png"
+        },
+        {
+          "fileName": "cyndaquil.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/cyndaquil.png"
+        },
+        {
+          "fileName": "darkrai.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/darkrai.png"
+        },
+        {
+          "fileName": "darmanitan-galar-zen.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/darmanitan-galar-zen.png"
+        },
+        {
+          "fileName": "darmanitan-galar.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/darmanitan-galar.png"
+        },
+        {
+          "fileName": "darmanitan-zen.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/darmanitan-zen.png"
+        },
+        {
+          "fileName": "darmanitan.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/darmanitan.png"
+        },
+        {
+          "fileName": "dartrix.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/dartrix.png"
+        },
+        {
+          "fileName": "darumaka-galar.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/darumaka-galar.png"
+        },
+        {
+          "fileName": "darumaka.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/darumaka.png"
+        },
+        {
+          "fileName": "decidueye-hisui.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/decidueye-hisui.png"
+        },
+        {
+          "fileName": "decidueye.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/decidueye.png"
+        },
+        {
+          "fileName": "dedenne.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/dedenne.png"
+        },
+        {
+          "fileName": "deerling-autumn.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/deerling-autumn.png"
+        },
+        {
+          "fileName": "deerling-summer.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/deerling-summer.png"
+        },
+        {
+          "fileName": "deerling-winter.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/deerling-winter.png"
+        },
+        {
+          "fileName": "deerling.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/deerling.png"
+        },
+        {
+          "fileName": "deino.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/deino.png"
+        },
+        {
+          "fileName": "delcatty.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/delcatty.png"
+        },
+        {
+          "fileName": "delibird.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/delibird.png"
+        },
+        {
+          "fileName": "delphox.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/delphox.png"
+        },
+        {
+          "fileName": "deoxys-attack.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/deoxys-attack.png"
+        },
+        {
+          "fileName": "deoxys-defense.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/deoxys-defense.png"
+        },
+        {
+          "fileName": "deoxys-speed.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/deoxys-speed.png"
+        },
+        {
+          "fileName": "deoxys.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/deoxys.png"
+        },
+        {
+          "fileName": "dewgong.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/dewgong.png"
+        },
+        {
+          "fileName": "dewott.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/dewott.png"
+        },
+        {
+          "fileName": "dewpider.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/dewpider.png"
+        },
+        {
+          "fileName": "dhelmise.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/dhelmise.png"
+        },
+        {
+          "fileName": "dialga-origin.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/dialga-origin.png"
+        },
+        {
+          "fileName": "dialga.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/dialga.png"
+        },
+        {
+          "fileName": "diancie-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/diancie-mega.png"
+        },
+        {
+          "fileName": "diancie.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/diancie.png"
+        },
+        {
+          "fileName": "diggersby.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/diggersby.png"
+        },
+        {
+          "fileName": "diglett-alola.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/diglett-alola.png"
+        },
+        {
+          "fileName": "diglett.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/diglett.png"
+        },
+        {
+          "fileName": "ditto.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/ditto.png"
+        },
+        {
+          "fileName": "dodrio.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/dodrio.png"
+        },
+        {
+          "fileName": "doduo.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/doduo.png"
+        },
+        {
+          "fileName": "donphan.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/donphan.png"
+        },
+        {
+          "fileName": "dottler.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/dottler.png"
+        },
+        {
+          "fileName": "doublade.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/doublade.png"
+        },
+        {
+          "fileName": "dracovish.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/dracovish.png"
+        },
+        {
+          "fileName": "dracozolt.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/dracozolt.png"
+        },
+        {
+          "fileName": "dragalge.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/dragalge.png"
+        },
+        {
+          "fileName": "dragapult.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/dragapult.png"
+        },
+        {
+          "fileName": "dragonair.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/dragonair.png"
+        },
+        {
+          "fileName": "dragonite.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/dragonite.png"
+        },
+        {
+          "fileName": "drakloak.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/drakloak.png"
+        },
+        {
+          "fileName": "drampa.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/drampa.png"
+        },
+        {
+          "fileName": "drapion.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/drapion.png"
+        },
+        {
+          "fileName": "dratini.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/dratini.png"
+        },
+        {
+          "fileName": "drednaw-gmax.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/drednaw-gmax.png"
+        },
+        {
+          "fileName": "drednaw.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/drednaw.png"
+        },
+        {
+          "fileName": "dreepy.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/dreepy.png"
+        },
+        {
+          "fileName": "drifblim.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/drifblim.png"
+        },
+        {
+          "fileName": "drifloon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/drifloon.png"
+        },
+        {
+          "fileName": "drilbur.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/drilbur.png"
+        },
+        {
+          "fileName": "drizzile.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/drizzile.png"
+        },
+        {
+          "fileName": "drowzee.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/drowzee.png"
+        },
+        {
+          "fileName": "druddigon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/druddigon.png"
+        },
+        {
+          "fileName": "dubwool.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/dubwool.png"
+        },
+        {
+          "fileName": "ducklett.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/ducklett.png"
+        },
+        {
+          "fileName": "dugtrio-alola.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/dugtrio-alola.png"
+        },
+        {
+          "fileName": "dugtrio.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/dugtrio.png"
+        },
+        {
+          "fileName": "dunsparce.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/dunsparce.png"
+        },
+        {
+          "fileName": "duosion.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/duosion.png"
+        },
+        {
+          "fileName": "duraludon-gmax.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/duraludon-gmax.png"
+        },
+        {
+          "fileName": "duraludon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/duraludon.png"
+        },
+        {
+          "fileName": "durant.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/durant.png"
+        },
+        {
+          "fileName": "dusclops.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/dusclops.png"
+        },
+        {
+          "fileName": "dusknoir.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/dusknoir.png"
+        },
+        {
+          "fileName": "duskull.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/duskull.png"
+        },
+        {
+          "fileName": "dustox.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/dustox.png"
+        },
+        {
+          "fileName": "dwebble.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/dwebble.png"
+        },
+        {
+          "fileName": "eelektrik.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/eelektrik.png"
+        },
+        {
+          "fileName": "eelektross.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/eelektross.png"
+        },
+        {
+          "fileName": "eevee-gmax.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/eevee-gmax.png"
+        },
+        {
+          "fileName": "eevee-starter.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/eevee-starter.png"
+        },
+        {
+          "fileName": "eevee.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/eevee.png"
+        },
+        {
+          "fileName": "eiscue-noice.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/eiscue-noice.png"
+        },
+        {
+          "fileName": "eiscue.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/eiscue.png"
+        },
+        {
+          "fileName": "ekans.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/ekans.png"
+        },
+        {
+          "fileName": "eldegoss.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/eldegoss.png"
+        },
+        {
+          "fileName": "electabuzz.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/electabuzz.png"
+        },
+        {
+          "fileName": "electivire.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/electivire.png"
+        },
+        {
+          "fileName": "electrike.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/electrike.png"
+        },
+        {
+          "fileName": "electrode-hisui-noble.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/electrode-hisui-noble.png"
+        },
+        {
+          "fileName": "electrode-hisui.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/electrode-hisui.png"
+        },
+        {
+          "fileName": "electrode.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/electrode.png"
+        },
+        {
+          "fileName": "elekid.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/elekid.png"
+        },
+        {
+          "fileName": "elgyem.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/elgyem.png"
+        },
+        {
+          "fileName": "emboar.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/emboar.png"
+        },
+        {
+          "fileName": "emolga.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/emolga.png"
+        },
+        {
+          "fileName": "empoleon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/empoleon.png"
+        },
+        {
+          "fileName": "enamorus-therian.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/enamorus-therian.png"
+        },
+        {
+          "fileName": "enamorus.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/enamorus.png"
+        },
+        {
+          "fileName": "entei.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/entei.png"
+        },
+        {
+          "fileName": "escavalier.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/escavalier.png"
+        },
+        {
+          "fileName": "espeon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/espeon.png"
+        },
+        {
+          "fileName": "espurr.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/espurr.png"
+        },
+        {
+          "fileName": "eternatus-eternamax.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/eternatus-eternamax.png"
+        },
+        {
+          "fileName": "eternatus.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/eternatus.png"
+        },
+        {
+          "fileName": "excadrill.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/excadrill.png"
+        },
+        {
+          "fileName": "exeggcute.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/exeggcute.png"
+        },
+        {
+          "fileName": "exeggutor-alola.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/exeggutor-alola.png"
+        },
+        {
+          "fileName": "exeggutor.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/exeggutor.png"
+        },
+        {
+          "fileName": "exploud.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/exploud.png"
+        },
+        {
+          "fileName": "falinks.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/falinks.png"
+        },
+        {
+          "fileName": "farfetchd-galar.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/farfetchd-galar.png"
+        },
+        {
+          "fileName": "farfetchd.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/farfetchd.png"
+        },
+        {
+          "fileName": "fearow.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/fearow.png"
+        },
+        {
+          "fileName": "feebas.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/feebas.png"
+        },
+        {
+          "fileName": "fennekin.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/fennekin.png"
+        },
+        {
+          "fileName": "feraligatr.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/feraligatr.png"
+        },
+        {
+          "fileName": "ferroseed.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/ferroseed.png"
+        },
+        {
+          "fileName": "ferrothorn.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/ferrothorn.png"
+        },
+        {
+          "fileName": "finneon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/finneon.png"
+        },
+        {
+          "fileName": "flaaffy.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/flaaffy.png"
+        },
+        {
+          "fileName": "flabebe-blue.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/flabebe-blue.png"
+        },
+        {
+          "fileName": "flabebe-orange.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/flabebe-orange.png"
+        },
+        {
+          "fileName": "flabebe-white.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/flabebe-white.png"
+        },
+        {
+          "fileName": "flabebe-yellow.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/flabebe-yellow.png"
+        },
+        {
+          "fileName": "flabebe.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/flabebe.png"
+        },
+        {
+          "fileName": "flapple-gmax.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/flapple-gmax.png"
+        },
+        {
+          "fileName": "flapple.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/flapple.png"
+        },
+        {
+          "fileName": "flareon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/flareon.png"
+        },
+        {
+          "fileName": "fletchinder.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/fletchinder.png"
+        },
+        {
+          "fileName": "fletchling.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/fletchling.png"
+        },
+        {
+          "fileName": "floatzel.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/floatzel.png"
+        },
+        {
+          "fileName": "floette-blue.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/floette-blue.png"
+        },
+        {
+          "fileName": "floette-eternal.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/floette-eternal.png"
+        },
+        {
+          "fileName": "floette-orange.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/floette-orange.png"
+        },
+        {
+          "fileName": "floette-white.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/floette-white.png"
+        },
+        {
+          "fileName": "floette-yellow.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/floette-yellow.png"
+        },
+        {
+          "fileName": "floette.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/floette.png"
+        },
+        {
+          "fileName": "florges-blue.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/florges-blue.png"
+        },
+        {
+          "fileName": "florges-orange.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/florges-orange.png"
+        },
+        {
+          "fileName": "florges-white.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/florges-white.png"
+        },
+        {
+          "fileName": "florges-yellow.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/florges-yellow.png"
+        },
+        {
+          "fileName": "florges.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/florges.png"
+        },
+        {
+          "fileName": "flygon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/flygon.png"
+        },
+        {
+          "fileName": "fomantis.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/fomantis.png"
+        },
+        {
+          "fileName": "foongus.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/foongus.png"
+        },
+        {
+          "fileName": "forretress.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/forretress.png"
+        },
+        {
+          "fileName": "fraxure.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/fraxure.png"
+        },
+        {
+          "fileName": "frillish.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/frillish.png"
+        },
+        {
+          "fileName": "froakie.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/froakie.png"
+        },
+        {
+          "fileName": "frogadier.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/frogadier.png"
+        },
+        {
+          "fileName": "froslass.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/froslass.png"
+        },
+        {
+          "fileName": "frosmoth.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/frosmoth.png"
+        },
+        {
+          "fileName": "furfrou-dandy.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/furfrou-dandy.png"
+        },
+        {
+          "fileName": "furfrou-debutante.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/furfrou-debutante.png"
+        },
+        {
+          "fileName": "furfrou-diamond.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/furfrou-diamond.png"
+        },
+        {
+          "fileName": "furfrou-heart.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/furfrou-heart.png"
+        },
+        {
+          "fileName": "furfrou-kabuki.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/furfrou-kabuki.png"
+        },
+        {
+          "fileName": "furfrou-la-reine.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/furfrou-la-reine.png"
+        },
+        {
+          "fileName": "furfrou-matron.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/furfrou-matron.png"
+        },
+        {
+          "fileName": "furfrou-pharaoh.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/furfrou-pharaoh.png"
+        },
+        {
+          "fileName": "furfrou-star.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/furfrou-star.png"
+        },
+        {
+          "fileName": "furfrou.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/furfrou.png"
+        },
+        {
+          "fileName": "furret.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/furret.png"
+        },
+        {
+          "fileName": "gabite.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/gabite.png"
+        },
+        {
+          "fileName": "gallade-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/gallade-mega.png"
+        },
+        {
+          "fileName": "gallade.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/gallade.png"
+        },
+        {
+          "fileName": "galvantula.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/galvantula.png"
+        },
+        {
+          "fileName": "garbodor-gmax.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/garbodor-gmax.png"
+        },
+        {
+          "fileName": "garbodor.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/garbodor.png"
+        },
+        {
+          "fileName": "garchomp-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/garchomp-mega.png"
+        },
+        {
+          "fileName": "garchomp.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/garchomp.png"
+        },
+        {
+          "fileName": "gardevoir-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/gardevoir-mega.png"
+        },
+        {
+          "fileName": "gardevoir.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/gardevoir.png"
+        },
+        {
+          "fileName": "gastly.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/gastly.png"
+        },
+        {
+          "fileName": "gastrodon-east.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/gastrodon-east.png"
+        },
+        {
+          "fileName": "gastrodon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/gastrodon.png"
+        },
+        {
+          "fileName": "genesect-burn.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/genesect-burn.png"
+        },
+        {
+          "fileName": "genesect-chill.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/genesect-chill.png"
+        },
+        {
+          "fileName": "genesect-douse.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/genesect-douse.png"
+        },
+        {
+          "fileName": "genesect-shock.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/genesect-shock.png"
+        },
+        {
+          "fileName": "genesect.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/genesect.png"
+        },
+        {
+          "fileName": "gengar-gmax.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/gengar-gmax.png"
+        },
+        {
+          "fileName": "gengar-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/gengar-mega.png"
+        },
+        {
+          "fileName": "gengar.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/gengar.png"
+        },
+        {
+          "fileName": "geodude-alola.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/geodude-alola.png"
+        },
+        {
+          "fileName": "geodude.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/geodude.png"
+        },
+        {
+          "fileName": "gible.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/gible.png"
+        },
+        {
+          "fileName": "gigalith.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/gigalith.png"
+        },
+        {
+          "fileName": "girafarig.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/girafarig.png"
+        },
+        {
+          "fileName": "giratina-origin.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/giratina-origin.png"
+        },
+        {
+          "fileName": "giratina.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/giratina.png"
+        },
+        {
+          "fileName": "glaceon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/glaceon.png"
+        },
+        {
+          "fileName": "glalie-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/glalie-mega.png"
+        },
+        {
+          "fileName": "glalie.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/glalie.png"
+        },
+        {
+          "fileName": "glameow.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/glameow.png"
+        },
+        {
+          "fileName": "glastrier.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/glastrier.png"
+        },
+        {
+          "fileName": "gligar.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/gligar.png"
+        },
+        {
+          "fileName": "gliscor.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/gliscor.png"
+        },
+        {
+          "fileName": "gloom.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/gloom.png"
+        },
+        {
+          "fileName": "gogoat.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/gogoat.png"
+        },
+        {
+          "fileName": "golbat.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/golbat.png"
+        },
+        {
+          "fileName": "goldeen.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/goldeen.png"
+        },
+        {
+          "fileName": "golduck.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/golduck.png"
+        },
+        {
+          "fileName": "golem-alola.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/golem-alola.png"
+        },
+        {
+          "fileName": "golem.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/golem.png"
+        },
+        {
+          "fileName": "golett.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/golett.png"
+        },
+        {
+          "fileName": "golisopod.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/golisopod.png"
+        },
+        {
+          "fileName": "golurk.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/golurk.png"
+        },
+        {
+          "fileName": "goodra-hisui.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/goodra-hisui.png"
+        },
+        {
+          "fileName": "goodra.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/goodra.png"
+        },
+        {
+          "fileName": "goomy.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/goomy.png"
+        },
+        {
+          "fileName": "gorebyss.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/gorebyss.png"
+        },
+        {
+          "fileName": "gossifleur.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/gossifleur.png"
+        },
+        {
+          "fileName": "gothita.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/gothita.png"
+        },
+        {
+          "fileName": "gothitelle.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/gothitelle.png"
+        },
+        {
+          "fileName": "gothorita.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/gothorita.png"
+        },
+        {
+          "fileName": "gourgeist-large.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/gourgeist-large.png"
+        },
+        {
+          "fileName": "gourgeist-small.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/gourgeist-small.png"
+        },
+        {
+          "fileName": "gourgeist-super.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/gourgeist-super.png"
+        },
+        {
+          "fileName": "gourgeist.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/gourgeist.png"
+        },
+        {
+          "fileName": "granbull.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/granbull.png"
+        },
+        {
+          "fileName": "grapploct.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/grapploct.png"
+        },
+        {
+          "fileName": "graveler-alola.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/graveler-alola.png"
+        },
+        {
+          "fileName": "graveler.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/graveler.png"
+        },
+        {
+          "fileName": "greedent.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/greedent.png"
+        },
+        {
+          "fileName": "greninja-ash.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/greninja-ash.png"
+        },
+        {
+          "fileName": "greninja.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/greninja.png"
+        },
+        {
+          "fileName": "grimer-alola.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/grimer-alola.png"
+        },
+        {
+          "fileName": "grimer.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/grimer.png"
+        },
+        {
+          "fileName": "grimmsnarl-gmax.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/grimmsnarl-gmax.png"
+        },
+        {
+          "fileName": "grimmsnarl.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/grimmsnarl.png"
+        },
+        {
+          "fileName": "grookey.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/grookey.png"
+        },
+        {
+          "fileName": "grotle.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/grotle.png"
+        },
+        {
+          "fileName": "groudon-primal.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/groudon-primal.png"
+        },
+        {
+          "fileName": "groudon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/groudon.png"
+        },
+        {
+          "fileName": "grovyle.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/grovyle.png"
+        },
+        {
+          "fileName": "growlithe-hisui.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/growlithe-hisui.png"
+        },
+        {
+          "fileName": "growlithe.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/growlithe.png"
+        },
+        {
+          "fileName": "grubbin.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/grubbin.png"
+        },
+        {
+          "fileName": "grumpig.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/grumpig.png"
+        },
+        {
+          "fileName": "gulpin.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/gulpin.png"
+        },
+        {
+          "fileName": "gumshoos.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/gumshoos.png"
+        },
+        {
+          "fileName": "gurdurr.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/gurdurr.png"
+        },
+        {
+          "fileName": "guzzlord.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/guzzlord.png"
+        },
+        {
+          "fileName": "gyarados-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/gyarados-mega.png"
+        },
+        {
+          "fileName": "gyarados.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/gyarados.png"
+        },
+        {
+          "fileName": "hakamo-o.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/hakamo-o.png"
+        },
+        {
+          "fileName": "happiny.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/happiny.png"
+        },
+        {
+          "fileName": "hariyama.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/hariyama.png"
+        },
+        {
+          "fileName": "hatenna.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/hatenna.png"
+        },
+        {
+          "fileName": "hatterene-gmax.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/hatterene-gmax.png"
+        },
+        {
+          "fileName": "hatterene.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/hatterene.png"
+        },
+        {
+          "fileName": "hattrem.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/hattrem.png"
+        },
+        {
+          "fileName": "haunter.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/haunter.png"
+        },
+        {
+          "fileName": "hawlucha.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/hawlucha.png"
+        },
+        {
+          "fileName": "haxorus.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/haxorus.png"
+        },
+        {
+          "fileName": "heatmor.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/heatmor.png"
+        },
+        {
+          "fileName": "heatran.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/heatran.png"
+        },
+        {
+          "fileName": "heliolisk.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/heliolisk.png"
+        },
+        {
+          "fileName": "helioptile.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/helioptile.png"
+        },
+        {
+          "fileName": "heracross-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/heracross-mega.png"
+        },
+        {
+          "fileName": "heracross.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/heracross.png"
+        },
+        {
+          "fileName": "herdier.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/herdier.png"
+        },
+        {
+          "fileName": "hippopotas.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/hippopotas.png"
+        },
+        {
+          "fileName": "hippowdon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/hippowdon.png"
+        },
+        {
+          "fileName": "hitmonchan.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/hitmonchan.png"
+        },
+        {
+          "fileName": "hitmonlee.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/hitmonlee.png"
+        },
+        {
+          "fileName": "hitmontop.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/hitmontop.png"
+        },
+        {
+          "fileName": "ho-oh.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/ho-oh.png"
+        },
+        {
+          "fileName": "honchkrow.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/honchkrow.png"
+        },
+        {
+          "fileName": "honedge.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/honedge.png"
+        },
+        {
+          "fileName": "hoopa-unbound.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/hoopa-unbound.png"
+        },
+        {
+          "fileName": "hoopa.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/hoopa.png"
+        },
+        {
+          "fileName": "hoothoot.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/hoothoot.png"
+        },
+        {
+          "fileName": "hoppip.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/hoppip.png"
+        },
+        {
+          "fileName": "horsea.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/horsea.png"
+        },
+        {
+          "fileName": "houndoom-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/houndoom-mega.png"
+        },
+        {
+          "fileName": "houndoom.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/houndoom.png"
+        },
+        {
+          "fileName": "houndour.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/houndour.png"
+        },
+        {
+          "fileName": "huntail.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/huntail.png"
+        },
+        {
+          "fileName": "hydreigon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/hydreigon.png"
+        },
+        {
+          "fileName": "hypno.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/hypno.png"
+        },
+        {
+          "fileName": "igglybuff.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/igglybuff.png"
+        },
+        {
+          "fileName": "illumise.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/illumise.png"
+        },
+        {
+          "fileName": "impidimp.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/impidimp.png"
+        },
+        {
+          "fileName": "incineroar.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/incineroar.png"
+        },
+        {
+          "fileName": "indeedee.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/indeedee.png"
+        },
+        {
+          "fileName": "infernape.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/infernape.png"
+        },
+        {
+          "fileName": "inkay.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/inkay.png"
+        },
+        {
+          "fileName": "inteleon-gmax.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/inteleon-gmax.png"
+        },
+        {
+          "fileName": "inteleon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/inteleon.png"
+        },
+        {
+          "fileName": "ivysaur.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/ivysaur.png"
+        },
+        {
+          "fileName": "jangmo-o.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/jangmo-o.png"
+        },
+        {
+          "fileName": "jellicent.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/jellicent.png"
+        },
+        {
+          "fileName": "jigglypuff.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/jigglypuff.png"
+        },
+        {
+          "fileName": "jirachi.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/jirachi.png"
+        },
+        {
+          "fileName": "jolteon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/jolteon.png"
+        },
+        {
+          "fileName": "joltik.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/joltik.png"
+        },
+        {
+          "fileName": "jumpluff.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/jumpluff.png"
+        },
+        {
+          "fileName": "jynx.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/jynx.png"
+        },
+        {
+          "fileName": "kabuto.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/kabuto.png"
+        },
+        {
+          "fileName": "kabutops.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/kabutops.png"
+        },
+        {
+          "fileName": "kadabra.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/kadabra.png"
+        },
+        {
+          "fileName": "kakuna.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/kakuna.png"
+        },
+        {
+          "fileName": "kangaskhan-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/kangaskhan-mega.png"
+        },
+        {
+          "fileName": "kangaskhan.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/kangaskhan.png"
+        },
+        {
+          "fileName": "karrablast.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/karrablast.png"
+        },
+        {
+          "fileName": "kartana.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/kartana.png"
+        },
+        {
+          "fileName": "kecleon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/kecleon.png"
+        },
+        {
+          "fileName": "keldeo-resolute.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/keldeo-resolute.png"
+        },
+        {
+          "fileName": "keldeo.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/keldeo.png"
+        },
+        {
+          "fileName": "kingdra.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/kingdra.png"
+        },
+        {
+          "fileName": "kingler-gmax.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/kingler-gmax.png"
+        },
+        {
+          "fileName": "kingler.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/kingler.png"
+        },
+        {
+          "fileName": "kirlia.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/kirlia.png"
+        },
+        {
+          "fileName": "klang.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/klang.png"
+        },
+        {
+          "fileName": "kleavor-noble.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/kleavor-noble.png"
+        },
+        {
+          "fileName": "kleavor.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/kleavor.png"
+        },
+        {
+          "fileName": "klefki.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/klefki.png"
+        },
+        {
+          "fileName": "klink.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/klink.png"
+        },
+        {
+          "fileName": "klinklang.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/klinklang.png"
+        },
+        {
+          "fileName": "koffing.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/koffing.png"
+        },
+        {
+          "fileName": "komala.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/komala.png"
+        },
+        {
+          "fileName": "kommo-o.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/kommo-o.png"
+        },
+        {
+          "fileName": "krabby.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/krabby.png"
+        },
+        {
+          "fileName": "kricketot.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/kricketot.png"
+        },
+        {
+          "fileName": "kricketune.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/kricketune.png"
+        },
+        {
+          "fileName": "krokorok.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/krokorok.png"
+        },
+        {
+          "fileName": "krookodile.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/krookodile.png"
+        },
+        {
+          "fileName": "kubfu.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/kubfu.png"
+        },
+        {
+          "fileName": "kyogre-primal.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/kyogre-primal.png"
+        },
+        {
+          "fileName": "kyogre.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/kyogre.png"
+        },
+        {
+          "fileName": "kyurem-black.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/kyurem-black.png"
+        },
+        {
+          "fileName": "kyurem-white.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/kyurem-white.png"
+        },
+        {
+          "fileName": "kyurem.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/kyurem.png"
+        },
+        {
+          "fileName": "lairon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/lairon.png"
+        },
+        {
+          "fileName": "lampent.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/lampent.png"
+        },
+        {
+          "fileName": "landorus-therian.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/landorus-therian.png"
+        },
+        {
+          "fileName": "landorus.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/landorus.png"
+        },
+        {
+          "fileName": "lanturn.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/lanturn.png"
+        },
+        {
+          "fileName": "lapras-gmax.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/lapras-gmax.png"
+        },
+        {
+          "fileName": "lapras.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/lapras.png"
+        },
+        {
+          "fileName": "larvesta.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/larvesta.png"
+        },
+        {
+          "fileName": "larvitar.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/larvitar.png"
+        },
+        {
+          "fileName": "latias-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/latias-mega.png"
+        },
+        {
+          "fileName": "latias.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/latias.png"
+        },
+        {
+          "fileName": "latios-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/latios-mega.png"
+        },
+        {
+          "fileName": "latios.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/latios.png"
+        },
+        {
+          "fileName": "leafeon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/leafeon.png"
+        },
+        {
+          "fileName": "leavanny.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/leavanny.png"
+        },
+        {
+          "fileName": "ledian.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/ledian.png"
+        },
+        {
+          "fileName": "ledyba.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/ledyba.png"
+        },
+        {
+          "fileName": "lickilicky.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/lickilicky.png"
+        },
+        {
+          "fileName": "lickitung.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/lickitung.png"
+        },
+        {
+          "fileName": "liepard.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/liepard.png"
+        },
+        {
+          "fileName": "lileep.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/lileep.png"
+        },
+        {
+          "fileName": "lilligant-hisui-noble.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/lilligant-hisui-noble.png"
+        },
+        {
+          "fileName": "lilligant-hisui.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/lilligant-hisui.png"
+        },
+        {
+          "fileName": "lilligant.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/lilligant.png"
+        },
+        {
+          "fileName": "lillipup.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/lillipup.png"
+        },
+        {
+          "fileName": "linoone-galar.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/linoone-galar.png"
+        },
+        {
+          "fileName": "linoone.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/linoone.png"
+        },
+        {
+          "fileName": "litleo.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/litleo.png"
+        },
+        {
+          "fileName": "litten.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/litten.png"
+        },
+        {
+          "fileName": "litwick.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/litwick.png"
+        },
+        {
+          "fileName": "lombre.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/lombre.png"
+        },
+        {
+          "fileName": "lopunny-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/lopunny-mega.png"
+        },
+        {
+          "fileName": "lopunny.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/lopunny.png"
+        },
+        {
+          "fileName": "lotad.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/lotad.png"
+        },
+        {
+          "fileName": "loudred.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/loudred.png"
+        },
+        {
+          "fileName": "lucario-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/lucario-mega.png"
+        },
+        {
+          "fileName": "lucario.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/lucario.png"
+        },
+        {
+          "fileName": "ludicolo.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/ludicolo.png"
+        },
+        {
+          "fileName": "lugia-shadow.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/lugia-shadow.png"
+        },
+        {
+          "fileName": "lugia.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/lugia.png"
+        },
+        {
+          "fileName": "lumineon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/lumineon.png"
+        },
+        {
+          "fileName": "lunala.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/lunala.png"
+        },
+        {
+          "fileName": "lunatone.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/lunatone.png"
+        },
+        {
+          "fileName": "lurantis.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/lurantis.png"
+        },
+        {
+          "fileName": "luvdisc.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/luvdisc.png"
+        },
+        {
+          "fileName": "luxio.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/luxio.png"
+        },
+        {
+          "fileName": "luxray.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/luxray.png"
+        },
+        {
+          "fileName": "lycanroc-dusk.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/lycanroc-dusk.png"
+        },
+        {
+          "fileName": "lycanroc-midnight.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/lycanroc-midnight.png"
+        },
+        {
+          "fileName": "lycanroc.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/lycanroc.png"
+        },
+        {
+          "fileName": "machamp-gmax.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/machamp-gmax.png"
+        },
+        {
+          "fileName": "machamp.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/machamp.png"
+        },
+        {
+          "fileName": "machoke.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/machoke.png"
+        },
+        {
+          "fileName": "machop.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/machop.png"
+        },
+        {
+          "fileName": "magby.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/magby.png"
+        },
+        {
+          "fileName": "magcargo.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/magcargo.png"
+        },
+        {
+          "fileName": "magearna-original.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/magearna-original.png"
+        },
+        {
+          "fileName": "magearna.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/magearna.png"
+        },
+        {
+          "fileName": "magikarp.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/magikarp.png"
+        },
+        {
+          "fileName": "magmar.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/magmar.png"
+        },
+        {
+          "fileName": "magmortar.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/magmortar.png"
+        },
+        {
+          "fileName": "magnemite.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/magnemite.png"
+        },
+        {
+          "fileName": "magneton.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/magneton.png"
+        },
+        {
+          "fileName": "magnezone.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/magnezone.png"
+        },
+        {
+          "fileName": "makuhita.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/makuhita.png"
+        },
+        {
+          "fileName": "malamar.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/malamar.png"
+        },
+        {
+          "fileName": "mamoswine.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/mamoswine.png"
+        },
+        {
+          "fileName": "manaphy.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/manaphy.png"
+        },
+        {
+          "fileName": "mandibuzz.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/mandibuzz.png"
+        },
+        {
+          "fileName": "manectric-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/manectric-mega.png"
+        },
+        {
+          "fileName": "manectric.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/manectric.png"
+        },
+        {
+          "fileName": "mankey.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/mankey.png"
+        },
+        {
+          "fileName": "mantine.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/mantine.png"
+        },
+        {
+          "fileName": "mantyke.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/mantyke.png"
+        },
+        {
+          "fileName": "maractus.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/maractus.png"
+        },
+        {
+          "fileName": "mareanie.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/mareanie.png"
+        },
+        {
+          "fileName": "mareep.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/mareep.png"
+        },
+        {
+          "fileName": "marill.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/marill.png"
+        },
+        {
+          "fileName": "marowak-alola.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/marowak-alola.png"
+        },
+        {
+          "fileName": "marowak.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/marowak.png"
+        },
+        {
+          "fileName": "marshadow-gen7.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/marshadow-gen7.png"
+        },
+        {
+          "fileName": "marshadow.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/marshadow.png"
+        },
+        {
+          "fileName": "marshtomp.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/marshtomp.png"
+        },
+        {
+          "fileName": "masquerain.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/masquerain.png"
+        },
+        {
+          "fileName": "mawile-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/mawile-mega.png"
+        },
+        {
+          "fileName": "mawile.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/mawile.png"
+        },
+        {
+          "fileName": "medicham-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/medicham-mega.png"
+        },
+        {
+          "fileName": "medicham.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/medicham.png"
+        },
+        {
+          "fileName": "meditite.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/meditite.png"
+        },
+        {
+          "fileName": "meganium.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/meganium.png"
+        },
+        {
+          "fileName": "melmetal-gmax.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/melmetal-gmax.png"
+        },
+        {
+          "fileName": "melmetal.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/melmetal.png"
+        },
+        {
+          "fileName": "meloetta-pirouette.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/meloetta-pirouette.png"
+        },
+        {
+          "fileName": "meloetta.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/meloetta.png"
+        },
+        {
+          "fileName": "meltan.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/meltan.png"
+        },
+        {
+          "fileName": "meowstic.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/meowstic.png"
+        },
+        {
+          "fileName": "meowth-alola.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/meowth-alola.png"
+        },
+        {
+          "fileName": "meowth-galar.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/meowth-galar.png"
+        },
+        {
+          "fileName": "meowth-gmax.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/meowth-gmax.png"
+        },
+        {
+          "fileName": "meowth.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/meowth.png"
+        },
+        {
+          "fileName": "mesprit.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/mesprit.png"
+        },
+        {
+          "fileName": "metagross-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/metagross-mega.png"
+        },
+        {
+          "fileName": "metagross.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/metagross.png"
+        },
+        {
+          "fileName": "metang.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/metang.png"
+        },
+        {
+          "fileName": "metapod.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/metapod.png"
+        },
+        {
+          "fileName": "mew.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/mew.png"
+        },
+        {
+          "fileName": "mewtwo-mega-x.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/mewtwo-mega-x.png"
+        },
+        {
+          "fileName": "mewtwo-mega-y.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/mewtwo-mega-y.png"
+        },
+        {
+          "fileName": "mewtwo.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/mewtwo.png"
+        },
+        {
+          "fileName": "mienfoo.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/mienfoo.png"
+        },
+        {
+          "fileName": "mienshao.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/mienshao.png"
+        },
+        {
+          "fileName": "mightyena.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/mightyena.png"
+        },
+        {
+          "fileName": "milcery.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/milcery.png"
+        },
+        {
+          "fileName": "milotic.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/milotic.png"
+        },
+        {
+          "fileName": "miltank.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/miltank.png"
+        },
+        {
+          "fileName": "mime-jr.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/mime-jr.png"
+        },
+        {
+          "fileName": "mimikyu.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/mimikyu.png"
+        },
+        {
+          "fileName": "minccino.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/minccino.png"
+        },
+        {
+          "fileName": "minior-blue-gen7.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/minior-blue-gen7.png"
+        },
+        {
+          "fileName": "minior-blue.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/minior-blue.png"
+        },
+        {
+          "fileName": "minior-green-gen7.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/minior-green-gen7.png"
+        },
+        {
+          "fileName": "minior-green.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/minior-green.png"
+        },
+        {
+          "fileName": "minior-indigo-gen7.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/minior-indigo-gen7.png"
+        },
+        {
+          "fileName": "minior-indigo.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/minior-indigo.png"
+        },
+        {
+          "fileName": "minior-orange-gen7.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/minior-orange-gen7.png"
+        },
+        {
+          "fileName": "minior-orange.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/minior-orange.png"
+        },
+        {
+          "fileName": "minior-red-gen7.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/minior-red-gen7.png"
+        },
+        {
+          "fileName": "minior-red.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/minior-red.png"
+        },
+        {
+          "fileName": "minior-violet-gen7.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/minior-violet-gen7.png"
+        },
+        {
+          "fileName": "minior-violet.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/minior-violet.png"
+        },
+        {
+          "fileName": "minior-yellow-gen7.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/minior-yellow-gen7.png"
+        },
+        {
+          "fileName": "minior-yellow.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/minior-yellow.png"
+        },
+        {
+          "fileName": "minior.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/minior.png"
+        },
+        {
+          "fileName": "minun.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/minun.png"
+        },
+        {
+          "fileName": "misdreavus.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/misdreavus.png"
+        },
+        {
+          "fileName": "mismagius.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/mismagius.png"
+        },
+        {
+          "fileName": "moltres-galar.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/moltres-galar.png"
+        },
+        {
+          "fileName": "moltres.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/moltres.png"
+        },
+        {
+          "fileName": "monferno.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/monferno.png"
+        },
+        {
+          "fileName": "morelull.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/morelull.png"
+        },
+        {
+          "fileName": "morgrem.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/morgrem.png"
+        },
+        {
+          "fileName": "morpeko-hangry.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/morpeko-hangry.png"
+        },
+        {
+          "fileName": "morpeko.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/morpeko.png"
+        },
+        {
+          "fileName": "mothim.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/mothim.png"
+        },
+        {
+          "fileName": "mr-mime-galar.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/mr-mime-galar.png"
+        },
+        {
+          "fileName": "mr-mime.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/mr-mime.png"
+        },
+        {
+          "fileName": "mr-rime.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/mr-rime.png"
+        },
+        {
+          "fileName": "mudbray.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/mudbray.png"
+        },
+        {
+          "fileName": "mudkip.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/mudkip.png"
+        },
+        {
+          "fileName": "mudsdale.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/mudsdale.png"
+        },
+        {
+          "fileName": "muk-alola.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/muk-alola.png"
+        },
+        {
+          "fileName": "muk.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/muk.png"
+        },
+        {
+          "fileName": "munchlax.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/munchlax.png"
+        },
+        {
+          "fileName": "munna.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/munna.png"
+        },
+        {
+          "fileName": "murkrow.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/murkrow.png"
+        },
+        {
+          "fileName": "musharna.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/musharna.png"
+        },
+        {
+          "fileName": "naganadel.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/naganadel.png"
+        },
+        {
+          "fileName": "natu.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/natu.png"
+        },
+        {
+          "fileName": "necrozma-dawn.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/necrozma-dawn.png"
+        },
+        {
+          "fileName": "necrozma-dusk.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/necrozma-dusk.png"
+        },
+        {
+          "fileName": "necrozma-ultra.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/necrozma-ultra.png"
+        },
+        {
+          "fileName": "necrozma.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/necrozma.png"
+        },
+        {
+          "fileName": "nickit.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/nickit.png"
+        },
+        {
+          "fileName": "nidoking.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/nidoking.png"
+        },
+        {
+          "fileName": "nidoqueen.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/nidoqueen.png"
+        },
+        {
+          "fileName": "nidoran-f.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/nidoran-f.png"
+        },
+        {
+          "fileName": "nidoran-m.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/nidoran-m.png"
+        },
+        {
+          "fileName": "nidorina.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/nidorina.png"
+        },
+        {
+          "fileName": "nidorino.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/nidorino.png"
+        },
+        {
+          "fileName": "nihilego.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/nihilego.png"
+        },
+        {
+          "fileName": "nincada.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/nincada.png"
+        },
+        {
+          "fileName": "ninetales-alola.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/ninetales-alola.png"
+        },
+        {
+          "fileName": "ninetales.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/ninetales.png"
+        },
+        {
+          "fileName": "ninjask.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/ninjask.png"
+        },
+        {
+          "fileName": "noctowl.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/noctowl.png"
+        },
+        {
+          "fileName": "noibat.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/noibat.png"
+        },
+        {
+          "fileName": "noivern.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/noivern.png"
+        },
+        {
+          "fileName": "nosepass.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/nosepass.png"
+        },
+        {
+          "fileName": "numel.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/numel.png"
+        },
+        {
+          "fileName": "nuzleaf.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/nuzleaf.png"
+        },
+        {
+          "fileName": "obstagoon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/obstagoon.png"
+        },
+        {
+          "fileName": "octillery.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/octillery.png"
+        },
+        {
+          "fileName": "oddish.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/oddish.png"
+        },
+        {
+          "fileName": "omanyte.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/omanyte.png"
+        },
+        {
+          "fileName": "omastar.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/omastar.png"
+        },
+        {
+          "fileName": "onix.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/onix.png"
+        },
+        {
+          "fileName": "oranguru.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/oranguru.png"
+        },
+        {
+          "fileName": "orbeetle-gmax.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/orbeetle-gmax.png"
+        },
+        {
+          "fileName": "orbeetle.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/orbeetle.png"
+        },
+        {
+          "fileName": "oricorio-pau.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/oricorio-pau.png"
+        },
+        {
+          "fileName": "oricorio-pom-pom.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/oricorio-pom-pom.png"
+        },
+        {
+          "fileName": "oricorio-sensu.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/oricorio-sensu.png"
+        },
+        {
+          "fileName": "oricorio.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/oricorio.png"
+        },
+        {
+          "fileName": "oshawott.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/oshawott.png"
+        },
+        {
+          "fileName": "overqwil.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/overqwil.png"
+        },
+        {
+          "fileName": "pachirisu.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pachirisu.png"
+        },
+        {
+          "fileName": "palkia-origin.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/palkia-origin.png"
+        },
+        {
+          "fileName": "palkia.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/palkia.png"
+        },
+        {
+          "fileName": "palossand.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/palossand.png"
+        },
+        {
+          "fileName": "palpitoad.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/palpitoad.png"
+        },
+        {
+          "fileName": "pancham.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pancham.png"
+        },
+        {
+          "fileName": "pangoro.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pangoro.png"
+        },
+        {
+          "fileName": "panpour.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/panpour.png"
+        },
+        {
+          "fileName": "pansage.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pansage.png"
+        },
+        {
+          "fileName": "pansear.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pansear.png"
+        },
+        {
+          "fileName": "paras.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/paras.png"
+        },
+        {
+          "fileName": "parasect.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/parasect.png"
+        },
+        {
+          "fileName": "passimian.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/passimian.png"
+        },
+        {
+          "fileName": "patrat.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/patrat.png"
+        },
+        {
+          "fileName": "pawniard.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pawniard.png"
+        },
+        {
+          "fileName": "pelipper.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pelipper.png"
+        },
+        {
+          "fileName": "perrserker.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/perrserker.png"
+        },
+        {
+          "fileName": "persian-alola.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/persian-alola.png"
+        },
+        {
+          "fileName": "persian.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/persian.png"
+        },
+        {
+          "fileName": "petilil.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/petilil.png"
+        },
+        {
+          "fileName": "phanpy.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/phanpy.png"
+        },
+        {
+          "fileName": "phantump.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/phantump.png"
+        },
+        {
+          "fileName": "pheromosa.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pheromosa.png"
+        },
+        {
+          "fileName": "phione.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/phione.png"
+        },
+        {
+          "fileName": "pichu-spiky-eared.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pichu-spiky-eared.png"
+        },
+        {
+          "fileName": "pichu.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pichu.png"
+        },
+        {
+          "fileName": "pidgeot-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pidgeot-mega.png"
+        },
+        {
+          "fileName": "pidgeot.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pidgeot.png"
+        },
+        {
+          "fileName": "pidgeotto.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pidgeotto.png"
+        },
+        {
+          "fileName": "pidgey.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pidgey.png"
+        },
+        {
+          "fileName": "pidove.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pidove.png"
+        },
+        {
+          "fileName": "pignite.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pignite.png"
+        },
+        {
+          "fileName": "pikachu-alola-cap.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pikachu-alola-cap.png"
+        },
+        {
+          "fileName": "pikachu-belle.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pikachu-belle.png"
+        },
+        {
+          "fileName": "pikachu-cosplay.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pikachu-cosplay.png"
+        },
+        {
+          "fileName": "pikachu-gmax.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pikachu-gmax.png"
+        },
+        {
+          "fileName": "pikachu-hoenn-cap.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pikachu-hoenn-cap.png"
+        },
+        {
+          "fileName": "pikachu-kalos-cap.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pikachu-kalos-cap.png"
+        },
+        {
+          "fileName": "pikachu-libre.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pikachu-libre.png"
+        },
+        {
+          "fileName": "pikachu-original-cap.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pikachu-original-cap.png"
+        },
+        {
+          "fileName": "pikachu-partner-cap.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pikachu-partner-cap.png"
+        },
+        {
+          "fileName": "pikachu-phd.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pikachu-phd.png"
+        },
+        {
+          "fileName": "pikachu-pop-star.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pikachu-pop-star.png"
+        },
+        {
+          "fileName": "pikachu-rock-star.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pikachu-rock-star.png"
+        },
+        {
+          "fileName": "pikachu-sinnoh-cap.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pikachu-sinnoh-cap.png"
+        },
+        {
+          "fileName": "pikachu-starter.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pikachu-starter.png"
+        },
+        {
+          "fileName": "pikachu-unova-cap.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pikachu-unova-cap.png"
+        },
+        {
+          "fileName": "pikachu-world-cap.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pikachu-world-cap.png"
+        },
+        {
+          "fileName": "pikachu.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pikachu.png"
+        },
+        {
+          "fileName": "pikipek.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pikipek.png"
+        },
+        {
+          "fileName": "piloswine.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/piloswine.png"
+        },
+        {
+          "fileName": "pincurchin.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pincurchin.png"
+        },
+        {
+          "fileName": "pineco.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pineco.png"
+        },
+        {
+          "fileName": "pinsir-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pinsir-mega.png"
+        },
+        {
+          "fileName": "pinsir.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pinsir.png"
+        },
+        {
+          "fileName": "piplup.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/piplup.png"
+        },
+        {
+          "fileName": "plusle.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/plusle.png"
+        },
+        {
+          "fileName": "poipole.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/poipole.png"
+        },
+        {
+          "fileName": "politoed.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/politoed.png"
+        },
+        {
+          "fileName": "poliwag.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/poliwag.png"
+        },
+        {
+          "fileName": "poliwhirl.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/poliwhirl.png"
+        },
+        {
+          "fileName": "poliwrath.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/poliwrath.png"
+        },
+        {
+          "fileName": "polteageist.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/polteageist.png"
+        },
+        {
+          "fileName": "ponyta-galar.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/ponyta-galar.png"
+        },
+        {
+          "fileName": "ponyta.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/ponyta.png"
+        },
+        {
+          "fileName": "poochyena.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/poochyena.png"
+        },
+        {
+          "fileName": "popplio.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/popplio.png"
+        },
+        {
+          "fileName": "porygon-z.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/porygon-z.png"
+        },
+        {
+          "fileName": "porygon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/porygon.png"
+        },
+        {
+          "fileName": "porygon2.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/porygon2.png"
+        },
+        {
+          "fileName": "primarina.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/primarina.png"
+        },
+        {
+          "fileName": "primeape.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/primeape.png"
+        },
+        {
+          "fileName": "prinplup.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/prinplup.png"
+        },
+        {
+          "fileName": "probopass.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/probopass.png"
+        },
+        {
+          "fileName": "psyduck.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/psyduck.png"
+        },
+        {
+          "fileName": "pumpkaboo-large.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pumpkaboo-large.png"
+        },
+        {
+          "fileName": "pumpkaboo-small.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pumpkaboo-small.png"
+        },
+        {
+          "fileName": "pumpkaboo-super.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pumpkaboo-super.png"
+        },
+        {
+          "fileName": "pumpkaboo.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pumpkaboo.png"
+        },
+        {
+          "fileName": "pupitar.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pupitar.png"
+        },
+        {
+          "fileName": "purrloin.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/purrloin.png"
+        },
+        {
+          "fileName": "purugly.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/purugly.png"
+        },
+        {
+          "fileName": "pyroar.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pyroar.png"
+        },
+        {
+          "fileName": "pyukumuku.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/pyukumuku.png"
+        },
+        {
+          "fileName": "quagsire.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/quagsire.png"
+        },
+        {
+          "fileName": "quilava.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/quilava.png"
+        },
+        {
+          "fileName": "quilladin.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/quilladin.png"
+        },
+        {
+          "fileName": "qwilfish-hisui.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/qwilfish-hisui.png"
+        },
+        {
+          "fileName": "qwilfish.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/qwilfish.png"
+        },
+        {
+          "fileName": "raboot.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/raboot.png"
+        },
+        {
+          "fileName": "raichu-alola.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/raichu-alola.png"
+        },
+        {
+          "fileName": "raichu.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/raichu.png"
+        },
+        {
+          "fileName": "raikou.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/raikou.png"
+        },
+        {
+          "fileName": "ralts.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/ralts.png"
+        },
+        {
+          "fileName": "rampardos.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/rampardos.png"
+        },
+        {
+          "fileName": "rapidash-galar.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/rapidash-galar.png"
+        },
+        {
+          "fileName": "rapidash.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/rapidash.png"
+        },
+        {
+          "fileName": "raticate-alola.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/raticate-alola.png"
+        },
+        {
+          "fileName": "raticate.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/raticate.png"
+        },
+        {
+          "fileName": "rattata-alola.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/rattata-alola.png"
+        },
+        {
+          "fileName": "rattata.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/rattata.png"
+        },
+        {
+          "fileName": "rayquaza-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/rayquaza-mega.png"
+        },
+        {
+          "fileName": "rayquaza.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/rayquaza.png"
+        },
+        {
+          "fileName": "regice.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/regice.png"
+        },
+        {
+          "fileName": "regidrago.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/regidrago.png"
+        },
+        {
+          "fileName": "regieleki.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/regieleki.png"
+        },
+        {
+          "fileName": "regigigas.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/regigigas.png"
+        },
+        {
+          "fileName": "regirock.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/regirock.png"
+        },
+        {
+          "fileName": "registeel.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/registeel.png"
+        },
+        {
+          "fileName": "relicanth.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/relicanth.png"
+        },
+        {
+          "fileName": "remoraid.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/remoraid.png"
+        },
+        {
+          "fileName": "reshiram.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/reshiram.png"
+        },
+        {
+          "fileName": "reuniclus.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/reuniclus.png"
+        },
+        {
+          "fileName": "rhydon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/rhydon.png"
+        },
+        {
+          "fileName": "rhyhorn.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/rhyhorn.png"
+        },
+        {
+          "fileName": "rhyperior.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/rhyperior.png"
+        },
+        {
+          "fileName": "ribombee.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/ribombee.png"
+        },
+        {
+          "fileName": "rillaboom-gmax.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/rillaboom-gmax.png"
+        },
+        {
+          "fileName": "rillaboom.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/rillaboom.png"
+        },
+        {
+          "fileName": "riolu.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/riolu.png"
+        },
+        {
+          "fileName": "rockruff.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/rockruff.png"
+        },
+        {
+          "fileName": "roggenrola.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/roggenrola.png"
+        },
+        {
+          "fileName": "rolycoly.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/rolycoly.png"
+        },
+        {
+          "fileName": "rookidee.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/rookidee.png"
+        },
+        {
+          "fileName": "roselia.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/roselia.png"
+        },
+        {
+          "fileName": "roserade.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/roserade.png"
+        },
+        {
+          "fileName": "rotom-fan.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/rotom-fan.png"
+        },
+        {
+          "fileName": "rotom-frost.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/rotom-frost.png"
+        },
+        {
+          "fileName": "rotom-heat.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/rotom-heat.png"
+        },
+        {
+          "fileName": "rotom-mow.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/rotom-mow.png"
+        },
+        {
+          "fileName": "rotom-wash.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/rotom-wash.png"
+        },
+        {
+          "fileName": "rotom.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/rotom.png"
+        },
+        {
+          "fileName": "rowlet.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/rowlet.png"
+        },
+        {
+          "fileName": "rufflet.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/rufflet.png"
+        },
+        {
+          "fileName": "runerigus.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/runerigus.png"
+        },
+        {
+          "fileName": "sableye-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/sableye-mega.png"
+        },
+        {
+          "fileName": "sableye.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/sableye.png"
+        },
+        {
+          "fileName": "salamence-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/salamence-mega.png"
+        },
+        {
+          "fileName": "salamence.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/salamence.png"
+        },
+        {
+          "fileName": "salandit.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/salandit.png"
+        },
+        {
+          "fileName": "salazzle.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/salazzle.png"
+        },
+        {
+          "fileName": "samurott-hisui.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/samurott-hisui.png"
+        },
+        {
+          "fileName": "samurott.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/samurott.png"
+        },
+        {
+          "fileName": "sandaconda-gmax.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/sandaconda-gmax.png"
+        },
+        {
+          "fileName": "sandaconda.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/sandaconda.png"
+        },
+        {
+          "fileName": "sandile.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/sandile.png"
+        },
+        {
+          "fileName": "sandshrew-alola.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/sandshrew-alola.png"
+        },
+        {
+          "fileName": "sandshrew.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/sandshrew.png"
+        },
+        {
+          "fileName": "sandslash-alola.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/sandslash-alola.png"
+        },
+        {
+          "fileName": "sandslash.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/sandslash.png"
+        },
+        {
+          "fileName": "sandygast.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/sandygast.png"
+        },
+        {
+          "fileName": "sawk.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/sawk.png"
+        },
+        {
+          "fileName": "sawsbuck-autumn.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/sawsbuck-autumn.png"
+        },
+        {
+          "fileName": "sawsbuck-summer.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/sawsbuck-summer.png"
+        },
+        {
+          "fileName": "sawsbuck-winter.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/sawsbuck-winter.png"
+        },
+        {
+          "fileName": "sawsbuck.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/sawsbuck.png"
+        },
+        {
+          "fileName": "scatterbug.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/scatterbug.png"
+        },
+        {
+          "fileName": "sceptile-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/sceptile-mega.png"
+        },
+        {
+          "fileName": "sceptile.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/sceptile.png"
+        },
+        {
+          "fileName": "scizor-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/scizor-mega.png"
+        },
+        {
+          "fileName": "scizor.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/scizor.png"
+        },
+        {
+          "fileName": "scolipede.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/scolipede.png"
+        },
+        {
+          "fileName": "scorbunny.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/scorbunny.png"
+        },
+        {
+          "fileName": "scrafty.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/scrafty.png"
+        },
+        {
+          "fileName": "scraggy.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/scraggy.png"
+        },
+        {
+          "fileName": "scyther.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/scyther.png"
+        },
+        {
+          "fileName": "seadra.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/seadra.png"
+        },
+        {
+          "fileName": "seaking.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/seaking.png"
+        },
+        {
+          "fileName": "sealeo.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/sealeo.png"
+        },
+        {
+          "fileName": "seedot.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/seedot.png"
+        },
+        {
+          "fileName": "seel.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/seel.png"
+        },
+        {
+          "fileName": "seismitoad.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/seismitoad.png"
+        },
+        {
+          "fileName": "sentret.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/sentret.png"
+        },
+        {
+          "fileName": "serperior.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/serperior.png"
+        },
+        {
+          "fileName": "servine.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/servine.png"
+        },
+        {
+          "fileName": "seviper.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/seviper.png"
+        },
+        {
+          "fileName": "sewaddle.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/sewaddle.png"
+        },
+        {
+          "fileName": "sharpedo-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/sharpedo-mega.png"
+        },
+        {
+          "fileName": "sharpedo.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/sharpedo.png"
+        },
+        {
+          "fileName": "shaymin-sky.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/shaymin-sky.png"
+        },
+        {
+          "fileName": "shaymin.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/shaymin.png"
+        },
+        {
+          "fileName": "shedinja.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/shedinja.png"
+        },
+        {
+          "fileName": "shelgon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/shelgon.png"
+        },
+        {
+          "fileName": "shellder.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/shellder.png"
+        },
+        {
+          "fileName": "shellos-east.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/shellos-east.png"
+        },
+        {
+          "fileName": "shellos.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/shellos.png"
+        },
+        {
+          "fileName": "shelmet.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/shelmet.png"
+        },
+        {
+          "fileName": "shieldon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/shieldon.png"
+        },
+        {
+          "fileName": "shiftry.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/shiftry.png"
+        },
+        {
+          "fileName": "shiinotic.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/shiinotic.png"
+        },
+        {
+          "fileName": "shinx.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/shinx.png"
+        },
+        {
+          "fileName": "shroomish.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/shroomish.png"
+        },
+        {
+          "fileName": "shuckle.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/shuckle.png"
+        },
+        {
+          "fileName": "shuppet.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/shuppet.png"
+        },
+        {
+          "fileName": "sigilyph.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/sigilyph.png"
+        },
+        {
+          "fileName": "silcoon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/silcoon.png"
+        },
+        {
+          "fileName": "silicobra.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/silicobra.png"
+        },
+        {
+          "fileName": "silvally-bug.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/silvally-bug.png"
+        },
+        {
+          "fileName": "silvally-dark.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/silvally-dark.png"
+        },
+        {
+          "fileName": "silvally-dragon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/silvally-dragon.png"
+        },
+        {
+          "fileName": "silvally-electric.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/silvally-electric.png"
+        },
+        {
+          "fileName": "silvally-fairy.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/silvally-fairy.png"
+        },
+        {
+          "fileName": "silvally-fighting.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/silvally-fighting.png"
+        },
+        {
+          "fileName": "silvally-fire.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/silvally-fire.png"
+        },
+        {
+          "fileName": "silvally-flying.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/silvally-flying.png"
+        },
+        {
+          "fileName": "silvally-ghost.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/silvally-ghost.png"
+        },
+        {
+          "fileName": "silvally-grass.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/silvally-grass.png"
+        },
+        {
+          "fileName": "silvally-ground.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/silvally-ground.png"
+        },
+        {
+          "fileName": "silvally-ice.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/silvally-ice.png"
+        },
+        {
+          "fileName": "silvally-poison.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/silvally-poison.png"
+        },
+        {
+          "fileName": "silvally-psychic.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/silvally-psychic.png"
+        },
+        {
+          "fileName": "silvally-rock.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/silvally-rock.png"
+        },
+        {
+          "fileName": "silvally-steel.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/silvally-steel.png"
+        },
+        {
+          "fileName": "silvally-water.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/silvally-water.png"
+        },
+        {
+          "fileName": "silvally.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/silvally.png"
+        },
+        {
+          "fileName": "simipour.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/simipour.png"
+        },
+        {
+          "fileName": "simisage.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/simisage.png"
+        },
+        {
+          "fileName": "simisear.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/simisear.png"
+        },
+        {
+          "fileName": "sinistea.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/sinistea.png"
+        },
+        {
+          "fileName": "sirfetchd.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/sirfetchd.png"
+        },
+        {
+          "fileName": "sizzlipede.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/sizzlipede.png"
+        },
+        {
+          "fileName": "skarmory.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/skarmory.png"
+        },
+        {
+          "fileName": "skiddo.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/skiddo.png"
+        },
+        {
+          "fileName": "skiploom.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/skiploom.png"
+        },
+        {
+          "fileName": "skitty.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/skitty.png"
+        },
+        {
+          "fileName": "skorupi.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/skorupi.png"
+        },
+        {
+          "fileName": "skrelp.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/skrelp.png"
+        },
+        {
+          "fileName": "skuntank.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/skuntank.png"
+        },
+        {
+          "fileName": "skwovet.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/skwovet.png"
+        },
+        {
+          "fileName": "slaking.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/slaking.png"
+        },
+        {
+          "fileName": "slakoth.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/slakoth.png"
+        },
+        {
+          "fileName": "sliggoo-hisui.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/sliggoo-hisui.png"
+        },
+        {
+          "fileName": "sliggoo.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/sliggoo.png"
+        },
+        {
+          "fileName": "slowbro-galar.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/slowbro-galar.png"
+        },
+        {
+          "fileName": "slowbro-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/slowbro-mega.png"
+        },
+        {
+          "fileName": "slowbro.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/slowbro.png"
+        },
+        {
+          "fileName": "slowking-galar.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/slowking-galar.png"
+        },
+        {
+          "fileName": "slowking.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/slowking.png"
+        },
+        {
+          "fileName": "slowpoke-galar.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/slowpoke-galar.png"
+        },
+        {
+          "fileName": "slowpoke.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/slowpoke.png"
+        },
+        {
+          "fileName": "slugma.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/slugma.png"
+        },
+        {
+          "fileName": "slurpuff.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/slurpuff.png"
+        },
+        {
+          "fileName": "smeargle.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/smeargle.png"
+        },
+        {
+          "fileName": "smoochum.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/smoochum.png"
+        },
+        {
+          "fileName": "sneasel-hisui.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/sneasel-hisui.png"
+        },
+        {
+          "fileName": "sneasel.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/sneasel.png"
+        },
+        {
+          "fileName": "sneasler.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/sneasler.png"
+        },
+        {
+          "fileName": "snivy.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/snivy.png"
+        },
+        {
+          "fileName": "snom.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/snom.png"
+        },
+        {
+          "fileName": "snorlax-gmax.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/snorlax-gmax.png"
+        },
+        {
+          "fileName": "snorlax.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/snorlax.png"
+        },
+        {
+          "fileName": "snorunt.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/snorunt.png"
+        },
+        {
+          "fileName": "snover.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/snover.png"
+        },
+        {
+          "fileName": "snubbull.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/snubbull.png"
+        },
+        {
+          "fileName": "sobble.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/sobble.png"
+        },
+        {
+          "fileName": "solgaleo.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/solgaleo.png"
+        },
+        {
+          "fileName": "solosis.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/solosis.png"
+        },
+        {
+          "fileName": "solrock.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/solrock.png"
+        },
+        {
+          "fileName": "spearow.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/spearow.png"
+        },
+        {
+          "fileName": "spectrier.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/spectrier.png"
+        },
+        {
+          "fileName": "spewpa.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/spewpa.png"
+        },
+        {
+          "fileName": "spheal.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/spheal.png"
+        },
+        {
+          "fileName": "spinarak.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/spinarak.png"
+        },
+        {
+          "fileName": "spinda-blank.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/spinda-blank.png"
+        },
+        {
+          "fileName": "spinda-filled.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/spinda-filled.png"
+        },
+        {
+          "fileName": "spinda.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/spinda.png"
+        },
+        {
+          "fileName": "spiritomb.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/spiritomb.png"
+        },
+        {
+          "fileName": "spoink.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/spoink.png"
+        },
+        {
+          "fileName": "spritzee.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/spritzee.png"
+        },
+        {
+          "fileName": "squirtle.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/squirtle.png"
+        },
+        {
+          "fileName": "stakataka.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/stakataka.png"
+        },
+        {
+          "fileName": "stantler.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/stantler.png"
+        },
+        {
+          "fileName": "staraptor.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/staraptor.png"
+        },
+        {
+          "fileName": "staravia.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/staravia.png"
+        },
+        {
+          "fileName": "starly.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/starly.png"
+        },
+        {
+          "fileName": "starmie.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/starmie.png"
+        },
+        {
+          "fileName": "staryu.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/staryu.png"
+        },
+        {
+          "fileName": "steelix-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/steelix-mega.png"
+        },
+        {
+          "fileName": "steelix.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/steelix.png"
+        },
+        {
+          "fileName": "steenee.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/steenee.png"
+        },
+        {
+          "fileName": "stonjourner.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/stonjourner.png"
+        },
+        {
+          "fileName": "stoutland.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/stoutland.png"
+        },
+        {
+          "fileName": "stufful.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/stufful.png"
+        },
+        {
+          "fileName": "stunfisk-galar.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/stunfisk-galar.png"
+        },
+        {
+          "fileName": "stunfisk.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/stunfisk.png"
+        },
+        {
+          "fileName": "stunky.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/stunky.png"
+        },
+        {
+          "fileName": "sudowoodo.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/sudowoodo.png"
+        },
+        {
+          "fileName": "suicune.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/suicune.png"
+        },
+        {
+          "fileName": "sunflora.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/sunflora.png"
+        },
+        {
+          "fileName": "sunkern.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/sunkern.png"
+        },
+        {
+          "fileName": "surskit.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/surskit.png"
+        },
+        {
+          "fileName": "swablu.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/swablu.png"
+        },
+        {
+          "fileName": "swadloon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/swadloon.png"
+        },
+        {
+          "fileName": "swalot.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/swalot.png"
+        },
+        {
+          "fileName": "swampert-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/swampert-mega.png"
+        },
+        {
+          "fileName": "swampert.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/swampert.png"
+        },
+        {
+          "fileName": "swanna.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/swanna.png"
+        },
+        {
+          "fileName": "swellow.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/swellow.png"
+        },
+        {
+          "fileName": "swinub.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/swinub.png"
+        },
+        {
+          "fileName": "swirlix.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/swirlix.png"
+        },
+        {
+          "fileName": "swoobat.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/swoobat.png"
+        },
+        {
+          "fileName": "sylveon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/sylveon.png"
+        },
+        {
+          "fileName": "taillow.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/taillow.png"
+        },
+        {
+          "fileName": "talonflame.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/talonflame.png"
+        },
+        {
+          "fileName": "tangela.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/tangela.png"
+        },
+        {
+          "fileName": "tangrowth.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/tangrowth.png"
+        },
+        {
+          "fileName": "tapu-bulu.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/tapu-bulu.png"
+        },
+        {
+          "fileName": "tapu-fini.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/tapu-fini.png"
+        },
+        {
+          "fileName": "tapu-koko.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/tapu-koko.png"
+        },
+        {
+          "fileName": "tapu-lele.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/tapu-lele.png"
+        },
+        {
+          "fileName": "tauros.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/tauros.png"
+        },
+        {
+          "fileName": "teddiursa.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/teddiursa.png"
+        },
+        {
+          "fileName": "tentacool.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/tentacool.png"
+        },
+        {
+          "fileName": "tentacruel.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/tentacruel.png"
+        },
+        {
+          "fileName": "tepig.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/tepig.png"
+        },
+        {
+          "fileName": "terrakion.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/terrakion.png"
+        },
+        {
+          "fileName": "thievul.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/thievul.png"
+        },
+        {
+          "fileName": "throh.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/throh.png"
+        },
+        {
+          "fileName": "thundurus-therian.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/thundurus-therian.png"
+        },
+        {
+          "fileName": "thundurus.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/thundurus.png"
+        },
+        {
+          "fileName": "thwackey.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/thwackey.png"
+        },
+        {
+          "fileName": "timburr.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/timburr.png"
+        },
+        {
+          "fileName": "tirtouga.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/tirtouga.png"
+        },
+        {
+          "fileName": "togedemaru.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/togedemaru.png"
+        },
+        {
+          "fileName": "togekiss.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/togekiss.png"
+        },
+        {
+          "fileName": "togepi.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/togepi.png"
+        },
+        {
+          "fileName": "togetic.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/togetic.png"
+        },
+        {
+          "fileName": "torchic.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/torchic.png"
+        },
+        {
+          "fileName": "torkoal.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/torkoal.png"
+        },
+        {
+          "fileName": "tornadus-therian.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/tornadus-therian.png"
+        },
+        {
+          "fileName": "tornadus.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/tornadus.png"
+        },
+        {
+          "fileName": "torracat.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/torracat.png"
+        },
+        {
+          "fileName": "torterra.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/torterra.png"
+        },
+        {
+          "fileName": "totodile.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/totodile.png"
+        },
+        {
+          "fileName": "toucannon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/toucannon.png"
+        },
+        {
+          "fileName": "toxapex.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/toxapex.png"
+        },
+        {
+          "fileName": "toxel.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/toxel.png"
+        },
+        {
+          "fileName": "toxicroak.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/toxicroak.png"
+        },
+        {
+          "fileName": "toxtricity-gmax.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/toxtricity-gmax.png"
+        },
+        {
+          "fileName": "toxtricity-low-key.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/toxtricity-low-key.png"
+        },
+        {
+          "fileName": "toxtricity.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/toxtricity.png"
+        },
+        {
+          "fileName": "tranquill.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/tranquill.png"
+        },
+        {
+          "fileName": "trapinch.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/trapinch.png"
+        },
+        {
+          "fileName": "treecko.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/treecko.png"
+        },
+        {
+          "fileName": "trevenant.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/trevenant.png"
+        },
+        {
+          "fileName": "tropius.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/tropius.png"
+        },
+        {
+          "fileName": "trubbish.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/trubbish.png"
+        },
+        {
+          "fileName": "trumbeak.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/trumbeak.png"
+        },
+        {
+          "fileName": "tsareena.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/tsareena.png"
+        },
+        {
+          "fileName": "turtonator.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/turtonator.png"
+        },
+        {
+          "fileName": "turtwig.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/turtwig.png"
+        },
+        {
+          "fileName": "tympole.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/tympole.png"
+        },
+        {
+          "fileName": "tynamo.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/tynamo.png"
+        },
+        {
+          "fileName": "type-null.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/type-null.png"
+        },
+        {
+          "fileName": "typhlosion-hisui.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/typhlosion-hisui.png"
+        },
+        {
+          "fileName": "typhlosion.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/typhlosion.png"
+        },
+        {
+          "fileName": "tyranitar-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/tyranitar-mega.png"
+        },
+        {
+          "fileName": "tyranitar.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/tyranitar.png"
+        },
+        {
+          "fileName": "tyrantrum.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/tyrantrum.png"
+        },
+        {
+          "fileName": "tyrogue.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/tyrogue.png"
+        },
+        {
+          "fileName": "tyrunt.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/tyrunt.png"
+        },
+        {
+          "fileName": "umbreon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/umbreon.png"
+        },
+        {
+          "fileName": "unfezant.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/unfezant.png"
+        },
+        {
+          "fileName": "unown-b.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/unown-b.png"
+        },
+        {
+          "fileName": "unown-c.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/unown-c.png"
+        },
+        {
+          "fileName": "unown-d.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/unown-d.png"
+        },
+        {
+          "fileName": "unown-e.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/unown-e.png"
+        },
+        {
+          "fileName": "unown-exclamation.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/unown-exclamation.png"
+        },
+        {
+          "fileName": "unown-f.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/unown-f.png"
+        },
+        {
+          "fileName": "unown-g.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/unown-g.png"
+        },
+        {
+          "fileName": "unown-h.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/unown-h.png"
+        },
+        {
+          "fileName": "unown-i.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/unown-i.png"
+        },
+        {
+          "fileName": "unown-j.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/unown-j.png"
+        },
+        {
+          "fileName": "unown-k.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/unown-k.png"
+        },
+        {
+          "fileName": "unown-l.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/unown-l.png"
+        },
+        {
+          "fileName": "unown-m.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/unown-m.png"
+        },
+        {
+          "fileName": "unown-n.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/unown-n.png"
+        },
+        {
+          "fileName": "unown-o.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/unown-o.png"
+        },
+        {
+          "fileName": "unown-p.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/unown-p.png"
+        },
+        {
+          "fileName": "unown-q.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/unown-q.png"
+        },
+        {
+          "fileName": "unown-question.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/unown-question.png"
+        },
+        {
+          "fileName": "unown-r.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/unown-r.png"
+        },
+        {
+          "fileName": "unown-s.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/unown-s.png"
+        },
+        {
+          "fileName": "unown-t.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/unown-t.png"
+        },
+        {
+          "fileName": "unown-u.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/unown-u.png"
+        },
+        {
+          "fileName": "unown-v.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/unown-v.png"
+        },
+        {
+          "fileName": "unown-w.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/unown-w.png"
+        },
+        {
+          "fileName": "unown-x.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/unown-x.png"
+        },
+        {
+          "fileName": "unown-y.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/unown-y.png"
+        },
+        {
+          "fileName": "unown-z.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/unown-z.png"
+        },
+        {
+          "fileName": "unown.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/unown.png"
+        },
+        {
+          "fileName": "ursaluna.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/ursaluna.png"
+        },
+        {
+          "fileName": "ursaring.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/ursaring.png"
+        },
+        {
+          "fileName": "urshifu-gmax.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/urshifu-gmax.png"
+        },
+        {
+          "fileName": "urshifu-rapid-strike-gmax.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/urshifu-rapid-strike-gmax.png"
+        },
+        {
+          "fileName": "urshifu.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/urshifu.png"
+        },
+        {
+          "fileName": "uxie.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/uxie.png"
+        },
+        {
+          "fileName": "vanillish.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/vanillish.png"
+        },
+        {
+          "fileName": "vanillite.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/vanillite.png"
+        },
+        {
+          "fileName": "vanilluxe.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/vanilluxe.png"
+        },
+        {
+          "fileName": "vaporeon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/vaporeon.png"
+        },
+        {
+          "fileName": "venipede.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/venipede.png"
+        },
+        {
+          "fileName": "venomoth.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/venomoth.png"
+        },
+        {
+          "fileName": "venonat.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/venonat.png"
+        },
+        {
+          "fileName": "venusaur-gmax.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/venusaur-gmax.png"
+        },
+        {
+          "fileName": "venusaur-mega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/venusaur-mega.png"
+        },
+        {
+          "fileName": "venusaur.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/venusaur.png"
+        },
+        {
+          "fileName": "vespiquen.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/vespiquen.png"
+        },
+        {
+          "fileName": "vibrava.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/vibrava.png"
+        },
+        {
+          "fileName": "victini.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/victini.png"
+        },
+        {
+          "fileName": "victreebel.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/victreebel.png"
+        },
+        {
+          "fileName": "vigoroth.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/vigoroth.png"
+        },
+        {
+          "fileName": "vikavolt.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/vikavolt.png"
+        },
+        {
+          "fileName": "vileplume.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/vileplume.png"
+        },
+        {
+          "fileName": "virizion.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/virizion.png"
+        },
+        {
+          "fileName": "vivillon-archipelago.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/vivillon-archipelago.png"
+        },
+        {
+          "fileName": "vivillon-continental.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/vivillon-continental.png"
+        },
+        {
+          "fileName": "vivillon-elegant.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/vivillon-elegant.png"
+        },
+        {
+          "fileName": "vivillon-fancy.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/vivillon-fancy.png"
+        },
+        {
+          "fileName": "vivillon-garden.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/vivillon-garden.png"
+        },
+        {
+          "fileName": "vivillon-high-plains.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/vivillon-high-plains.png"
+        },
+        {
+          "fileName": "vivillon-icy-snow.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/vivillon-icy-snow.png"
+        },
+        {
+          "fileName": "vivillon-jungle.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/vivillon-jungle.png"
+        },
+        {
+          "fileName": "vivillon-marine.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/vivillon-marine.png"
+        },
+        {
+          "fileName": "vivillon-modern.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/vivillon-modern.png"
+        },
+        {
+          "fileName": "vivillon-monsoon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/vivillon-monsoon.png"
+        },
+        {
+          "fileName": "vivillon-ocean.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/vivillon-ocean.png"
+        },
+        {
+          "fileName": "vivillon-poke-ball.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/vivillon-poke-ball.png"
+        },
+        {
+          "fileName": "vivillon-polar.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/vivillon-polar.png"
+        },
+        {
+          "fileName": "vivillon-river.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/vivillon-river.png"
+        },
+        {
+          "fileName": "vivillon-sandstorm.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/vivillon-sandstorm.png"
+        },
+        {
+          "fileName": "vivillon-savanna.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/vivillon-savanna.png"
+        },
+        {
+          "fileName": "vivillon-sun.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/vivillon-sun.png"
+        },
+        {
+          "fileName": "vivillon-tundra.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/vivillon-tundra.png"
+        },
+        {
+          "fileName": "vivillon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/vivillon.png"
+        },
+        {
+          "fileName": "volbeat.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/volbeat.png"
+        },
+        {
+          "fileName": "volcanion.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/volcanion.png"
+        },
+        {
+          "fileName": "volcarona.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/volcarona.png"
+        },
+        {
+          "fileName": "voltorb-hisui.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/voltorb-hisui.png"
+        },
+        {
+          "fileName": "voltorb.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/voltorb.png"
+        },
+        {
+          "fileName": "vullaby.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/vullaby.png"
+        },
+        {
+          "fileName": "vulpix-alola.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/vulpix-alola.png"
+        },
+        {
+          "fileName": "vulpix.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/vulpix.png"
+        },
+        {
+          "fileName": "wailmer.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/wailmer.png"
+        },
+        {
+          "fileName": "wailord.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/wailord.png"
+        },
+        {
+          "fileName": "walrein.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/walrein.png"
+        },
+        {
+          "fileName": "wartortle.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/wartortle.png"
+        },
+        {
+          "fileName": "watchog.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/watchog.png"
+        },
+        {
+          "fileName": "weavile.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/weavile.png"
+        },
+        {
+          "fileName": "weedle.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/weedle.png"
+        },
+        {
+          "fileName": "weepinbell.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/weepinbell.png"
+        },
+        {
+          "fileName": "weezing-galar.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/weezing-galar.png"
+        },
+        {
+          "fileName": "weezing.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/weezing.png"
+        },
+        {
+          "fileName": "whimsicott.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/whimsicott.png"
+        },
+        {
+          "fileName": "whirlipede.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/whirlipede.png"
+        },
+        {
+          "fileName": "whiscash.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/whiscash.png"
+        },
+        {
+          "fileName": "whismur.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/whismur.png"
+        },
+        {
+          "fileName": "wigglytuff.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/wigglytuff.png"
+        },
+        {
+          "fileName": "wimpod.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/wimpod.png"
+        },
+        {
+          "fileName": "wingull.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/wingull.png"
+        },
+        {
+          "fileName": "wishiwashi-school.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/wishiwashi-school.png"
+        },
+        {
+          "fileName": "wishiwashi.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/wishiwashi.png"
+        },
+        {
+          "fileName": "wobbuffet.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/wobbuffet.png"
+        },
+        {
+          "fileName": "woobat.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/woobat.png"
+        },
+        {
+          "fileName": "wooloo.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/wooloo.png"
+        },
+        {
+          "fileName": "wooper.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/wooper.png"
+        },
+        {
+          "fileName": "wormadam-sandy.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/wormadam-sandy.png"
+        },
+        {
+          "fileName": "wormadam-trash.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/wormadam-trash.png"
+        },
+        {
+          "fileName": "wormadam.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/wormadam.png"
+        },
+        {
+          "fileName": "wurmple.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/wurmple.png"
+        },
+        {
+          "fileName": "wynaut.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/wynaut.png"
+        },
+        {
+          "fileName": "wyrdeer.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/wyrdeer.png"
+        },
+        {
+          "fileName": "xatu.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/xatu.png"
+        },
+        {
+          "fileName": "xerneas-active.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/xerneas-active.png"
+        },
+        {
+          "fileName": "xerneas.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/xerneas.png"
+        },
+        {
+          "fileName": "xurkitree.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/xurkitree.png"
+        },
+        {
+          "fileName": "yamask-galar.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/yamask-galar.png"
+        },
+        {
+          "fileName": "yamask.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/yamask.png"
+        },
+        {
+          "fileName": "yamper.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/yamper.png"
+        },
+        {
+          "fileName": "yanma.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/yanma.png"
+        },
+        {
+          "fileName": "yanmega.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/yanmega.png"
+        },
+        {
+          "fileName": "yungoos.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/yungoos.png"
+        },
+        {
+          "fileName": "yveltal.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/yveltal.png"
+        },
+        {
+          "fileName": "zacian-crowned.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/zacian-crowned.png"
+        },
+        {
+          "fileName": "zacian.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/zacian.png"
+        },
+        {
+          "fileName": "zamazenta-crowned.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/zamazenta-crowned.png"
+        },
+        {
+          "fileName": "zamazenta.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/zamazenta.png"
+        },
+        {
+          "fileName": "zangoose.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/zangoose.png"
+        },
+        {
+          "fileName": "zapdos-galar.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/zapdos-galar.png"
+        },
+        {
+          "fileName": "zapdos.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/zapdos.png"
+        },
+        {
+          "fileName": "zarude-dada.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/zarude-dada.png"
+        },
+        {
+          "fileName": "zarude.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/zarude.png"
+        },
+        {
+          "fileName": "zebstrika.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/zebstrika.png"
+        },
+        {
+          "fileName": "zekrom.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/zekrom.png"
+        },
+        {
+          "fileName": "zeraora.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/zeraora.png"
+        },
+        {
+          "fileName": "zigzagoon-galar.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/zigzagoon-galar.png"
+        },
+        {
+          "fileName": "zigzagoon.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/zigzagoon.png"
+        },
+        {
+          "fileName": "zoroark-hisui.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/zoroark-hisui.png"
+        },
+        {
+          "fileName": "zoroark.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/zoroark.png"
+        },
+        {
+          "fileName": "zorua-hisui.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/zorua-hisui.png"
+        },
+        {
+          "fileName": "zorua.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/zorua.png"
+        },
+        {
+          "fileName": "zubat.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/zubat.png"
+        },
+        {
+          "fileName": "zweilous.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/zweilous.png"
+        },
+        {
+          "fileName": "zygarde-10.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/zygarde-10.png"
+        },
+        {
+          "fileName": "zygarde-complete.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/zygarde-complete.png"
+        },
+        {
+          "fileName": "zygarde.png",
+          "url": "/favicons/msikma_pokesprite/pokemon-gen8/regular/zygarde.png"
+        }
+      ]
+    },
     "pokemon-gen8-shiny": {
       "name": "Pokemon Gen8 Shiny",
       "description": "Shiny Pokemon sprites from Gen8",

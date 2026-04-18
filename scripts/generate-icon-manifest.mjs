@@ -3,10 +3,9 @@
  * Run: node scripts/generate-icon-manifest.mjs
  */
 
-import { readdirSync } from 'node:fs';
+import { readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { writeFileSync } from 'node:fs';
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url));
 const PUBLIC_DIR = join(__dirname, '../public');
@@ -18,22 +17,22 @@ const ICON_SETS = [
     id: 'pokemon-gen8-regular',
     name: 'Pokemon Gen8 Regular',
     description: 'Standard Pokemon sprites from Gen8',
-    basePath: 'favicons',
-    recursive: false,
+    basePath: 'favicons/msikma_pokesprite/pokemon-gen8/regular',
+    indexFile: 'favicons/index.json',
   },
   {
     id: 'pokemon-gen8-shiny',
     name: 'Pokemon Gen8 Shiny',
     description: 'Shiny Pokemon sprites from Gen8',
     basePath: 'favicons/msikma_pokesprite/pokemon-gen8/shiny',
-    recursive: false,
+    indexFile: null,
   },
   {
     id: 'pokemon-gen8-special',
     name: 'Pokemon Gen8 Special',
     description: 'Egg and unknown Pokemon sprites from Gen8',
     basePath: 'favicons/msikma_pokesprite/pokemon-gen8',
-    recursive: false,
+    indexFile: null,
     filter: (f) => ['egg.png', 'egg-manaphy.png', 'unknown.png', 'unknown-gen5.png'].includes(f),
   },
 ];
@@ -65,7 +64,7 @@ function generateManifest() {
 
   for (const set of ICON_SETS) {
     const fullPath = join(PUBLIC_DIR, set.basePath);
-    const icons = scanDirectory(fullPath, set.recursive, set.filter);
+    const icons = scanDirectory(fullPath, set.filter);
 
     if (icons.length > 0) {
       manifest.iconSets[set.id] = {
