@@ -7,7 +7,7 @@ export const defaultLang = 'en';
 export const ui = {
   en: {
     'site.title': 'Pokemon Sprites Gallery',
-    'site.subtitle': 'Compare sprite sources from PokeAPI. All images are static remote links.',
+    'site.subtitle': 'Compare Pokemon sprite sources from PokeAPI, Showdown, HOME and more. Search by ID, random refresh, and set any sprite as your browser favicon.',
     'control.id': 'ID',
     'control.random': 'Random',
     'control.generation': 'Generation',
@@ -32,7 +32,7 @@ export const ui = {
   },
   zh: {
     'site.title': '宝可梦精灵图鉴',
-    'site.subtitle': '对比 PokeAPI 的精灵图来源。所有图片均为静态远程链接。',
+    'site.subtitle': '对比 PokeAPI、PokeAPI Home、Showdown 等多个来源的精灵图，支持 ID 查询、随机刷新和浏览器图标设置。',
     'control.id': '编号',
     'control.random': '随机',
     'control.generation': '世代',

@@ -34,6 +34,16 @@ body {
   font-family: 'Inter', system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif;
 }
 
+/* Keyboard focus indicator */
+:focus-visible {
+  outline: 2px solid var(--color-link);
+  outline-offset: 2px;
+}
+
+.dark :focus-visible {
+  outline-color: var(--color-link-dark);
+}
+
 /* ===== Sprite-specific styles (not Tailwind utilities) ===== */
 .sprite-img {
   image-rendering: pixelated;

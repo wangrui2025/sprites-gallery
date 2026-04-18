@@ -123,10 +123,10 @@ const generations = Array.from(
                 <span class="tag text-xs px-2 py-0.5 rounded-full bg-tag-tech dark:bg-tag-tech-dark text-tag-tech-text dark:text-tag-tech-text-dark">{t['tag.style']}</span>
               </div>
               <div class="flex justify-center gap-2 mt-2 opacity-85 transition-opacity group-hover:opacity-100">
-                <button class="action-btn text-xs px-2 py-1 border border-border dark:border-border-dark rounded bg-transparent text-text dark:text-text-dark cursor-pointer transition-colors hover:bg-tag-field dark:hover:bg-tag-field-dark" data-source={source.id}>
+                <button class="action-btn text-xs px-2 py-1 border border-border dark:border-border-dark rounded bg-transparent text-text dark:text-text-dark cursor-pointer transition-colors hover:bg-tag-field dark:hover:bg-tag-field-dark" data-source={source.id} aria-label={`${t['action.copyUrl']} - ${source.name}`}>
                   {t['action.copyUrl']}
                 </button>
-                <button class="action-btn text-xs px-2 py-1 border border-border dark:border-border-dark rounded bg-transparent text-text dark:text-text-dark cursor-pointer transition-colors hover:bg-tag-field dark:hover:bg-tag-field-dark" data-source={source.id}>
+                <button class="action-btn text-xs px-2 py-1 border border-border dark:border-border-dark rounded bg-transparent text-text dark:text-text-dark cursor-pointer transition-colors hover:bg-tag-field dark:hover:bg-tag-field-dark" data-source={source.id} aria-label={`${t['action.setFavicon']} - ${source.name}`}>
                   {t['action.setFavicon']}
                 </button>
               </div>

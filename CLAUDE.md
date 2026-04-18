@@ -2,6 +2,10 @@
 
 > Frozen ADR v1.0 reference: `~/.claude/memory/astro-6-modernization-checklist.md`
 
+## 请参考
+
+请先阅读 `~/.claude/CLAUDE.md` 获得通用知识。
+
 ## Definition of Done
 
 - [ ] `npx astro check` → 0 errors / 0 warnings / 0 hints
