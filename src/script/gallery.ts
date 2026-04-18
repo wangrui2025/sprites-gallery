@@ -8,6 +8,7 @@ interface PokemonInfo {
 let currentId = 1;
 let selectedSourceId: string | null = null;
 const pokeCache = new Map<number, PokemonInfo>();
+const sourceMap = new Map(SPRITE_SOURCES.map((s) => [s.id, s]));
 
 export function showToast(message: string) {
   const toast = document.getElementById('toast') as HTMLDivElement | null;
@@ -114,7 +115,7 @@ export function updateImages(): void {
     const el = img as HTMLImageElement;
     const sourceId = el.dataset.source;
     if (!sourceId) return;
-    const source = SPRITE_SOURCES.find((s) => s.id === sourceId);
+    const source = sourceMap.get(sourceId);
     if (!source) return;
 
     if (!isValidForSource(id, source)) {
@@ -179,7 +180,7 @@ export async function setAsFavicon(sourceId: string, pokemonId: number): Promise
     faviconUrl = `/sprites-gallery/favicons/${info.names.en.toLowerCase().replace(/[^a-z0-9]/g, '')}.png`;
   } else {
     // Build the source URL and fetch as data URI to avoid CORS
-    const source = SPRITE_SOURCES.find((s) => s.id === sourceId);
+    const source = sourceMap.get(sourceId);
     if (!source) {
       showToast(`Unknown source: ${sourceId}`);
       return;
@@ -239,7 +240,7 @@ export function initGallery(): void {
     if (!sid) return;
 
     if (target.classList.contains('copy-url')) {
-      const source = SPRITE_SOURCES.find((s) => s.id === sid);
+      const source = sourceMap.get(sid);
       if (source) {
         navigator.clipboard.writeText(source.url(currentId));
         showToast('URL copied');
@@ -303,6 +304,23 @@ export function initGallery(): void {
         break;
       }
     }
+  });
+
+  // Hover preloading — prefetch next/prev Pokemon images
+  grid?.addEventListener('mouseover', (e) => {
+    const img = (e.target as HTMLElement).closest('.sprite-img') as HTMLImageElement | null;
+    if (!img) return;
+    const sourceId = img.dataset.source;
+    if (!sourceId) return;
+    const source = sourceMap.get(sourceId);
+    if (!source) return;
+    // Prefetch current + next 2 IDs
+    const nextIds = [currentId, currentId + 1, currentId + 2].filter((id) => id <= 1025);
+    nextIds.forEach((id) => {
+      if (!isValidForSource(id, source)) return;
+      const preload = new Image();
+      preload.src = source.url(id);
+    });
   });
 
   // Image error handler

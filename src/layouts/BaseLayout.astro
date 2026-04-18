@@ -47,6 +47,15 @@ const defaultId = 1;
     <!-- Performance: preconnect to sprite CDN -->
     <link rel="dns-prefetch" href="https://raw.githubusercontent.com" />
     <link rel="preconnect" href="https://raw.githubusercontent.com" crossorigin />
+    <link rel="dns-prefetch" href="https://play.pokemonshowdown.com" />
+    <link rel="preconnect" href="https://play.pokemonshowdown.com" crossorigin />
+
+    <!-- Preload initial Pokemon sprite (first visible source) -->
+    <link
+      rel="preload"
+      as="image"
+      href={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${defaultId}.png`}
+    />
 
     <link id="pokemon-favicon" rel="icon" type="image/png" href="/sprites-gallery/favicons/pikachu.png" />
     <script is:inline define:vars={{ defaultTemplate, defaultId }}>
