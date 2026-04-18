@@ -6,10 +6,14 @@
 import { readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { execSync } from 'node:child_process';
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url));
 const PUBLIC_DIR = join(__dirname, '../public');
 const MANIFEST_PATH = join(__dirname, '../public/icon-manifest.json');
+
+// Get current git commit SHA for immutable CDN versioning
+const GIT_SHA = execSync('git rev-parse HEAD', { cwd: join(__dirname, '..') }).toString().trim();
 
 // Icon set definitions
 const ICON_SETS = [
@@ -72,9 +76,12 @@ function loadIndexJson(filePath) {
 }
 
 function generateManifest() {
+  const cdnBase = `https://cdn.jsdelivr.net/gh/wangrui2025/sprites-gallery@${GIT_SHA}/public`;
   const manifest = {
     version: '1.0',
     generated: new Date().toISOString(),
+    gitSha: GIT_SHA,
+    cdnBase,
     iconSets: {},
   };
 
@@ -97,7 +104,7 @@ function generateManifest() {
         iconCount: icons.length,
         icons: icons.map((icon) => ({
           fileName: icon,
-          url: `/${set.basePath}/${icon}`,
+          url: `${cdnBase}/${set.basePath}/${icon}`,
         })),
       };
     }
