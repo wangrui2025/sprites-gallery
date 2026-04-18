@@ -90,7 +90,7 @@ export async function updatePokemonInfo(id: number): Promise<void> {
   // Sync favicon preview when info is available
   if (info) {
     const name = info.names.en.toLowerCase().replace(/[^a-z0-9]/g, '');
-    const faviconUrl = `/sprites-gallery/favicons/${name}.png`;
+    const faviconUrl = `/sprites-gallery/favicons/msikma_pokesprite/pokemon-gen8/regular/${name}.png`;
     const previewImg = document.getElementById('favicon-preview-img') as HTMLImageElement | null;
     if (previewImg) previewImg.src = faviconUrl;
     const hasFaviconPref = localStorage.getItem('preferred-sprite-source');
@@ -177,7 +177,7 @@ export async function setAsFavicon(sourceId: string, pokemonId: number): Promise
 
   let faviconUrl: string;
   if (sourceId === 'favicon-preview') {
-    faviconUrl = `/sprites-gallery/favicons/${info.names.en.toLowerCase().replace(/[^a-z0-9]/g, '')}.png`;
+    faviconUrl = `/sprites-gallery/favicons/msikma_pokesprite/pokemon-gen8/regular/${info.names.en.toLowerCase().replace(/[^a-z0-9]/g, '')}.png`;
   } else {
     // Build the source URL and fetch as data URI to avoid CORS
     const source = sourceMap.get(sourceId);
@@ -350,7 +350,7 @@ export function initGallery(): void {
       const name = info.names.en.toLowerCase().replace(/[^a-z0-9]/g, '');
       const faviconLink = document.getElementById('pokemon-favicon') as HTMLLinkElement | null;
       if (faviconLink) {
-        faviconLink.href = `/sprites-gallery/favicons/${name}.png`;
+        faviconLink.href = `/sprites-gallery/favicons/msikma_pokesprite/pokemon-gen8/regular/${name}.png`;
       }
     }
   });
