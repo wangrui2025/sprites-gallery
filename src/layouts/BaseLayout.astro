@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import { getLangFromUrl } from '../i18n/utils';
 import LanguagePicker from '../components/LanguagePicker.astro';
+import manifest from '../data/favicon-manifest.json';
 
 interface Props {
   title: string;
@@ -17,6 +18,12 @@ const currentLang = getLangFromUrl(Astro.url);
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
 const defaultTemplate = 'https://play.pokemonshowdown.com/sprites/gen5/1.png';
 const defaultId = 1;
+
+// Build all favicon URLs (regular + shiny) at build time
+const faviconUrls = manifest.iconSets
+  .filter(s => s.id === 'regular' || s.id === 'shiny')
+  .flatMap(s => s.icons)
+  .map(i => i.url);
 ---
 
 <!doctype html>
@@ -58,9 +65,20 @@ const defaultId = 1;
     />
 
     <link id="pokemon-favicon" rel="icon" type="image/png" href="/sprites-gallery/favicons/msikma_pokesprite/pokemon-gen8/regular/lotad.png" />
+    <script is:inline define:vars={{ faviconUrls }}>
+      (function() {
+        // Default to Lotad (first icon)
+        var link = document.getElementById('pokemon-favicon');
+        if (!link) return;
+
+        // True random each visit from regular + shiny icons
+        var randomUrl = faviconUrls[Math.floor(Math.random() * faviconUrls.length)];
+        link.href = randomUrl;
+      })();
+    </script>
+
     <script is:inline define:vars={{ defaultTemplate, defaultId }}>
       (function() {
-        // True random each visit (no localStorage persistence)
         var initialId = Math.floor(Math.random() * 898) + 1;
         window.__INITIAL_POKEMON_ID__ = initialId;
       })();
