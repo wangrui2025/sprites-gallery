@@ -1,5 +1,11 @@
 import { SPRITE_SOURCES, isValidForSource } from '../data/sprite-sources';
 
+declare global {
+  interface Window {
+    __INITIAL_POKEMON_ID__?: number;
+  }
+}
+
 interface PokemonInfo {
   names: { en: string; ja: string; zh: string };
   types: string[];
@@ -63,7 +69,8 @@ export async function fetchPokemonInfo(id: number): Promise<PokemonInfo | null> 
     };
     pokeCache.set(id, info);
     return info;
-  } catch {
+  } catch (err) {
+    console.warn(`[gallery] Failed to fetch Pokemon #${id}:`, err);
     return null;
   }
 }
@@ -188,7 +195,8 @@ export async function setAsFavicon(sourceId: string, pokemonId: number): Promise
     const imgUrl = source.url(pokemonId);
     try {
       faviconUrl = await urlToDataUri(imgUrl);
-    } catch {
+    } catch (err) {
+      console.warn(`[gallery] Failed to load image from ${source.name}:`, err);
       showToast(`Failed to load image from ${source.name}`);
       return;
     }
@@ -338,7 +346,7 @@ export function initGallery(): void {
   });
 
   // Initial load
-  const initialId = (window as any).__INITIAL_POKEMON_ID__ || 1;
+  const initialId = window.__INITIAL_POKEMON_ID__ || 1;
   currentId = initialId;
   if (idInput) idInput.value = String(initialId);
   updateImages();
