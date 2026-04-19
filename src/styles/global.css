@@ -14,9 +14,9 @@
   --color-border: #e5e3db;
   --color-border-dark: #30302e;
   --color-paper: #faf9f5;
-  --color-paper-dark: #30302e;
+  --color-paper-dark: #1e1e1c;
   --color-paper-border: #f0eee6;
-  --color-paper-border-dark: #30302e;
+  --color-paper-border-dark: #3a3a36;
   --color-tag-field: #e8dcc8;
   --color-tag-field-dark: #3d3529;
   --color-tag-field-text: #5e4a3a;
@@ -27,11 +27,75 @@
   --color-tag-tech-text-dark: #b0aea5;
   --color-text-secondary: #5e5e59;
   --color-text-secondary-dark: #b0aea5;
+
+  /* Warm Editorial palette extensions */
+  --color-cream: #fdfcf8;
+  --color-cream-dark: #1a1a18;
+  --color-warm-shadow: rgba(180, 160, 140, 0.15);
+  --color-warm-shadow-dark: rgba(0, 0, 0, 0.4);
+  --color-glow-warm: rgba(201, 100, 66, 0.12);
+  --color-glow-warm-dark: rgba(217, 119, 87, 0.15);
 }
 
-/* Base styles */
+/* ===== Atmospheric Background ===== */
 body {
   font-family: 'Inter', system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  position: relative;
+}
+
+/* Subtle warm grain texture */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.35;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+}
+
+.dark body::before {
+  opacity: 0.2;
+}
+
+/* Ensure content stays above atmospheric layer */
+.max-w-7xl {
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== Enhanced Card System ===== */
+.sprite-card {
+  background: var(--color-paper);
+  border: 1px solid var(--color-paper-border);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  transition:
+    transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.25s ease,
+    border-color 0.2s ease;
+  box-shadow: 0 1px 3px var(--color-warm-shadow);
+}
+
+.sprite-card:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 8px 24px var(--color-warm-shadow),
+    0 2px 8px var(--color-warm-shadow);
+  border-color: var(--color-border);
+}
+
+.dark .sprite-card {
+  background: var(--color-paper-dark);
+  border-color: var(--color-paper-border-dark);
+  box-shadow: 0 1px 3px var(--color-warm-shadow-dark);
+}
+
+.dark .sprite-card:hover {
+  box-shadow:
+    0 8px 24px var(--color-warm-shadow-dark),
+    0 2px 8px var(--color-warm-shadow-dark);
+  border-color: var(--color-border-dark);
 }
 
 /* Keyboard focus indicator */
@@ -84,6 +148,77 @@ body {
 .dark .code-block {
   background: #0f0f1a;
   color: #a6adc8;
+}
+
+/* ===== Enhanced Form Controls ===== */
+/* Input polish */
+input[type="number"],
+input[type="text"],
+select {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  background: var(--color-bg);
+  border-color: var(--color-border);
+}
+
+input[type="number"]:hover,
+input[type="text"]:hover,
+select:hover {
+  border-color: var(--color-link);
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus,
+select:focus {
+  border-color: var(--color-link);
+  box-shadow: 0 0 0 3px var(--color-glow-warm);
+  outline: none;
+}
+
+.dark input[type="number"],
+.dark input[type="text"],
+.dark select {
+  background: var(--color-bg-dark);
+  border-color: var(--color-border-dark);
+}
+
+.dark input[type="number"]:hover,
+.dark input[type="text"]:hover,
+.dark select:hover {
+  border-color: var(--color-link-dark);
+}
+
+.dark input[type="number"]:focus,
+.dark input[type="text"]:focus,
+.dark select:focus {
+  border-color: var(--color-link-dark);
+  box-shadow: 0 0 0 3px var(--color-glow-warm-dark);
+}
+
+/* Button polish */
+button {
+  transition: opacity 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* ===== Type Badge Polish ===== */
+.type-badge {
+  display: inline-block;
+  padding: 0.15rem 0.6rem;
+  border-radius: 9999px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.type-badge:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  transform: scale(1.05);
 }
 
 /* Type badge colors */
