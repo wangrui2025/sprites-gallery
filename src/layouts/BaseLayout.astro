@@ -60,8 +60,8 @@ const defaultId = 1;
     <link id="pokemon-favicon" rel="icon" type="image/png" href="/sprites-gallery/favicons/msikma_pokesprite/pokemon-gen8/regular/pikachu.png" />
     <script is:inline define:vars={{ defaultTemplate, defaultId }}>
       (function() {
-        var stored = localStorage.getItem('preferred-pokemon-id');
-        var initialId = stored ? parseInt(stored, 10) : Math.floor(Math.random() * 898) + 1;
+        // True random each visit (no localStorage persistence)
+        var initialId = Math.floor(Math.random() * 898) + 1;
         window.__INITIAL_POKEMON_ID__ = initialId;
       })();
     </script>
