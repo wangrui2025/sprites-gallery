@@ -15,8 +15,9 @@ const MANIFEST_PATH = join(__dirname, '../public/icon-manifest.json');
 // This ensures manifest always pins to the exact commit that contains it,
 // preventing stale CDN cache from serving old image versions.
 import { execSync } from 'node:child_process';
-const GIT_SHA = execSync('git rev-parse HEAD', { encoding: 'utf-8' }).trim();
-const GIT_REF = GIT_SHA;
+// Use 'main' branch for CDN URLs - jsDelivr auto-invalidates cache on new commits
+// This avoids the chicken-egg problem: manifest can't point to its own commit
+const GIT_REF = 'main';
 
 // Icon set definitions
 const ICON_SETS = [
