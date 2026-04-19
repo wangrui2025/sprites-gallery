@@ -65,6 +65,15 @@ const faviconUrls = manifest.iconSets
     />
 
     <link id="pokemon-favicon" rel="icon" type="image/png" href="/sprites-gallery/favicons/msikma_pokesprite/pokemon-gen8/regular/lotad.png" />
+    <link rel="manifest" href="/sprites-gallery/manifest.json" />
+    <meta name="theme-color" content="#3b82f6" />
+    <script is:inline>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sprites-gallery/sw.js').catch(() => {});
+        });
+      }
+    </script>
     <script is:inline define:vars={{ faviconUrls }}>
       (function() {
         // Default to Lotad (first icon)
