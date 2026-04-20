@@ -67,6 +67,25 @@ src/
 
 **Note**: All UI strings are internationalized via `src/i18n/ui.ts`.
 
+## Pokemon Data Integrity Check (Fossil Evolution Chain)
+
+When adding or modifying Pokemon in the gallery, **before claiming completeness**:
+
+```bash
+# 1. Verify CDN resource exists (all fossil Pokemon)
+for poke in shieldon bastiodon cranidos rampardos anorith armaldo kabutops tirtouga carracosta amaura aurorus lileem cradily carbink archen archeops swinub piloswine mamoswine; do
+  code=$(curl -s -o /dev/null -w "%{http_code}" "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${poke}.png")
+  echo "$poke: $code"
+done
+
+# 2. Verify evolution chain order (pre-evolution → final form)
+# Reference: Amaura → Aurorus (NOT Aurorus → Amaura)
+# Reference: Tirtouga → Carracosta (NOT Carracosta → Tirtouga)
+# Reference: Lileem → Cradily (Gen 5, NOT in Gen 8 sprite set)
+```
+
+**Rule**: IF adding Pokemon to list → THEN verify CDN + evolution order + all-at-once (not one-by-one)
+
 ## Regression checks (run after `npm run build`)
 
 ```bash
