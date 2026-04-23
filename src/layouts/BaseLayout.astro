@@ -51,6 +51,24 @@ const faviconUrls = manifest.iconSets
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={defaultTemplate} />
 
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json" is:inline set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": title,
+      "description": description,
+      "url": canonicalURL,
+      "inLanguage": currentLang === 'zh' ? 'zh-CN' : 'en-US',
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": `${canonicalURL}?q={search_term_string}`
+        },
+        "query-input": "required name=search_term_string"
+      }
+    })} />
+
     <!-- Performance: preconnect to sprite CDN -->
     <link rel="dns-prefetch" href="https://raw.githubusercontent.com" />
     <link rel="preconnect" href="https://raw.githubusercontent.com" crossorigin />

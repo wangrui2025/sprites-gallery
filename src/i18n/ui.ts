@@ -29,6 +29,9 @@ export const ui = {
     'toast.templateCopied': 'Template copied',
     'toast.faviconSet': 'Favicon set to',
     'toast.noSource': 'No visible source to set as favicon',
+    'error.pageNotFound': 'Page Not Found',
+    'error.description': 'The page you are looking for does not exist or has been moved.',
+    'error.suggestion': 'Return to the homepage to explore the Pokemon sprites gallery.',
   },
   zh: {
     'site.title': '宝可梦精灵图鉴',
@@ -54,6 +57,9 @@ export const ui = {
     'toast.templateCopied': '模板已复制',
     'toast.faviconSet': '图标已设为',
     'toast.noSource': '没有可用的来源',
+    'error.pageNotFound': '页面未找到',
+    'error.description': '您访问的页面不存在或已被移动。',
+    'error.suggestion': '返回首页探索宝可梦精灵图鉴。',
   },
 } as const;
 
