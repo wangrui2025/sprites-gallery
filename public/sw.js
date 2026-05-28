@@ -1,4 +1,5 @@
-const CACHE_NAME = 'sprites-gallery-v1';
+const CACHE_VERSION = 'v2';
+const CACHE_NAME = `sprites-gallery-${CACHE_VERSION}`;
 const STATIC_ASSETS = [
   '/sprites-gallery/',
   '/sprites-gallery/favicons/icon-192x192.png',
@@ -22,11 +23,15 @@ self.addEventListener('activate', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
+  const url = new URL(event.request.url);
+  // Don't cache external API responses (PokeAPI, etc.)
+  if (url.origin !== self.location.origin) return;
+
   event.respondWith(
     caches.match(event.request).then((cached) => {
       if (cached) return cached;
       return fetch(event.request).then((response) => {
-        if (!response || response.status !== 200) return response;
+        if (!response || response.status !== 200 || response.type !== 'basic') return response;
         const clone = response.clone();
         caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
         return response;

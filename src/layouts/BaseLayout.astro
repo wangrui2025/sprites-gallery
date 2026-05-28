@@ -58,15 +58,7 @@ const faviconUrls = manifest.iconSets
       "name": title,
       "description": description,
       "url": canonicalURL,
-      "inLanguage": currentLang === 'zh' ? 'zh-CN' : 'en-US',
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": `${canonicalURL}?q={search_term_string}`
-        },
-        "query-input": "required name=search_term_string"
-      }
+      "inLanguage": currentLang === 'zh' ? 'zh-CN' : 'en-US'
     })} />
 
     <!-- Performance: preconnect to sprite CDN -->
