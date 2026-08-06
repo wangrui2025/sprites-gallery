@@ -19,6 +19,9 @@
     "@astrojs/check": "^0.9.8",
     "typescript": "^5.9.3"
   },
+  "overrides": {
+    "fast-uri": "^3.1.5"
+  },
   "engines": {
     "node": ">=22.12.0"
   }
