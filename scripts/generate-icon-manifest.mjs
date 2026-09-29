@@ -11,10 +11,6 @@ const __dirname = fileURLToPath(new URL('.', import.meta.url));
 const PUBLIC_DIR = join(__dirname, '../public');
 const MANIFEST_PATH = join(__dirname, '../public/icon-manifest.json');
 
-// Read current git SHA for immutable CDN URLs
-// This ensures manifest always pins to the exact commit that contains it,
-// preventing stale CDN cache from serving old image versions.
-import { execSync } from 'node:child_process';
 // Use 'main' branch for CDN URLs - jsDelivr auto-invalidates cache on new commits
 // This avoids the chicken-egg problem: manifest can't point to its own commit
 const GIT_REF = 'main';
