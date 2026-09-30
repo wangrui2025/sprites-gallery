@@ -2,6 +2,14 @@
 
 A live showcase for comparing Pokemon sprite sources — and setting any sprite as your browser's favicon.
 
+## CI and publication
+
+This repository uses **DEPLOY_ONLY**: the production build is its meaningful acceptance path. Follow the shared [account-level CI standard](https://github.com/mykcs/.agents/blob/main/docs/agents/CI_STANDARD.md); this README is the local CI owner.
+
+- Local validation: `npm ci`, `npx astro check`, then `npm run build`. The build includes the post-build critical-CSS inliner.
+- `.github/workflows/deploy.yml` runs on every push to `main`, builds with Node 22, and publishes the `dist/` artifact to GitHub Pages Production. It has no pull-request trigger, required exact-head check, or concurrency/stale-run policy.
+- GitHub currently has no active ruleset or branch protection for `main`; the Pages workflow is not a merge gate. Re-read live rules before changing this contract. GitHub Actions supplies build compute; GitHub Pages serves the static product.
+
 ## The Purpose
 
 **Why this exists:** A Pokemon fan site where the browser tab icon itself is a Pokemon. Every page refresh gives you a different random Pokemon as your favicon — making your browser tab feel alive.
