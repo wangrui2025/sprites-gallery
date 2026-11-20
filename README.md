@@ -58,3 +58,11 @@ The favicon card in the grid uses Layer 2 (indicated by the purple **ID → Name
 3. Browse the grid — click **Set Favicon** on any card to apply it
 4. Press `F` to quickly set the currently focused source as favicon
 5. Use arrow keys or the input to navigate between Pokemon
+
+## Interaction craftsmanship — an open wish (2026-11-20 · 交互品质参考)
+
+The gallery should feel deliberate when visitors browse sprite sources, choose a Pokémon, filter by generation and set a favicon. Hover, focus, touch and selected-state feedback should make it obvious which source is actionable and which choice is currently active. Icon sizing, image alignment, spacing and hit targets should support comparison across different sprite art styles without misleading scale changes.
+
+**Present-day reference, not a permanent design:** [nuro.dev](https://nuro.dev/) was observed on 2026-11-20 for its subtle hover treatment, icon proportions and spatial rhythm. This is an example to learn from, not a request to clone it, adopt its CSS stack or freeze its dimensions, colors or animation timings. Better future design examples can replace it.
+
+When implementing later, keep the random/selected favicon logic and local persistence truthful; test desktop mouse hover and keyboard focus, 440px touch, reduced-motion preferences, no layout jumps/overflow, and sprite-source accuracy. **This PR records the aspiration only; it changes no app code or published behavior.**
