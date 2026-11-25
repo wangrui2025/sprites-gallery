@@ -66,3 +66,9 @@ The gallery should feel deliberate when visitors browse sprite sources, choose a
 **Present-day reference, not a permanent design:** [nuro.dev](https://nuro.dev/) was observed on 2026-11-20 for its subtle hover treatment, icon proportions and spatial rhythm. This is an example to learn from, not a request to clone it, adopt its CSS stack or freeze its dimensions, colors or animation timings. Better future design examples can replace it.
 
 When implementing later, keep the random/selected favicon logic and local persistence truthful; test desktop mouse hover and keyboard focus, 440px touch, reduced-motion preferences, no layout jumps/overflow, and sprite-source accuracy. **This PR records the aspiration only; it changes no app code or published behavior.**
+
+## Project governance
+
+[AGENTS](AGENTS.md) · [Wish](docs/wish/README.md) · [Dev](docs/dev/README.md) · [Design](docs/design/README.md) · [Website Passport](docs/dev/WEBSITE_PASSPORT.md).
+
+Build the source and run \`npm run check:reader\` to check the public reader outputs.

@@ -1,0 +1,8 @@
+# Pokémon Sprite Gallery
+
+跨来源 Pokémon 素材比较与浏览器 favicon 体验。
+
+- [Main gallery](https://wangrui2025.github.io/sprites-gallery/) — original public gallery and its interaction.
+
+- [Agent reader](https://wangrui2025.github.io/sprites-gallery/agent/) — site structure, source links and limits.
+- [Structured catalog](https://wangrui2025.github.io/sprites-gallery/agent/site.json) — same public reader data in JSON.
