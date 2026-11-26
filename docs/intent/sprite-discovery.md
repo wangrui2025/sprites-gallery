@@ -1,0 +1,23 @@
+# Sprite discovery and icon selection
+
+稳定 ID：sprite-discovery；范围：Localized gallery。
+
+## 目标与来源
+
+让访客发现同一 Pokémon 的不同素材表现、按世代筛选，并选择浏览器标签页图标。
+
+依据：[现有 Wish](../wish/LATEST.md)、[现有 Design](../design/README.md)，2026-11-26 按原仓库内容整理；不宣称获得新的用户批准。
+
+## 保护的体验与语义
+
+随机图标、当前对象、多来源对照、世代筛选和用户选择是核心；保持本地记忆、中英文和现有离线行为。素材来源、可用性与授权不夸大，不因改版丢失随机和选择能力。
+
+允许更优布局、交互和技术实现；新目标须记录来源及时间，不把当前实现不足变成降低意图的理由。
+
+## 实现与验收
+
+[现有页面](../../src/pages/[lang]/index.astro) · [Design](../design/README.md) · [Dev / 验收入口](../dev/WEBSITE_PASSPORT.md)。
+
+按现有 Design/Passport 检查随机、世代筛选、图标选择和刷新保持、同对象对照、语言、离线与失败状态；手机和键盘同样可用。
+
+状态：意图来源已核对；本次只接入文档，不改变网站代码或重新验收生产功能。未验证项保持明确。

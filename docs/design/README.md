@@ -5,3 +5,5 @@
 **Executable owner:** [global.css](../../src/styles/global.css) and [shared layout](../../src/layouts/BaseLayout.astro). Change shared semantic roles there rather than creating a duplicate global token table. Preserve existing ordinary-page hierarchy, readable line length, native links, visible focus, contrast, and responsive behavior. Test desktop 1440×900 and mobile 440×956 CSS pixels (DPR3/touch), including the actual primary controls; a simulator is not a physical-phone test. Check existing theme and image error/fallback behavior.
 
 Read [Wish interpretation](../wish/DESIGN.md) before navigation/product changes. No approved aesthetic redesign is implied by this document.
+
+Feature-level goals and protected semantics: [Intent](../intent/README.md). This file retains its existing ownership and history.

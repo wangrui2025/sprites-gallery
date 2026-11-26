@@ -15,3 +15,5 @@ Profile: full. Canonical serving URL: https://wangrui2025.github.io/sprites-gall
 | W09 Governance | [AGENTS](../../AGENTS.md), [Wish](../wish/README.md), [Dev](README.md), [Design](../design/README.md). |
 
 Freshness: the reader is a source-derived catalog, not a real-time status claim. Any future checked/updated claim needs its real source instant and visible PT/SGT display with supported precision. This map is an implementation contract, not a blanket compliance certification.
+
+Feature-level goals and protected semantics: [Intent](../intent/README.md). This file retains its existing ownership and history.
