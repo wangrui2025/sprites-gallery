@@ -7,3 +7,5 @@
 - Public reader: `/agent/`, `/agent/site.json`, `/llms.txt` relative to the site's base.
 
 Before edits, check exact main and overlapping PRs. Preserve the user's project intention, source provenance and existing public/approval boundaries. Never add credentials, private records or unapproved images to public output. Build and test the changed layer; report exact-head CI and production independently. Do not introduce paid services, hosting changes or permission changes without separate approval.
+
+For material page/feature changes, resolve the relevant [Feature Design](docs/design/features/README.md) (intent and realization), preserve source-backed essential outcomes, then actively compare and verify a better feasible design using the latest owner intent, technology and evidence. Do not freeze the old implementation or infer approval from a passing test.
