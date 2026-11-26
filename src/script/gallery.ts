@@ -16,6 +16,18 @@ let selectedSourceId: string | null = null;
 const pokeCache = new Map<number, PokemonInfo>();
 const sourceMap = new Map(SPRITE_SOURCES.map((s) => [s.id, s]));
 
+function markImage(img: HTMLImageElement, available: boolean) {
+  img.classList.toggle('error', !available);
+  img.parentElement?.classList.toggle('show-placeholder', !available);
+  if (available) {
+    img.parentElement?.removeAttribute('aria-label');
+    img.parentElement?.removeAttribute('role');
+  } else {
+    img.parentElement?.setAttribute('role', 'img');
+    img.parentElement?.setAttribute('aria-label', img.alt + (document.documentElement.lang === 'zh' ? '：图片不可用' : ': image unavailable'));
+  }
+}
+
 export function showToast(message: string) {
   const toast = document.getElementById('toast') as HTMLDivElement | null;
   if (!toast) return;
@@ -85,6 +97,7 @@ export async function updatePokemonInfo(id: number): Promise<void> {
   if (pokeTypes) pokeTypes.innerHTML = '';
 
   const info = await fetchPokemonInfo(id);
+  if (id !== currentId) return;
   if (info) {
     const { names, types } = info;
     const typeText = types.map((t: string) => `<span class="type-badge type-${t}">${t}</span>`).join('');
@@ -126,16 +139,14 @@ export function updateImages(): void {
     if (!source) return;
 
     if (!isValidForSource(id, source)) {
-      el.src = '';
-      el.classList.add('error');
-      el.parentElement?.classList.add('show-placeholder');
+      el.removeAttribute('src');
+      markImage(el, false);
     } else {
-      el.classList.remove('error');
-      el.parentElement?.classList.remove('show-placeholder');
       const newUrl = source.url(id);
       if (el.src !== newUrl) {
+        markImage(el, true);
         el.src = newUrl;
-      }
+      } else if (el.complete) markImage(el, !!el.naturalWidth);
     }
   });
 
@@ -330,14 +341,12 @@ export function initGallery(): void {
     });
   });
 
-  // Image error handler
-  grid?.addEventListener('error', (e) => {
-    const target = e.target as HTMLImageElement;
-    if (target.classList.contains('sprite-img')) {
-      target.classList.add('error');
-      target.parentElement?.classList.add('show-placeholder');
-    }
-  }, true);
+  // Capture cached failures as well as future load/error events, including the local favicon preview.
+  grid?.querySelectorAll<HTMLImageElement>('img').forEach(img => {
+    img.addEventListener('error', () => markImage(img, false));
+    img.addEventListener('load', () => markImage(img, true));
+    if (img.complete) markImage(img, !!img.naturalWidth);
+  });
 
   // Theme toggle
   themeToggle?.addEventListener('click', () => {
