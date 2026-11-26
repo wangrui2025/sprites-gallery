@@ -10,7 +10,7 @@ const currentRoute = getRouteFromUrl(Astro.url) || '/';
   <a
     href={translatePath(currentRoute, 'en')}
     class={`px-2 py-1 rounded transition-colors ${lang === 'en' ? 'font-semibold text-link dark:text-link-dark' : 'text-text-secondary dark:text-text-secondary-dark hover:bg-paper-border dark:hover:bg-paper-border-dark'}`}
-    aria-label="English"
+    aria-label="EN — English"
   >EN</a>
   <span class="text-text-secondary dark:text-text-secondary-dark select-none">/</span>
   <a

@@ -72,7 +72,7 @@ const generations = Array.from(
           max="1025"
           value="1"
           class="w-20 px-2 py-1.5 border border-border dark:border-border-dark rounded-md bg-bg dark:bg-bg-dark text-text dark:text-text-dark text-base"
-          aria-label={lang === 'zh' ? '宝可梦编号' : 'Pokemon ID'}
+          aria-label={lang === 'zh' ? '编号（宝可梦）' : 'ID (Pokemon)'}
         />
       </div>
 
@@ -153,7 +153,7 @@ const generations = Array.from(
             <span class="text-xs px-2 py-0.5 rounded-full bg-tag-tech dark:bg-tag-tech-dark text-tag-tech-text dark:text-tag-tech-text-dark">{t['tag.format']}</span>
             <span class="text-xs px-2 py-0.5 rounded-full bg-tag-tech dark:bg-tag-tech-dark text-tag-tech-text dark:text-tag-tech-text-dark">32×32</span>
             <span class="text-xs px-2 py-0.5 rounded-full bg-tag-tech dark:bg-tag-tech-dark text-tag-tech-text dark:text-tag-tech-text-dark">{t['tag.local']}</span>
-            <span class="text-xs px-2 py-0.5 rounded-full bg-violet-500 text-white">{t['tag.mapping']}</span>
+            <span class="text-xs px-2 py-0.5 rounded-full bg-violet-700 text-white">{t['tag.mapping']}</span>
           </div>
           <div class="flex justify-center gap-2 mt-2">
             <span class="text-xs text-text-secondary dark:text-text-secondary-dark text-center">{t['tag.currentBrowser']}</span>
@@ -165,7 +165,7 @@ const generations = Array.from(
     {/* Code Snippet */}
     <div class="p-4 bg-paper dark:bg-paper-dark border border-paper-border dark:border-paper-border-dark rounded-lg mb-8">
       <h2 class="text-base font-semibold mb-2 text-heading dark:text-heading-dark">{t['section.urlTemplate']}</h2>
-      <pre class="code-block p-3 rounded-md overflow-x-auto text-sm m-0 mb-3"><code id="url-template">Select a source to view its URL template</code></pre>
+      <pre tabindex="0" role="region" aria-label={t['section.urlTemplate']} class="code-block p-3 rounded-md overflow-x-auto text-sm m-0 mb-3"><code id="url-template">Select a source to view its URL template</code></pre>
       <button id="copy-template" class="px-4 py-2 rounded-md bg-link text-white font-medium cursor-pointer transition-opacity hover:opacity-90">{t['action.copyTemplate']}</button>
     </div>
 

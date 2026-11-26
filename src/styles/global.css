@@ -9,7 +9,7 @@
   --color-text-dark: #c9c9c9;
   --color-heading: #141413;
   --color-heading-dark: #e8e8e8;
-  --color-link: #c96442;
+  --color-link: #a84a2a;
   --color-link-dark: #d97757;
   --color-border: #e5e3db;
   --color-border-dark: #30302e;
@@ -115,13 +115,13 @@ body::before {
 }
 
 .sprite-image-wrap::after {
-  content: "?";
+  content: "Unavailable";
   position: absolute;
   inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 0.875rem;
   color: var(--color-text-secondary);
   background: var(--color-tag-tech);
   border-radius: 0.375rem;
@@ -132,9 +132,11 @@ body::before {
 
 .dark .sprite-image-wrap::after {
   background: #2d2d44;
-  color: #6b6b8a;
+  color: #c0c0d6;
 }
 
+.sprite-image-wrap img.error { visibility: hidden; }
+html[lang="zh"] .sprite-image-wrap.show-placeholder::after { content: "图片不可用"; }
 .sprite-image-wrap.show-placeholder::after {
   opacity: 1;
 }
@@ -222,19 +224,19 @@ button:active {
 }
 
 /* Type badge colors */
-.type-badge.type-normal { background: #a8a878; color: white; }
-.type-badge.type-fire { background: #f08030; color: white; }
-.type-badge.type-water { background: #6890f0; color: white; }
+.type-badge.type-normal { background: #a8a878; color: #141413; }
+.type-badge.type-fire { background: #f08030; color: #141413; }
+.type-badge.type-water { background: #6890f0; color: #141413; }
 .type-badge.type-electric { background: #f8d030; color: black; }
-.type-badge.type-grass { background: #78c850; color: white; }
+.type-badge.type-grass { background: #78c850; color: #141413; }
 .type-badge.type-ice { background: #98d8d8; color: black; }
 .type-badge.type-fighting { background: #c03028; color: white; }
 .type-badge.type-poison { background: #a040a0; color: white; }
 .type-badge.type-ground { background: #e0c068; color: black; }
-.type-badge.type-flying { background: #a890f0; color: white; }
-.type-badge.type-psychic { background: #f85888; color: white; }
-.type-badge.type-bug { background: #a8b820; color: white; }
-.type-badge.type-rock { background: #b8a038; color: white; }
+.type-badge.type-flying { background: #a890f0; color: #141413; }
+.type-badge.type-psychic { background: #f85888; color: #141413; }
+.type-badge.type-bug { background: #a8b820; color: #141413; }
+.type-badge.type-rock { background: #b8a038; color: #141413; }
 .type-badge.type-ghost { background: #705898; color: white; }
 .type-badge.type-dragon { background: #7038f8; color: white; }
 .type-badge.type-dark { background: #705848; color: white; }
